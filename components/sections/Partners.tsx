@@ -19,9 +19,9 @@ export function Partners() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {t.partners.spotlight.map((p, i) => (
             <Reveal key={p.name} index={i}>
-              <div className="h-full rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-6">
-                <h3 className="text-base font-extrabold text-navy-950">{p.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-navy-600">{p.role}</p>
+              <div className="h-full min-w-0 break-words rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-6">
+                <h3 className="min-w-0 break-words text-base font-extrabold text-navy-950">{p.name}</h3>
+                <p className="mt-2 min-w-0 break-words whitespace-pre-line text-sm leading-relaxed text-navy-600">{p.role}</p>
               </div>
             </Reveal>
           ))}
@@ -31,15 +31,15 @@ export function Partners() {
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {t.partners.groups.map((g, i) => (
             <Reveal key={g.name} index={i}>
-              <div className="h-full rounded-[var(--radius-card)] border border-sand-200 bg-white p-5">
-                <p className="text-xs font-semibold uppercase tracking-wider text-accent-600">
+              <div className="h-full min-w-0 break-words rounded-[var(--radius-card)] border border-sand-200 bg-white p-5">
+                <p className="min-w-0 break-words text-xs font-semibold uppercase tracking-wider text-accent-600">
                   {g.name}
                 </p>
                 <ul className="mt-3 flex flex-wrap gap-1.5">
                   {g.members.map((m) => (
                     <li
                       key={m}
-                      className="rounded-full border border-sand-300 bg-sand-50 px-2.5 py-1 text-xs font-medium text-navy-700"
+                      className="min-w-0 break-words rounded-full border border-sand-300 bg-sand-50 px-2.5 py-1 text-xs font-medium text-navy-700"
                     >
                       {m}
                     </li>

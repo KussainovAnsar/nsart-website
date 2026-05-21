@@ -23,12 +23,12 @@ export function Technologies() {
             const Icon = icons[i] ?? Cpu;
             return (
               <Reveal key={item.title} index={i}>
-                <div className="group h-full rounded-[var(--radius-card)] border border-sand-300 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
+                <div className="group h-full min-w-0 break-words rounded-[var(--radius-card)] border border-sand-300 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
                   <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-accent-600/10 text-accent-600">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="mt-5 text-lg font-bold text-navy-950">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy-600">{item.text}</p>
+                  <h3 className="mt-5 min-w-0 break-words text-lg font-bold text-navy-950">{item.title}</h3>
+                  <p className="mt-2 min-w-0 break-words whitespace-pre-line text-sm leading-relaxed text-navy-600">{item.text}</p>
                 </div>
               </Reveal>
             );

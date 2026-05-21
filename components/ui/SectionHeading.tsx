@@ -18,11 +18,11 @@ export function SectionHeading({
 }) {
   return (
     <div
-      className={cn(
-        "max-w-2xl",
-        align === "center" && "mx-auto text-center",
-        className,
-      )}
+        className={cn(
+          "max-w-2xl break-words whitespace-pre-line min-w-0",
+          align === "center" && "mx-auto text-center",
+          className,
+        )}
     >
       {eyebrow && (
         <Reveal>
@@ -45,7 +45,7 @@ export function SectionHeading({
       <Reveal index={1}>
         <h2
           className={cn(
-            "text-balance text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.7rem]",
+            "text-balance text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.7rem] break-words whitespace-pre-line min-w-0",
             tone === "light" ? "text-white" : "text-navy-950",
           )}
         >
@@ -56,7 +56,7 @@ export function SectionHeading({
         <Reveal index={2}>
           <p
             className={cn(
-              "mt-4 text-lg leading-relaxed",
+              "mt-4 text-lg leading-relaxed break-words whitespace-pre-line min-w-0",
               tone === "light" ? "text-navy-100/80" : "text-navy-600/90",
             )}
           >

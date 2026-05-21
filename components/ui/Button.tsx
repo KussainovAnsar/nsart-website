@@ -42,7 +42,7 @@ export function Button({
   ...rest
 }: CommonProps & { href: string } & Omit<ComponentProps<typeof Link>, "href">) {
   const internal = href.startsWith("/") || href.startsWith("#");
-  const classes = cn(base, sizes[size], variants[variant], className);
+  const classes = cn(base, sizes[size], variants[variant], "break-words whitespace-pre-line min-w-0", className);
   const content = (
     <>
       {children}

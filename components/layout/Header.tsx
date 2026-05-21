@@ -59,7 +59,7 @@ export function Header() {
           : "border-b border-transparent py-4",
       )}
     >
-      <div className="container-page flex items-center justify-between gap-4">
+      <div className="container-page flex items-center justify-between gap-4 break-words whitespace-pre-line min-w-0">
         <Link href="/" aria-label="NSART home" className="shrink-0">
           <Logo tone={scrolled ? "dark" : "light"} />
         </Link>
@@ -76,7 +76,7 @@ export function Header() {
               type="button"
               onClick={() => setCompOpen((v) => !v)}
               className={cn(
-                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
                 scrolled
                   ? "text-navy-700 hover:bg-navy-50"
                   : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -119,7 +119,7 @@ export function Header() {
               type="button"
               onClick={() => setAudOpen((v) => !v)}
               className={cn(
-                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
                 scrolled
                   ? "text-navy-700 hover:bg-navy-50"
                   : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -242,7 +242,7 @@ function NavLink({
     <Link
       href={href}
       className={cn(
-        "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+        "rounded-full px-3.5 py-2 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
         scrolled
           ? "text-navy-700 hover:bg-navy-50"
           : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -263,7 +263,7 @@ function MobileLink({
   return (
     <Link
       href={href}
-      className="rounded-xl px-3 py-3 text-base font-medium text-navy-800 transition-colors hover:bg-navy-50"
+      className="rounded-xl px-3 py-3 text-base font-medium text-navy-800 transition-colors hover:bg-navy-50 break-words whitespace-pre-line min-w-0"
     >
       {children}
     </Link>

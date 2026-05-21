@@ -29,7 +29,7 @@ export function LanguageSwitcher({ tone = "dark" }: { tone?: "dark" | "light" })
         aria-haspopup="listbox"
         aria-expanded={open}
         className={cn(
-          "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors",
+          "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
           tone === "light"
             ? "border-white/30 text-white hover:bg-white/20"
             : "border-navy-200 text-navy-700 hover:border-navy-400 hover:bg-navy-50",
@@ -45,7 +45,24 @@ export function LanguageSwitcher({ tone = "dark" }: { tone?: "dark" | "light" })
       {open && (
         <ul
           role="listbox"
-          className="absolute end-0 z-50 mt-2 w-44 overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]"
+          className={cn(
+            // By default open down, but on mobile (sm: max-width 640px) open up
+            "absolute end-0 z-50 w-44 overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]",
+            // Open down on desktop, up on mobile
+            "mt-2 sm:mt-2 sm:bottom-auto sm:top-full",
+            "bottom-full mb-2 sm:mb-0 sm:bottom-auto sm:top-full",
+            // Show above the button on mobile
+            "sm:translate-y-0",
+            // Position above the button on mobile
+            "[direction-up]:bottom-full [direction-up]:mb-2"
+          )}
+          style={{
+            // On mobile, open upwards (bottom: 100%), on desktop open down (top: 100%)
+            top: window.innerWidth <= 640 ? undefined : '100%',
+            bottom: window.innerWidth > 640 ? undefined : '100%',
+            marginBottom: window.innerWidth <= 640 ? '0.5rem' : undefined,
+            marginTop: window.innerWidth > 640 ? '0.5rem' : undefined,
+          }}
         >
           {locales.map((l: Locale) => (
             <li key={l}>
@@ -58,7 +75,7 @@ export function LanguageSwitcher({ tone = "dark" }: { tone?: "dark" | "light" })
                   setOpen(false);
                 }}
                 className={cn(
-                  "flex w-full items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors",
+                  "flex w-full items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors break-words whitespace-pre-line min-w-0",
                   l === locale
                     ? "bg-navy-50 text-navy-900"
                     : "text-navy-600 hover:bg-sand-100",
