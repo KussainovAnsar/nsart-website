@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/views/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">BMI Calculator</a>
+</nav>
+
+<div class="container-fluid mt-5 ml-3">
+    <form id="bmiForm" action="/bmicalculator" method="post">
+        <div class="form-group">
+            <label for="height">Height</label>
+            <input type="number" class="form-control" id="height" name="height" placeholder="Enter height" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight</label>
+            <input type="number" class="form-control" id="weight" name="weight" placeholder="Enter weight" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" name="age" placeholder="Enter age" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="unit">Units</label>
+            <select class="form-control" id="unit" name="unit" required>
+                <option value="metric">Metric</option>
+                <option value="imperial">Imperial</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="btn btn-primary mt-4">Calculate BMI</button>
+            <a href="/" class="btn btn-danger mt-4 ml-2">Back to Home</a>
+        </div>
+    </form>
+</div>
+
+<footer class="mt-5 text-center">
+    <p>Ansar | SE-2201</p>
+</footer>
+
+</body>
+</html>

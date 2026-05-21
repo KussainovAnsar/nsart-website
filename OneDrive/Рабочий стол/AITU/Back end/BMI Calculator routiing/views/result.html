@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/views/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">BMI Calculator</a>
+</nav>
+
+<div class="container mt-5 ml-3">
+    <h2>Calculation Results</h2>
+    <div id="calculationResult" class="result-container mt-3">
+        <p class="bmi-result">Your <span id="bmiResult"></span></p>
+        <p class="interpretation">Interpretation: <span id="interpretationResult"></span></p>
+        <div class="mt-4"></div> 
+    </div>
+    <div class="form-row mt-4">
+        <a href="/bmicalculator" class="btn btn-primary btn-mt4">Back</a>
+    </div>
+</div>
+
+<footer class="mt-5 text-center">
+    <p>Ansar | SE-2201</p>
+</footer>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const bmi = urlParams.get('bmi');
+    const interpretation = urlParams.get('interpretation');
+    document.getElementById('bmiResult').innerText = bmi ? `BMI: ${bmi}` : 'N/A';
+    document.getElementById('interpretationResult').innerText = interpretation ? interpretation : 'N/A';
+</script>
+</body>
+</html>
+
