@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  NSART design tokens                                               */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  /* Brand — derived from the NSART brief palette */
+  --color-navy-50: #eef2f7;
+  --color-navy-100: #d6e0ec;
+  --color-navy-200: #aec2d8;
+  --color-navy-300: #7e9bbd;
+  --color-navy-400: #4f6f96;
+  --color-navy-500: #34557c;
+  --color-navy-600: #284564;
+  --color-navy-700: #1f3a5f;
+  --color-navy-800: #142944;
+  --color-navy-900: #0d1c30;
+  --color-navy-950: #081222;
+
+  --color-accent-400: #3f86c9;
+  --color-accent-500: #2570b1;
+  --color-accent-600: #185fa5;
+
+  --color-esg-400: #1b9a78;
+  --color-esg-500: #128064;
+  --color-esg-600: #0f6e56;
+
+  --color-brand-red: #c0392b;
+  --color-brand-red-bright: #d8463a;
+  --color-amber-600: #854f0b;
+
+  --color-sand-50: #fafaf8;
+  --color-sand-100: #f4f2ec;
+  --color-sand-200: #eceae1;
+  --color-sand-300: #d3d1c7;
+
+  --color-ink: #11161d;
+
+  --font-sans:
+    var(--font-inter), "IBM Plex Sans Arabic", ui-sans-serif, system-ui,
+    sans-serif;
+  --font-display:
+    var(--font-sora), var(--font-inter), "IBM Plex Sans Arabic", ui-sans-serif,
+    system-ui, sans-serif;
+
+  --radius-card: 1.25rem;
+
+  --shadow-soft:
+    0 1px 2px rgba(13, 28, 48, 0.04), 0 12px 32px -12px rgba(13, 28, 48, 0.16);
+  --shadow-lift:
+    0 1px 2px rgba(13, 28, 48, 0.05), 0 24px 56px -20px rgba(13, 28, 48, 0.28);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                              */
+/* ------------------------------------------------------------------ */
+
+:root {
+  --background: #ffffff;
+  --foreground: #11161d;
+  color-scheme: light;
+}
+
+* {
+  border-color: var(--color-sand-300);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-navy-700);
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+/* RTL: relax the negative tracking that hurts Arabic shaping */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4 {
+  letter-spacing: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Utilities                                                         */
+/* ------------------------------------------------------------------ */
+
+@layer utilities {
+  .container-page {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .container-page {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .text-gradient-navy {
+    background: linear-gradient(
+      120deg,
+      var(--color-navy-900),
+      var(--color-accent-600) 58%,
+      var(--color-esg-600)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .bg-dotgrid {
+    background-image: radial-gradient(
+      rgba(31, 58, 95, 0.09) 1px,
+      transparent 1px
+    );
+    background-size: 22px 22px;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+  }
+}
+
+/* Marquee for trust strip / partners */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
