@@ -9,9 +9,11 @@ import { cn } from "@/lib/utils";
 export function LanguageSwitcher({
   tone = "dark",
   placement = "bottom",
+  compact = false,
 }: {
   tone?: "dark" | "light";
   placement?: "top" | "bottom";
+  compact?: boolean;
 }) {
   const { locale, setLocale } = useLanguage();
   const [open, setOpen] = useState(false);
@@ -35,16 +37,17 @@ export function LanguageSwitcher({
         aria-haspopup="listbox"
         aria-expanded={open}
         className={cn(
-          "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors",
+          "inline-flex shrink-0 items-center rounded-full border font-medium transition-colors",
+          compact ? "gap-1 px-2.5 py-1.5 text-xs" : "gap-1.5 px-3 py-1.5 text-sm",
           tone === "light"
             ? "border-white/30 text-white hover:bg-white/20"
             : "border-navy-200 text-navy-700 hover:border-navy-400 hover:bg-navy-50",
         )}
       >
-        <Globe className="h-4 w-4 opacity-80" />
+        <Globe className={cn("opacity-80", compact ? "h-3.5 w-3.5" : "h-4 w-4")} />
         {localeMeta[locale].native}
         <ChevronDown
-          className={cn("h-3.5 w-3.5 transition-transform", open && "rotate-180")}
+          className={cn(compact ? "h-3 w-3" : "h-3.5 w-3.5", "transition-transform", open && "rotate-180")}
         />
       </button>
 
@@ -52,7 +55,8 @@ export function LanguageSwitcher({
         <ul
           role="listbox"
           className={cn(
-            "absolute end-0 z-50 w-44 overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]",
+            "absolute end-0 z-50 max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]",
+            compact ? "w-36" : "w-40 sm:w-44",
             placement === "top" ? "bottom-full mb-2" : "mt-2",
           )}
         >
@@ -67,19 +71,22 @@ export function LanguageSwitcher({
                   setOpen(false);
                 }}
                 className={cn(
-                  "flex w-full items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors",
+                  "flex w-full items-center justify-between gap-2 rounded-xl transition-colors",
+                  compact ? "px-2.5 py-1.5 text-xs" : "px-3 py-2 text-sm",
                   l === locale
                     ? "bg-navy-50 text-navy-900"
                     : "text-navy-600 hover:bg-sand-100",
                 )}
               >
-                <span className="flex items-center gap-2.5">
-                  <span className="w-6 text-xs font-bold text-accent-600">
+                <span className="flex min-w-0 items-center gap-2">
+                  <span className="w-5 shrink-0 text-xs font-bold text-accent-600">
                     {localeMeta[l].native}
                   </span>
-                  <span dir={localeMeta[l].dir}>{localeMeta[l].label}</span>
+                  <span className="min-w-0 truncate" dir={localeMeta[l].dir}>
+                    {localeMeta[l].label}
+                  </span>
                 </span>
-                {l === locale && <Check className="h-4 w-4 text-esg-600" />}
+                {l === locale && <Check className="h-3.5 w-3.5 shrink-0 text-esg-600" />}
               </button>
             </li>
           ))}

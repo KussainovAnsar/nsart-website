@@ -47,7 +47,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.06, ease }}
-              className="mt-6 max-w-3xl text-balance text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.6rem] min-w-0 break-words"
+              className="hero-title mt-6 max-w-3xl text-balance text-[2.15rem] font-extrabold leading-[1.08] sm:text-5xl lg:text-[3.6rem] min-w-0 [overflow-wrap:anywhere]"
             >
               {t.hero.title}
             </motion.h1>
@@ -56,7 +56,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.14, ease }}
-              className="mt-6 max-w-xl text-lg leading-relaxed text-navy-100/80 min-w-0 break-words whitespace-pre-line"
+              className="hero-subtitle mt-5 max-w-xl text-base leading-relaxed text-navy-100/80 sm:mt-6 sm:text-lg min-w-0 [overflow-wrap:anywhere] whitespace-pre-line"
             >
               {t.hero.subtitle}
             </motion.p>
@@ -65,7 +65,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.22, ease }}
-              className="mt-9 flex flex-wrap items-center gap-3"
+              className="mt-8 flex flex-wrap items-center gap-3 sm:mt-9"
             >
               <a
                 href="#audiences"

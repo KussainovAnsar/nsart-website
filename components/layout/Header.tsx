@@ -217,9 +217,9 @@ export function Header() {
                 <MobileLink href="/contact">{t.nav.contact}</MobileLink>
               </div>
             </div>
-            <div className="flex items-center justify-between gap-3 border-t border-sand-300 px-5 py-4">
-              <LanguageSwitcher placement="top" />
-              <Button href="/contact" withArrow>
+            <div className="flex items-center justify-between gap-2 border-t border-sand-300 px-4 py-3">
+              <LanguageSwitcher placement="top" compact />
+              <Button href="/contact" withArrow className="min-w-0 shrink px-4 py-2.5 text-center text-xs leading-tight">
                 {t.common.getInTouch}
               </Button>
             </div>

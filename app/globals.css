@@ -91,7 +91,6 @@ h3,
 h4 {
   font-family: var(--font-display);
   letter-spacing: 0;
-  text-wrap: balance;
 }
 
 /* RTL: relax the negative tracking that hurts Arabic shaping */
@@ -100,6 +99,33 @@ h4 {
 [dir="rtl"] h3,
 [dir="rtl"] h4 {
   letter-spacing: 0;
+}
+
+.hero-title,
+.hero-subtitle {
+  text-wrap: pretty;
+}
+
+[dir="rtl"] .hero-title {
+  font-family:
+    var(--font-inter), "IBM Plex Sans Arabic", ui-sans-serif, system-ui,
+    sans-serif;
+  line-height: 1.18;
+}
+
+[dir="rtl"] .hero-subtitle {
+  line-height: 1.75;
+}
+
+@media (max-width: 420px) {
+  .container-page {
+    padding-inline: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.12;
+  }
 }
 
 /* ------------------------------------------------------------------ */
