@@ -47,7 +47,7 @@ const en = {
     ctaPrimary: "Choose your path",
     ctaSecondary: "Explore Miras Accelerator",
     stats: [
-      { value: "10–100 MW", label: "Planned IT capacity, Tamdy Cloud" },
+      { value: "10–100 MW", label: "AI & Green cloud" },
       { value: "PUE ~1.2", label: "Energy efficiency — among the best on Earth" },
       { value: "Top-25", label: "Kazakhstan in the UN e-Government ranking" },
       { value: "4 regions", label: "Central Asia · MENA · South Asia · Africa" },
@@ -694,7 +694,7 @@ const ru: Dictionary = {
     ctaPrimary: "Выберите путь",
     ctaSecondary: "Акселератор Miras",
     stats: [
-      { value: "10–100 МВт", label: "Планируемая ИТ-мощность Tamdy Cloud" },
+      { value: "10–100 МВт", label: "AI & Green cloud" },
       { value: "PUE ~1,2", label: "Энергоэффективность — одна из лучших в мире" },
       { value: "Top-25", label: "Казахстан в рейтинге ООН по e-Government" },
       { value: "4 региона", label: "Центральная Азия · MENA · Южная Азия · Африка" },
@@ -1304,7 +1304,7 @@ const ar: DeepPartial<Dictionary> = {
     ctaPrimary: "اختر مسارك",
     ctaSecondary: "استكشف مسرّعة مِراس",
     stats: [
-      { value: "10–100 ميجاوات", label: "السعة الحاسوبية المخطّطة لـ Tamdy Cloud" },
+      { value: "10–100 ميجاوات", label: "AI & Green cloud" },
       { value: "PUE ~1,2", label: "كفاءة الطاقة — من بين الأفضل عالميًا" },
       { value: "Top-25", label: "كازاخستان في تصنيف الأمم المتحدة للحكومة الإلكترونية" },
       { value: "4 مناطق", label: "آسيا الوسطى · MENA · جنوب آسيا · أفريقيا" },
@@ -1779,7 +1779,7 @@ const kk: DeepPartial<Dictionary> = {
     ctaPrimary: "Жолыңызды таңдаңыз",
     ctaSecondary: "Miras акселераторы",
     stats: [
-      { value: "10–100 МВт", label: "Tamdy Cloud жоспарлы IT-қуаты" },
+      { value: "10–100 МВт", label: "AI & Green cloud" },
       { value: "PUE ~1,2", label: "Энергия тиімділігі — әлемдегі үздіктердің бірі" },
       { value: "Top-25", label: "Қазақстан БҰҰ-ның e-Gov рейтингінде" },
       { value: "4 өңір", label: "Орталық Азия · MENA · Оңтүстік Азия · Африка" },
