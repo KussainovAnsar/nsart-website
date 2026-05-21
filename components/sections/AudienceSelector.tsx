@@ -51,9 +51,9 @@ export function AudienceSelector() {
             return (
               <Reveal key={card.key} index={i}>
                 <Link
-                  href={card.href}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-navy-200 hover:bg-white hover:shadow-[var(--shadow-lift)]"
-                >
+                    href={card.href}
+                    className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-navy-200 hover:bg-white hover:shadow-[var(--shadow-lift)] break-words"
+                  >
                   <span
                     className={cn(
                       "absolute inset-x-0 top-0 h-1 bg-gradient-to-r opacity-0 transition-opacity duration-300 group-hover:opacity-100",
@@ -71,10 +71,10 @@ export function AudienceSelector() {
                   <p className={cn("mt-5 text-xs font-semibold uppercase tracking-wider", m.accent)}>
                     {card.tag}
                   </p>
-                  <h3 className="mt-2 text-xl font-bold text-navy-950">
+                  <h3 className="mt-2 text-xl font-bold text-navy-950 min-w-0 break-words">
                     {card.title}
                   </h3>
-                  <p className="mt-3 flex-1 text-[0.95rem] leading-relaxed text-navy-600">
+                  <p className="mt-3 flex-1 text-[0.95rem] leading-relaxed text-navy-600 min-w-0 break-words whitespace-pre-line">
                     {card.text}
                   </p>
                   <span

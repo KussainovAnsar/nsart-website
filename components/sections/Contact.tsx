@@ -20,13 +20,13 @@ export function Contact() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {t.contact.audiences.map((a, i) => (
             <Reveal key={a.title} index={i}>
-              <div className="flex h-full flex-col rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-6">
-                <h3 className="text-lg font-extrabold text-navy-950">{a.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-navy-600">{a.text}</p>
-                <div className="mt-auto pt-6">
+              <div className="flex h-full min-w-0 flex-col rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-6 break-words">
+                <h3 className="text-lg font-extrabold text-navy-950 min-w-0 break-words">{a.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy-600 min-w-0 break-words whitespace-pre-line">{a.text}</p>
+                <div className="mt-auto pt-6 overflow-x-auto">
                   <Link
                     href={a.href}
-                    className="inline-flex items-center gap-2 rounded-full bg-navy-950 px-5 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-navy-950 px-5 py-3 text-center text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
                   >
                     {a.cta}
                     <ArrowRight className="h-4 w-4 rtl:rotate-180" />

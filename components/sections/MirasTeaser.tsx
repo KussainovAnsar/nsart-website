@@ -18,7 +18,7 @@ export function MirasTeaser() {
         }}
       />
       <div className="container-page relative">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center min-w-0 break-words">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3.5 py-1.5 text-xs font-medium text-navy-100">
               <Sparkles className="h-3.5 w-3.5 text-accent-400" />
@@ -26,15 +26,15 @@ export function MirasTeaser() {
             </span>
           </Reveal>
           <Reveal index={1}>
-            <h2 className="mt-6 text-balance text-3xl font-extrabold leading-tight sm:text-4xl md:text-[2.8rem]">
+            <h2 className="mx-auto mt-6 max-w-3xl text-balance text-3xl font-extrabold leading-tight sm:text-4xl md:text-[2.8rem] min-w-0 break-words">
               {t.mirasTeaser.heading}
             </h2>
           </Reveal>
           <Reveal index={2}>
-            <p className="mt-5 text-lg leading-relaxed text-navy-100/80">{t.mirasTeaser.text}</p>
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-navy-100/80 min-w-0 break-words whitespace-pre-line">{t.mirasTeaser.text}</p>
           </Reveal>
           <Reveal index={3}>
-            <p className="mt-4 text-sm text-navy-200/70">{t.mirasTeaser.aligned}</p>
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-navy-200/70 min-w-0 break-words whitespace-pre-line">{t.mirasTeaser.aligned}</p>
           </Reveal>
           <Reveal index={4}>
             <div className="mt-8 flex justify-center">

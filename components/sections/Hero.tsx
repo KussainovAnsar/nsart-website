@@ -47,7 +47,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.06, ease }}
-              className="mt-6 text-balance text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.6rem]"
+              className="mt-6 max-w-3xl text-balance text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.6rem] min-w-0 break-words"
             >
               {t.hero.title}
             </motion.h1>
@@ -56,7 +56,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.14, ease }}
-              className="mt-6 max-w-xl text-lg leading-relaxed text-navy-100/80"
+              className="mt-6 max-w-xl text-lg leading-relaxed text-navy-100/80 min-w-0 break-words whitespace-pre-line"
             >
               {t.hero.subtitle}
             </motion.p>
@@ -69,14 +69,14 @@ export function Hero() {
             >
               <a
                 href="#audiences"
-                className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-[0.95rem] font-semibold text-navy-900 shadow-[var(--shadow-lift)] transition-transform hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-center text-[0.95rem] font-semibold text-navy-900 shadow-[var(--shadow-lift)] transition-transform hover:-translate-y-0.5"
               >
                 {t.hero.ctaPrimary}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5" />
               </a>
               <a
                 href="/miras"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3.5 text-[0.95rem] font-medium text-white transition-colors hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3.5 text-center text-[0.95rem] font-medium text-white transition-colors hover:bg-white/10"
               >
                 {t.hero.ctaSecondary}
               </a>
@@ -99,17 +99,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease }}
-          className="grid grid-cols-2 gap-px overflow-hidden rounded-t-3xl border border-white/10 bg-white/10 lg:grid-cols-4"
+          className="grid grid-cols-2 gap-px overflow-hidden rounded-t-3xl border border-white/10 bg-white/10 lg:grid-cols-4 min-w-0 break-words"
         >
           {t.hero.stats.map((s) => (
             <div
               key={s.label}
-              className="bg-navy-950/60 p-5 backdrop-blur-sm sm:p-6"
+              className="bg-navy-950/60 p-5 backdrop-blur-sm sm:p-6 min-w-0 break-words"
             >
-              <p className="font-display text-2xl font-bold text-white sm:text-3xl">
+              <p className="font-display text-2xl font-bold text-white sm:text-3xl min-w-0 break-words">
                 {s.value}
               </p>
-              <p className="mt-1.5 text-xs leading-snug text-navy-100/70">
+              <p className="mt-1.5 text-xs leading-snug text-navy-100/70 min-w-0 break-words">
                 {s.label}
               </p>
             </div>

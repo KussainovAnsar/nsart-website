@@ -18,7 +18,7 @@ export function Cases() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {t.cases.items.map((c, i) => (
             <Reveal key={c.title} index={i}>
-              <article className="flex h-full flex-col rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-6 transition-colors hover:bg-white hover:shadow-[var(--shadow-soft)] sm:p-8">
+              <article className="flex h-full min-w-0 flex-col rounded-[var(--radius-card)] border border-sand-300 bg-sand-50 p-6 transition-colors hover:bg-white hover:shadow-[var(--shadow-soft)] sm:p-8 break-words">
                 <div className="flex items-center justify-between">
                   <span className="rounded-full bg-accent-600/10 px-3 py-1 text-xs font-semibold text-accent-600">
                     {c.tag}
@@ -27,13 +27,13 @@ export function Cases() {
                     {c.status}
                   </span>
                 </div>
-                <h3 className="mt-5 text-xl font-extrabold text-navy-950">{c.title}</h3>
-                <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-navy-500">
+                <h3 className="mt-5 text-xl font-extrabold text-navy-950 min-w-0 break-words">{c.title}</h3>
+                <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-navy-500 min-w-0 break-words">
                   <MapPin className="h-3.5 w-3.5" />
                   {c.location}
                 </p>
-                <p className="mt-4 text-sm leading-relaxed text-navy-700">{c.text}</p>
-                <div className="mt-6 grid grid-cols-2 gap-3 border-t border-sand-200 pt-5 sm:grid-cols-4">
+                <p className="mt-4 text-sm leading-relaxed text-navy-700 min-w-0 break-words whitespace-pre-line">{c.text}</p>
+                <div className="mt-6 grid grid-cols-2 gap-3 border-t border-sand-200 pt-5 sm:grid-cols-4 flex-wrap">
                   {c.metrics.map((m, j) => (
                     <div key={j}>
                       <p className="font-display text-base font-bold text-navy-950">{m.v}</p>

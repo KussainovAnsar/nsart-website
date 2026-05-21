@@ -59,7 +59,7 @@ export function Header() {
           : "border-b border-transparent py-4",
       )}
     >
-      <div className="container-page flex items-center justify-between gap-4 break-words whitespace-pre-line min-w-0">
+      <div className="container-page flex items-center justify-between gap-4">
         <Link href="/" aria-label="NSART home" className="shrink-0">
           <Logo tone={scrolled ? "dark" : "light"} />
         </Link>
@@ -76,7 +76,7 @@ export function Header() {
               type="button"
               onClick={() => setCompOpen((v) => !v)}
               className={cn(
-                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
+                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
                 scrolled
                   ? "text-navy-700 hover:bg-navy-50"
                   : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -119,7 +119,7 @@ export function Header() {
               type="button"
               onClick={() => setAudOpen((v) => !v)}
               className={cn(
-                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
+                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
                 scrolled
                   ? "text-navy-700 hover:bg-navy-50"
                   : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -151,12 +151,13 @@ export function Header() {
           </div>
 
           <NavLink href="/contact" scrolled={scrolled}>{t.nav.contact}</NavLink>
+          {/* Языковой переключатель прямо в навигации */}
+          <div className="ml-2 flex items-center">
+            <LanguageSwitcher tone={scrolled ? "dark" : "light"} />
+          </div>
         </nav>
 
         <div className="flex items-center gap-2.5">
-          <div className="hidden sm:block">
-            <LanguageSwitcher tone={scrolled ? "dark" : "light"} />
-          </div>
           <Button href="/contact" size="md" className="hidden md:inline-flex">
             {t.common.getInTouch}
           </Button>
@@ -217,7 +218,7 @@ export function Header() {
               </div>
             </div>
             <div className="flex items-center justify-between gap-3 border-t border-sand-300 px-5 py-4">
-              <LanguageSwitcher />
+              <LanguageSwitcher placement="top" />
               <Button href="/contact" withArrow>
                 {t.common.getInTouch}
               </Button>
@@ -242,7 +243,7 @@ function NavLink({
     <Link
       href={href}
       className={cn(
-        "rounded-full px-3.5 py-2 text-sm font-medium transition-colors break-words whitespace-pre-line min-w-0",
+        "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
         scrolled
           ? "text-navy-700 hover:bg-navy-50"
           : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -263,7 +264,7 @@ function MobileLink({
   return (
     <Link
       href={href}
-      className="rounded-xl px-3 py-3 text-base font-medium text-navy-800 transition-colors hover:bg-navy-50 break-words whitespace-pre-line min-w-0"
+      className="rounded-xl px-3 py-3 text-base font-medium text-navy-800 transition-colors hover:bg-navy-50"
     >
       {children}
     </Link>

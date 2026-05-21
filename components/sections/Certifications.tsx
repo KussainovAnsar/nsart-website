@@ -18,13 +18,13 @@ export function Certifications() {
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {t.certifications.items.map((c, i) => (
             <Reveal key={c.name} index={i}>
-              <div className="flex h-full gap-4 rounded-[var(--radius-card)] border border-sand-300 bg-white p-5">
+              <div className="flex h-full min-w-0 gap-4 rounded-[var(--radius-card)] border border-sand-300 bg-white p-5 break-words">
                 <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-esg-600/10 text-esg-600">
                   <Award className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-extrabold text-navy-950">{c.name}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-navy-600">{c.meaning}</p>
+                  <p className="text-sm font-extrabold text-navy-950 min-w-0 break-words">{c.name}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-600 min-w-0 break-words whitespace-pre-line">{c.meaning}</p>
                 </div>
               </div>
             </Reveal>

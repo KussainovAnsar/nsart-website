@@ -30,15 +30,12 @@ const STORAGE_KEY = "nsart-locale";
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(defaultLocale);
 
-  // Hydrate from storage / browser once on mount.
+  // Hydrate from storage once on mount. Fresh visits stay on English by default.
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored && isLocale(stored)) {
       queueMicrotask(() => setLocaleState(stored));
-      return;
     }
-    const nav = window.navigator.language.slice(0, 2).toLowerCase();
-    if (isLocale(nav)) queueMicrotask(() => setLocaleState(nav));
   }, []);
 
   // Reflect locale onto <html> and persist.
