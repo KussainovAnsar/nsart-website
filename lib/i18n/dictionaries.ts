@@ -8,7 +8,7 @@ const en = {
   meta: {
     title: "NSART · Technology Interaction",
     description:
-      "Deep-tech ventures from Central Asia to the world. R&D, intellectual property, and investment infrastructure across Kazakhstan, Saudi Arabia, and Africa.",
+      "We build deep-tech companies from Central Asia for the world — with research, intellectual property, and investment across Kazakhstan, Saudi Arabia, and Africa.",
   },
   nav: {
     home: "Home",
@@ -41,9 +41,9 @@ const en = {
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · SDG-aligned",
   hero: {
     eyebrow: "NSART · Technology Interaction",
-    title: "Deep-tech ventures from Central Asia to the world.",
+    title: "Deep-tech companies from Central Asia, built for the world.",
     subtitle:
-      "R&D, intellectual property, and investment infrastructure across Kazakhstan, Saudi Arabia, and Africa.",
+      "Research, intellectual property, and investment across Kazakhstan, Saudi Arabia, and Africa.",
     ctaPrimary: "Choose your path",
     ctaSecondary: "Explore Miras Accelerator",
     stats: [
@@ -56,13 +56,13 @@ const en = {
   audience: {
     eyebrow: "Three ways in",
     heading: "Built for the way you evaluate technology.",
-    sub: "Investors, clients, and founders look for different signals of trust. Choose the path that fits you.",
+    sub: "Investors, clients, and founders each look for different proof. Pick the path that fits you.",
     cards: [
       {
         key: "investors",
         tag: "For investors",
-        title: "Sovereign, SDG-aligned deep-tech",
-        text: "An SDG-aligned deep-tech portfolio, the Miras Accelerator, and ESG & Ethical-AI frameworks.",
+        title: "Independent, SDG-aligned deep tech",
+        text: "A deep-tech portfolio built around the UN SDGs, the Miras Accelerator, and clear ESG and ethical-AI standards.",
         href: "/investors",
         cta: "Investment thesis",
       },
@@ -70,7 +70,7 @@ const en = {
         key: "enterprise",
         tag: "For enterprises & government",
         title: "Technology that meets your standards",
-        text: "AI, GovTech, smart infrastructure, and sovereign data centers, certified to international standards.",
+        text: "AI, GovTech, smart infrastructure, and independent data centers — all certified to international standards.",
         href: "/enterprise",
         cta: "Explore services",
       },
@@ -78,7 +78,7 @@ const en = {
         key: "founders",
         tag: "For founders & R&D",
         title: "From research to revenue",
-        text: "The full IP lifecycle, valuation, and access to investment for founders, universities & R&D centers.",
+        text: "We cover the full IP journey — protection, valuation, and access to investment — for founders, universities, and R&D centers.",
         href: "/founders",
         cta: "IP assessment",
       },
@@ -87,30 +87,30 @@ const en = {
   technologies: {
     eyebrow: "Technologies",
     heading: "We design, build, and certify deep technology.",
-    sub: "From sovereign data centers and AI compute to GovTech platforms — engineered to international standards and built to be audited.",
+    sub: "From independent data centers and AI computing to GovTech platforms — built to international standards and easy to audit.",
     items: [
       {
         title: "Artificial Intelligence",
-        text: "AI Agent Factory, domain government agents, ML on real-time data lakes, and large-model training on sovereign GPU infrastructure.",
+        text: "An AI Agent Factory, government AI agents, machine learning on real-time data, and large-model training on our own GPU infrastructure.",
       },
       {
         title: "Smart Infrastructure",
-        text: "Green, high-density compute — NVIDIA H200 clusters, exascale open-source stacks, and energy-efficient design.",
+        text: "Green, high-density computing — NVIDIA H200 clusters, open-source exascale systems, and energy-efficient design.",
       },
       {
         title: "GovTech",
-        text: "20+ years of e-Government experience exported as scalable modules: digital identity, data exchange, paperless services.",
+        text: "20+ years of e-government experience, packaged as ready-to-use modules: digital identity, data exchange, and paperless services.",
       },
       {
         title: "Data Centers",
-        text: "Tamdy Cloud — Tier III/IV design, PUE ~1.2, cryogenic LNG cooling, and the leading TIA-942 / Uptime practice in Central Asia.",
+        text: "Tamdy Cloud — Tier III/IV design, PUE ~1.2, LNG-based cooling, and the leading TIA-942 / Uptime expertise in Central Asia.",
       },
     ],
   },
   mirasTeaser: {
     eyebrow: "Miras Accelerator",
-    heading: "Infrastructure for commercialising deep technologies.",
-    text: "A joint venture of NSART and PNOD, Miras helps mature technologies cross the readiness gap — combining deep-tech engineering with governance and compliance, full IP lifecycle support, and a path to investment.",
+    heading: "The infrastructure to turn deep technology into business.",
+    text: "Miras is a joint venture of NSART and PNOD. It helps proven technologies become real businesses — combining engineering, governance and compliance, full IP support, and a clear path to investment.",
     aligned: "Aligned with Vision 2030, the OIC, the Digital Cooperation Organization, and the UN SDGs.",
     cta: "Inside Miras Accelerator",
   },
@@ -124,7 +124,7 @@ const en = {
         title: "Tamdy Cloud",
         location: "Kuryk SEZ, Mangystau · Tier III/IV design",
         status: "In development",
-        text: "A green energy-and-digital cluster using cryogenic cold from an adjacent LNG re-gasification terminal as primary cooling — near-zero marginal cooling cost. Powered by a gas-turbine station with integrated solar, structured for green-bond financing.",
+        text: "A green energy-and-data cluster. It uses cold from a nearby LNG terminal for cooling, so cooling costs almost nothing. Powered by a gas-turbine plant with solar, and set up for green-bond financing.",
         metrics: [
           { v: "10–100 MW", l: "Planned IT capacity" },
           { v: "PUE ~1.2", l: "Target efficiency" },
@@ -137,7 +137,7 @@ const en = {
         title: "Sovereign exascale compute",
         location: "Kazakhstan · open-source stack",
         status: "Operating",
-        text: "NVIDIA H200 SXM (HBM3e, 141 GB, 4.8 TB/s) with NVLink 4.0 for training and inference. An open exascale stack — Slurm + OpenMPI, ROCm/CUDA OSS, OpenStack, Lustre/GPFS — sovereign, auditable, with no vendor lock-in.",
+        text: "NVIDIA H200 SXM GPUs (HBM3e, 141 GB, 4.8 TB/s) with NVLink 4.0 for training and inference. An open exascale stack — Slurm + OpenMPI, ROCm/CUDA, OpenStack, Lustre/GPFS — fully independent, auditable, and free of vendor lock-in.",
         metrics: [
           { v: "H200 SXM", l: "141 GB HBM3e per GPU" },
           { v: "4.8 TB/s", l: "Memory bandwidth" },
@@ -150,7 +150,7 @@ const en = {
         title: "Saudi AI & GovTech Lab",
         location: "JV: NSART · NITEC · PNOD · King Saud University",
         status: "In development",
-        text: "Aligned with Vision 2030: an AI Agent Factory of reusable domain government agents, Smart Data Ukimet over 400+ national databases, a proactive Digital Family Card, and an AI & data capacity-building program for civil servants.",
+        text: "Built around Saudi Vision 2030: an AI Agent Factory of reusable government agents, Smart Data Ukimet across 400+ national databases, a proactive Digital Family Card, and AI and data training for civil servants.",
         metrics: [
           { v: "400+", l: "National databases unified" },
           { v: "Top-25", l: "UN e-Gov ranking (KZ)" },
@@ -163,7 +163,7 @@ const en = {
         title: "Global GovTech export",
         location: "NITEC + InfoTech (Pakistan) · 3 regions",
         status: "Active",
-        text: "Data exchange, digital identity, and paperless government exported across three regions through Scalable Solution Modules — including joint participation in World Bank and ADB tenders. Fintech and certification via Pixel DMC; cloud migration with Dataset, Eagale Soft, and KT Cloud Lab.",
+        text: "We export data exchange, digital identity, and paperless government to three regions using ready-made modules — including joint bids for World Bank and ADB tenders. Fintech and certification run through Pixel DMC; cloud migration with Dataset, Eagale Soft, and KT Cloud Lab.",
         metrics: [
           { v: "3 regions", l: "Export footprint" },
           { v: "WB · ADB", l: "Joint tenders" },
@@ -176,41 +176,41 @@ const en = {
   markets: {
     eyebrow: "Markets",
     heading: "Operating across four regions.",
-    sub: "A bridge between Central Asia and the world — built where emerging-market demand meets institutional capital.",
+    sub: "A bridge between Central Asia and the world — where demand in new markets meets large-scale investment.",
     items: [
-      { name: "Central Asia", desc: "Kazakhstan home base — sovereign HPC, GovTech, and green data centers." },
-      { name: "MENA", desc: "Saudi Arabia — GovTech labs, Vision 2030 alignment, and GRC partnerships." },
-      { name: "South Asia", desc: "Pakistan — GovTech export, fintech gateways, and certification distribution." },
-      { name: "Africa", desc: "Emerging-market infrastructure, ESG-aligned investment, and capacity building." },
+      { name: "Central Asia", desc: "Our home base in Kazakhstan — independent supercomputing, GovTech, and green data centers." },
+      { name: "MENA", desc: "Saudi Arabia — GovTech labs, Vision 2030 projects, and governance partnerships." },
+      { name: "South Asia", desc: "Pakistan — exporting GovTech, fintech gateways, and certification." },
+      { name: "Africa", desc: "Infrastructure for new markets, responsible investment, and training." },
     ],
   },
   partners: {
     eyebrow: "Partners",
-    heading: "An ecosystem of governments, science, and capital.",
-    sub: "Grouped by role — from state infrastructure to GRC, sustainability, and market access.",
+    heading: "A network of governments, science, and investors.",
+    sub: "Grouped by role — from state infrastructure to governance, sustainability, and market access.",
     groups: [
       { name: "State & infrastructure", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
       { name: "Technology & cloud", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
-      { name: "Science & education (DeepTech origin)", members: ["King Saud University", "KZ universities & institutes", "Artisan Education"] },
-      { name: "GRC, audit & sustainability", members: ["PNOD Auditing Co.", "MSTDAM"] },
+      { name: "Science & education (deep-tech origin)", members: ["King Saud University", "KZ universities & institutes", "Artisan Education"] },
+      { name: "Governance, audit & sustainability", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "Trade & market access", members: ["QazTrade", "MENA partners", "South Asia partners", "Africa partners"] },
     ],
     spotlight: [
       {
         name: "PNOD Auditing Co.",
-        role: "GRC, audit, and AI governance (14 years' expertise; ISO/IEC 42001), with deep knowledge of the Saudi regulatory environment. Co-founder of the Miras Accelerator joint venture.",
+        role: "Governance, audit, and AI oversight (14 years' experience; ISO/IEC 42001), with deep knowledge of Saudi regulations. Co-founder of the Miras Accelerator joint venture.",
       },
       {
         name: "MSTDAM",
-        role: "Environmental sustainability platform — carbon-footprint measurement, tree planting, and ESG reporting (Saudi Arabia). Green-agenda and ESG partner.",
+        role: "An environmental platform (Saudi Arabia) — measuring carbon footprints, planting trees, and ESG reporting. Our green and ESG partner.",
       },
       {
         name: "NITEC",
-        role: "National Information Technologies — Kazakhstan's state operator of e-Government services and digital identity infrastructure.",
+        role: "National Information Technologies — Kazakhstan's state operator for e-government services and digital identity.",
       },
       {
         name: "King Saud University",
-        role: "Anchor academic partner in Saudi Arabia for DeepTech research, joint R&D, and the Saudi AI & GovTech Lab.",
+        role: "Our main academic partner in Saudi Arabia for deep-tech research, joint R&D, and the Saudi AI & GovTech Lab.",
       },
     ],
     logos: [
@@ -236,30 +236,30 @@ const en = {
   verticals: {
     eyebrow: "Verticals",
     heading: "Where we work.",
-    sub: "Four verticals where NSART builds, certifies, and scales deep technology.",
+    sub: "Four areas where NSART builds, certifies, and scales deep technology.",
     items: [
       {
         n: "01",
         title: "Telecom & Space Tech",
-        text: "Telecommunications, network analytics, space technologies, data centers — innovation for communications and aerospace sectors.",
+        text: "Telecoms, network analytics, space tech, and data centers — innovation for the communications and aerospace sectors.",
         tags: ["Network & Analytics", "Space Tech", "Data Centers"],
       },
       {
         n: "02",
         title: "GovTech",
-        text: "Government digital solutions — e-Gov services and cybersecurity for a transparent, secure public sector.",
+        text: "Digital tools for government — e-government services and cybersecurity for a clear, secure public sector.",
         tags: ["e-Gov", "Cyber Security"],
       },
       {
         n: "03",
         title: "Digital Platforms",
-        text: "Digital platforms for education, fintech, automotive, food, and agriculture — turnkey solutions for new markets.",
+        text: "Ready-to-use digital platforms for education, finance, cars, food, and farming — built for new markets.",
         tags: ["EdTech", "FinTech", "CarTech", "FoodTech", "AgroTech"],
       },
       {
         n: "04",
         title: "Smart Infrastructure",
-        text: "Intelligent city solutions — digital twins, smart fields, AIoT, and machine-to-machine infrastructure for modern urban environments.",
+        text: "Smart-city solutions — digital twins, smart fields, AIoT, and machine-to-machine systems for modern cities.",
         tags: ["Digital Twins", "Smart Field", "AIoT & M2M"],
       },
     ],
@@ -267,34 +267,34 @@ const en = {
   methodology: {
     eyebrow: "Methodology",
     heading: "Proven frameworks that turn ideas into real companies.",
-    sub: "Four frameworks NSART uses across every engagement — from strategy to execution.",
+    sub: "Four frameworks NSART uses on every project — from strategy to delivery.",
     items: [
       {
         n: "01",
         title: "Vision 3P",
         sub: "Strategic vision",
-        text: "Based on the convoy law — prioritising People, streamlined Process, and quality Product.",
+        text: "Built on one rule: put People first, keep the Process simple, and deliver a quality Product.",
         tags: ["People", "Process", "Product"],
       },
       {
         n: "02",
         title: "Venture Development",
         sub: "Integrated development cycle",
-        text: "Full venture business cycle — from idea inception to operations scaling and results.",
+        text: "The full business cycle — from first idea to scaling operations and results.",
         tags: ["Value Creation", "Value Protection", "Structuring", "Operations"],
       },
       {
         n: "03",
         title: "GIST Planning",
         sub: "Agile strategic planning",
-        text: "From long-term goals and innovative ideas to clear steps and effective implementation.",
+        text: "From long-term goals and new ideas to clear steps and real results.",
         tags: ["Goals", "Ideas", "Steps", "Tasks"],
       },
       {
         n: "04",
         title: "CIVTI Assessment",
         sub: "Project evaluation system",
-        text: "Comprehensive analysis of ideas through value, technical complexity, and required investment.",
+        text: "A full review of each idea by its value, technical difficulty, and the investment it needs.",
         tags: ["Current Ideas", "Value", "Complexity", "Investment"],
       },
     ],
@@ -319,19 +319,19 @@ const en = {
       },
       {
         title: "NSART Corporate Innovations",
-        text: "R&D, pilot implementations, and open innovation programs for enterprise clients.",
+        text: "Research, pilot projects, and open-innovation programs for business clients.",
       },
     ],
   },
   certifications: {
     eyebrow: "Certifications & compliance",
-    heading: "Trust signals, verified.",
-    sub: "A permanent trust line for every audience — quality, environment, infrastructure, and governance.",
+    heading: "Proof you can verify.",
+    sub: "Independent proof for every audience — quality, environment, infrastructure, and governance.",
     items: [
       { name: "ISO 9001", meaning: "Quality management." },
-      { name: "ISO 14001", meaning: "Environmental management — national + international. Directly tied to ESG." },
-      { name: "ISO 10015", meaning: "Training & development management (supports Capacity Building)." },
-      { name: "TIA-942", meaning: "Data-center infrastructure standard — leading practice in Central Asia." },
+      { name: "ISO 14001", meaning: "Environmental management — national and international. Directly linked to ESG." },
+      { name: "ISO 10015", meaning: "Training and development management (supports skills-building)." },
+      { name: "TIA-942", meaning: "Data-center standard — leading expertise in Central Asia." },
       { name: "Uptime Tier III/IV", meaning: "Data-center design and constructed-facility certification." },
       { name: "UN e-Gov Top-25", meaning: "Kazakhstan's e-Government — among the best in the world." },
     ],
@@ -349,47 +349,47 @@ const en = {
     emailLabel: "Email us",
   },
   footer: {
-    tagline: "Deep-tech ventures from Central Asia to the world.",
+    tagline: "Deep-tech companies from Central Asia, built for the world.",
     company: "Company",
     audiences: "Audiences",
     contactTitle: "Contact",
     rights: "NSART · Technology Interaction. All rights reserved.",
     confidential:
-      "The Miras Accelerator is presented at a public level only — without budgets, target fund sizes, or internal details.",
+      "We share the Miras Accelerator at a public level only — no budgets, fund sizes, or internal details.",
   },
 
   /* -------- For Investors page -------- */
   investorsPage: {
     badge: "For institutional & impact investors",
-    title: "Invest in sovereign, SDG-aligned deep-tech infrastructure.",
+    title: "Invest in independent, SDG-aligned deep-tech infrastructure.",
     intro:
-      "We structure and de-risk investments in green data centers, AI compute, and GovTech across emerging markets — built on ESG principles, Ethical AI, and international certification. The Miras Accelerator is our dedicated vehicle for capital raising.",
+      "We make it safer to invest in green data centers, AI computing, and government tech in new markets — with strong environmental standards, responsible AI, and global certification. The Miras Accelerator is how we raise capital.",
     ctas: ["View our investment thesis", "Explore Miras Accelerator", "Request ESG brief by email"],
     audienceNote:
       "For IsDB, EBRD, ADB, the World Bank, UN-affiliated funds, and private impact investors.",
     sdg: {
       heading: "Aligned with the UN Sustainable Development Goals",
-      sub: "NSART and the Miras Accelerator sit at the intersection of recognised mandates — mapped to the SDGs without disclosing financial parameters.",
+      sub: "NSART and the Miras Accelerator line up with widely recognised goals — mapped to the UN SDGs, without sharing financial details.",
       items: [
         { goal: "SDG 4 & 9", desc: "Education, technology, industry and innovation — training engineers and transferring technology." },
         { goal: "SDG 7 & 13", desc: "Clean energy and climate — a green data center, solar generation, and a lower carbon footprint." },
         { goal: "SDG 8", desc: "Decent work and economic growth — supporting SMEs and creating jobs." },
         { goal: "SDG 11", desc: "Sustainable cities — smart infrastructure and GovTech." },
-        { goal: "SDG 17", desc: "Partnerships — multilateral agreements with development institutions and governments." },
+        { goal: "SDG 17", desc: "Partnerships — agreements with development banks and governments." },
       ],
     },
     esg: {
       heading: "ESG & green finance",
       sub: "The direct language of development banks.",
       points: [
-        { title: "Tamdy Cloud, PUE ~1.2", text: "Cryogenic LNG cold as primary cooling, with integrated solar generation." },
-        { title: "Green-bond ready", text: "Structured for green-bond financing and development-bank mandates." },
-        { title: "Ethical AI & privacy", text: "Transparency, no bias, human oversight; GDPR-style data handling." },
-        { title: "Sovereign open stacks", text: "Auditable, with no vendor lock-in." },
+        { title: "Tamdy Cloud, PUE ~1.2", text: "LNG-based cooling as the main system, with built-in solar power." },
+        { title: "Green-bond ready", text: "Set up for green-bond financing and development-bank funding." },
+        { title: "Ethical AI & privacy", text: "Transparent, no bias, human oversight; GDPR-style data handling." },
+        { title: "Independent, open systems", text: "Auditable, with no vendor lock-in." },
       ],
     },
     metricsHeading: "The numbers",
-    cta: { heading: "Request the investor materials", text: "One-pager and deck by e-mail. No confidential parameters are published online.", button: "Talk to our investment team" },
+    cta: { heading: "Request the investor materials", text: "We'll send a one-pager and deck by email. We don't publish confidential details online.", button: "Talk to our investment team" },
   },
 
   /* -------- For Enterprises & Government page -------- */
@@ -397,17 +397,17 @@ const en = {
     badge: "For private & public sector",
     title: "Technology that meets your standards — national and international.",
     intro:
-      "From sovereign data centers and AI compute to GovTech platforms, we design, build, and certify technology for the public and private sectors — and scout, evaluate, and integrate emerging innovations into your operations.",
+      "From independent data centers and AI computing to GovTech platforms, we design, build, and certify technology for the public and private sectors — and we find, test, and add new innovations to your operations.",
     ctas: ["Request a technology audit", "Start a pilot", "Explore our AI services"],
     services: {
       heading: "Service catalog",
       items: [
-        { title: "AI systems", text: "Domain agents, ML, and decision systems on sovereign compute." },
+        { title: "AI systems", text: "AI agents, machine learning, and decision systems on our own computing." },
         { title: "Smart infrastructure", text: "High-density, energy-efficient compute and connectivity." },
         { title: "GovTech", text: "Digital identity, data exchange, and paperless services." },
         { title: "Data-center certification", text: "TIA-942 and Uptime Tier III/IV — full lifecycle." },
-        { title: "Corporate innovation", text: "Technology scouting and integration into your operations." },
-        { title: "SpaceTech / NajmSat", text: "A distinctive space competence — satellite and ground systems." },
+        { title: "Corporate innovation", text: "Finding new technology and adding it to your operations." },
+        { title: "SpaceTech / NajmSat", text: "Rare space expertise — satellite and ground systems." },
       ],
     },
     standards: {
@@ -417,14 +417,14 @@ const en = {
     scouting: {
       heading: "Technology scouting in three steps",
       steps: [
-        { n: "01", title: "Scout", text: "Identify emerging technologies relevant to your operations." },
-        { n: "02", title: "Evaluate (CIVTI)", text: "Assess fit, readiness, and impact with our evaluation methodology." },
-        { n: "03", title: "Integrate", text: "Embed validated innovations into your processes and systems." },
+        { n: "01", title: "Scout", text: "Find new technologies that matter to your business." },
+        { n: "02", title: "Evaluate (CIVTI)", text: "Check fit, readiness, and impact using our review method." },
+        { n: "03", title: "Integrate", text: "Add proven innovations into your processes and systems." },
       ],
     },
     pilot: {
-      heading: "A low-threshold pilot",
-      text: "A proof of concept in 6–8 weeks, with a clear scope-of-work template — so you can validate before you commit.",
+      heading: "An easy way to start",
+      text: "A proof of concept in 6–8 weeks, with a clear plan — so you can test the idea before committing.",
       button: "Start a pilot",
     },
   },
@@ -432,18 +432,18 @@ const en = {
   /* -------- For Founders & R&D page -------- */
   foundersPage: {
     badge: "For founders, universities & R&D centers",
-    title: "From research to revenue — protect, value, and grow your intangible assets.",
+    title: "From research to revenue — protect, value, and grow your ideas and know-how.",
     intro:
-      "For startups, established companies, universities, and R&D centers: we manage the full intellectual property lifecycle — assessment, protection, and valuation — and open the path to investment and business development through the Miras Accelerator.",
+      "For startups, established companies, universities, and R&D centers: we manage the full intellectual-property journey — review, protection, and valuation — and open the way to investment and growth through the Miras Accelerator.",
     ctas: ["Get an IP assessment", "Apply to Miras Accelerator", "Talk to our team"],
     lifecycle: {
       heading: "The IP lifecycle",
       sub: "Four steps, with what NSART does at each.",
       steps: [
-        { n: "1", title: "Assess", text: "Asset audit and readiness scoring — TRL / CRL / MRL — identifying protectable objects." },
-        { n: "2", title: "Protect", text: "Patents, trademarks, know-how, software registration, and a multi-jurisdiction protection strategy." },
-        { n: "3", title: "Value", text: "Intangible-asset valuation by DCF and market comparables, for deals and fundraising." },
-        { n: "4", title: "Monetize", text: "Licensing, deal structuring, and a path to investment through the Miras Accelerator." },
+        { n: "1", title: "Assess", text: "We audit your assets, score their readiness (TRL / CRL / MRL), and find what can be protected." },
+        { n: "2", title: "Protect", text: "Patents, trademarks, know-how, software registration, and a protection plan across countries." },
+        { n: "3", title: "Value", text: "We value your assets using standard financial methods, ready for deals and fundraising." },
+        { n: "4", title: "Monetize", text: "Licensing, deal-making, and a path to investment through the Miras Accelerator." },
       ],
     },
     assets: {
@@ -452,7 +452,7 @@ const en = {
     },
     university: {
       heading: "A dedicated track for universities & R&D centers",
-      text: "DeepTech origin — technology transfer, spin-offs from science, and the protection and commercialisation of research results.",
+      text: "Deep-tech roots — moving research into the market, science spin-offs, and protecting and selling research results.",
       anchors: "Anchor partners: King Saud University (Saudi Arabia) and Kazakh research institutes and universities.",
     },
     form: {
@@ -474,15 +474,15 @@ const en = {
     badge: "About NSART",
     title: "We turn deep-tech ideas into real businesses.",
     intro:
-      "NSART is a venture studio specialising in deep-tech projects — identifying investment opportunities, building strategic partnerships, structuring ventures, and entering new markets across Central Asia, MENA, South Asia, and Africa.",
+      "NSART is a venture studio focused on deep-tech projects — finding investment opportunities, building partnerships, setting up companies, and entering new markets across Central Asia, MENA, South Asia, and Africa.",
     missionHeading: "Our mission",
     missionText:
-      "Bridge science and commerce: take mature research, structure it as venture-grade companies, and connect it to international capital and institutional mandates.",
+      "Connect science and business: take proven research, turn it into investable companies, and link it to international capital and institutions.",
     valuesHeading: "What we stand for",
     values: [
-      { title: "Sovereign by design", text: "Open stacks, no vendor lock-in, auditable by regulators and investors." },
-      { title: "Evidence over rhetoric", text: "Every claim backed by certification, metrics, or a deployed reference." },
-      { title: "Aligned with global mandates", text: "SDG-aligned, ESG-ready, structured for development-bank capital." },
+      { title: "Independent by design", text: "Open systems, no vendor lock-in, easy for regulators and investors to audit." },
+      { title: "Evidence over rhetoric", text: "Every claim backed by a certificate, a number, or a live project." },
+      { title: "Aligned with global mandates", text: "SDG-aligned, ESG-ready, and set up for development-bank funding." },
       { title: "Multilingual by default", text: "EN · AR · RU · KK — built for the markets we serve." },
     ],
   },
@@ -492,27 +492,27 @@ const en = {
     badge: "Technology stack",
     title: "Deep technology, engineered and certified.",
     intro:
-      "From sovereign data centers and AI compute to GovTech and smart infrastructure — built to international standards, auditable end-to-end, and ready to integrate with national and enterprise environments.",
+      "From independent data centers and AI computing to GovTech and smart infrastructure — built to international standards, fully auditable, and ready to connect with national and business systems.",
     pillars: [
       {
         title: "Artificial Intelligence",
-        text: "AI Agent Factory, domain government agents, ML on real-time data lakes, and large-model training on sovereign GPU infrastructure (NVIDIA H200, open exascale stack).",
-        items: ["Agent Factory", "Domain LLMs", "Real-time ML", "Sovereign GPU"],
+        text: "An AI Agent Factory, government AI agents, machine learning on real-time data, and large-model training on our own GPUs (NVIDIA H200, open exascale stack).",
+        items: ["Agent Factory", "Domain LLMs", "Real-time ML", "Our own GPUs"],
       },
       {
         title: "Smart Infrastructure",
-        text: "High-density compute, AIoT and M2M networks, digital-twin platforms, and connectivity engineered for urban and industrial environments.",
+        text: "High-density computing, AIoT and machine-to-machine networks, digital-twin platforms, and connectivity built for cities and industry.",
         items: ["AIoT & M2M", "Digital Twins", "Smart Field", "Energy-efficient design"],
       },
       {
         title: "GovTech",
-        text: "20+ years of e-Government experience exported as scalable modules — digital identity, data exchange, paperless services, cybersecurity.",
+        text: "20+ years of e-government experience, packaged as ready-to-use modules — digital identity, data exchange, paperless services, and cybersecurity.",
         items: ["e-Gov", "Digital ID", "Data exchange", "Cyber Security"],
       },
       {
         title: "Data Centers",
-        text: "Tamdy Cloud — Tier III/IV design, PUE ~1.2, cryogenic LNG cooling, and the leading TIA-942 / Uptime practice in Central Asia.",
-        items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1.2", "Cryogenic LNG cooling"],
+        text: "Tamdy Cloud — Tier III/IV design, PUE ~1.2, LNG-based cooling, and the leading TIA-942 / Uptime expertise in Central Asia.",
+        items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1.2", "LNG-based cooling"],
       },
     ],
   },
@@ -520,20 +520,20 @@ const en = {
   /* -------- IP & Assets page -------- */
   ipPage: {
     badge: "Intellectual property & intangible assets",
-    title: "Safeguard, value, and monetise your intangible assets.",
+    title: "Protect, value, and earn from your ideas and know-how.",
     intro:
-      "Full lifecycle support for intellectual property — software, digital services, R&D results, agro-industrial complexes, and space technologies. From audit and protection to valuation, licensing, and a path to investment.",
+      "Full support for intellectual property — software, digital services, R&D results, agri-industrial projects, and space tech. From audit and protection to valuation, licensing, and a path to investment.",
     lifecycleHeading: "The IP lifecycle",
     steps: [
-      { n: "1", title: "Assess", text: "Asset audit and readiness scoring (TRL / CRL / MRL); identify protectable objects." },
-      { n: "2", title: "Protect", text: "Patents, trademarks, know-how, software registration, multi-jurisdiction strategy." },
-      { n: "3", title: "Value", text: "Valuation by DCF and market comparables — for deals, fundraising, and partnerships." },
-      { n: "4", title: "Monetize", text: "Licensing, deal structuring, and a path to investment through Miras Accelerator." },
+      { n: "1", title: "Assess", text: "We audit your assets, score their readiness (TRL / CRL / MRL), and find what can be protected." },
+      { n: "2", title: "Protect", text: "Patents, trademarks, know-how, software registration, and a plan across countries." },
+      { n: "3", title: "Value", text: "Valuation using standard financial methods — for deals, fundraising, and partnerships." },
+      { n: "4", title: "Monetize", text: "Licensing, deal-making, and a path to investment through the Miras Accelerator." },
     ],
     assetsHeading: "Asset types we work with",
     assets: ["Software", "Digital services", "R&D results", "Agro-industrial complexes", "Space technologies"],
     ctaHeading: "Bring your assets to the next stage.",
-    ctaText: "Start with an IP assessment — we'll map your portfolio and recommend the protection and monetisation path that fits.",
+    ctaText: "Start with an IP assessment — we'll map your portfolio and recommend the best way to protect and earn from it.",
     ctaButton: "Get an IP assessment",
   },
 
@@ -542,41 +542,41 @@ const en = {
     badge: "Where we operate",
     title: "Four regions. One bridge.",
     intro:
-      "NSART operates at the intersection of emerging-market demand and institutional capital — Central Asia as home, Saudi Arabia and the wider MENA as a growth corridor, South Asia and Africa as expansion frontiers.",
+      "NSART works where demand in new markets meets large-scale investment — Central Asia is home, Saudi Arabia and the wider MENA are our growth area, and South Asia and Africa are where we're expanding next.",
     regionsHeading: "Regions",
     regions: [
       {
         name: "Central Asia",
         kicker: "Home base",
-        desc: "Kazakhstan: sovereign HPC, GovTech reference, and green data centers. 20+ years of e-Government experience and Top-25 UN e-Gov ranking.",
+        desc: "Kazakhstan: independent supercomputing, proven GovTech, and green data centers. 20+ years of e-government experience and a Top-25 UN e-Gov ranking.",
       },
       {
         name: "MENA",
         kicker: "Growth corridor",
-        desc: "Saudi Arabia: GovTech labs aligned with Vision 2030, GRC partnerships with PNOD, and the Miras Accelerator joint venture.",
+        desc: "Saudi Arabia: GovTech labs built around Vision 2030, governance partnerships with PNOD, and the Miras Accelerator joint venture.",
       },
       {
         name: "South Asia",
         kicker: "Expansion",
-        desc: "Pakistan: GovTech export with NITEC + InfoTech, fintech gateways via Pixel DMC, certification distribution.",
+        desc: "Pakistan: exporting GovTech with NITEC and InfoTech, fintech gateways through Pixel DMC, and certification.",
       },
       {
         name: "Africa",
         kicker: "Frontier",
-        desc: "Emerging-market infrastructure, ESG-aligned investment, capacity building, and Scalable Solution Modules for governments.",
+        desc: "Infrastructure for new markets, responsible investment, training, and ready-made modules for governments.",
       },
     ],
     gatewayHeading: "NSART Gateway",
     gatewayText:
-      "A dedicated product for entering the markets of Central Asia, South Asia, MENA, and Africa — combining local presence, regulatory navigation, and partner ecosystems.",
+      "A product for entering the markets of Central Asia, South Asia, MENA, and Africa — combining local presence, help with regulations, and partner networks.",
   },
 
   /* -------- Partners page -------- */
   partnersPage: {
     badge: "Ecosystem",
-    title: "An ecosystem of governments, science, and capital.",
+    title: "A network of governments, science, and investors.",
     intro:
-      "We work across five partner groups — state and infrastructure, technology and cloud, science and education, GRC and sustainability, trade and market access.",
+      "We work with five partner groups — state and infrastructure, technology and cloud, science and education, governance and sustainability, and trade and market access.",
     spotlightHeading: "Spotlight partners",
     logoHeading: "Selected partners",
   },
@@ -596,20 +596,20 @@ const en = {
     formSuccess: "Thank you — we will get back to you shortly.",
     audienceOptions: ["Investor", "Enterprise / Government", "Founder / R&D", "Partner", "Other"],
     directHeading: "Or reach us directly",
-    location: "Almaty, Kazakhstan",
+    location: "Astana, Kazakhstan",
     privacy: "By submitting, you agree we may contact you. We don't share data with third parties.",
   },
 
   /* -------- Miras Accelerator page -------- */
   mirasPage: {
     badge: "Joint venture · NSART × PNOD",
-    title: "Miras Accelerator — infrastructure for commercialising deep technologies.",
+    title: "Miras Accelerator — the infrastructure to turn deep technology into business.",
     intro:
-      "A joint venture of NSART and PNOD, Miras helps mature technologies cross the readiness gap — combining deep-tech engineering with governance and compliance, full IP lifecycle support, and a path to investment, aligned with Vision 2030, the OIC, and the UN SDGs.",
+      "Miras is a joint venture of NSART and PNOD. It helps proven technologies become real businesses — combining engineering, governance and compliance, full IP support, and a clear path to investment, in line with Vision 2030, the OIC, and the UN SDGs.",
     ctas: ["Learn about Miras", "Apply to a track", "Partner with us"],
     problem: {
       heading: "The gap Miras closes",
-      text: "A technology can be scientifically mature, yet an organisation may lack the commercial, regulatory, and manufacturing infrastructure to deploy it. Miras closes this gap through a three-dimensional readiness model.",
+      text: "A technology can be scientifically ready, but a company may still lack the commercial, regulatory, and manufacturing setup to use it. Miras closes that gap with a three-part readiness model.",
       dims: [
         { code: "TRL", title: "Technology readiness", q: "Is the technology proven at the required scale?" },
         { code: "CRL", title: "Commercial readiness", q: "Is there a path to revenue, pricing, and a contract model?" },
@@ -619,17 +619,17 @@ const en = {
     tracks: {
       heading: "Three tracks",
       items: [
-        { n: "Track 1", title: "Deep-Tech Cohort", text: "Accelerating teams from diagnostics to investment readiness and demo day." },
-        { n: "Track 2", title: "Regulatory Sandbox", text: "Testing solutions in a regulated environment — CleanTech, GovTech, agentic AI, data marketplace — on sovereign GPU infrastructure." },
-        { n: "Track 3", title: "IP Portfolio & Founders", text: "The full IP lifecycle and founder development — from diagnostics to licensing and an IP showcase." },
+        { n: "Track 1", title: "Deep-Tech Cohort", text: "We take teams from first review to investment-ready and demo day." },
+        { n: "Track 2", title: "Regulatory Sandbox", text: "Testing solutions in a controlled, regulated setting — CleanTech, GovTech, AI agents, data marketplace — on our own GPUs." },
+        { n: "Track 3", title: "IP Portfolio & Founders", text: "The full IP journey and founder support — from first review to licensing and an IP showcase." },
       ],
     },
     positioning: {
       heading: "Strategic positioning",
-      text: "Miras is built at the intersection of recognised mandates — Saudi Vision 2030, the OIC agenda, the Digital Cooperation Organization, and the UN SDGs. It is a language understood by development institutions, usable without disclosing commercial parameters.",
+      text: "Miras is built around widely recognised goals — Saudi Vision 2030, the OIC agenda, the Digital Cooperation Organization, and the UN SDGs. It speaks the language development institutions understand, without revealing commercial details.",
     },
     confidential:
-      "Confidentiality: this section is kept at a public level. Budgets, target fund sizes, leadership and advisor names, specific investors, and details of government approaches are internal.",
+      "Confidentiality: this section stays at a public level. Budgets, fund sizes, leadership and advisor names, specific investors, and details of government talks are kept internal.",
   },
 } as const;
 
@@ -658,7 +658,7 @@ const ru: Dictionary = {
   meta: {
     title: "NSART · Technology Interaction",
     description:
-      "Глубокотехнологичные венчуры из Центральной Азии — для всего мира. R&D, интеллектуальная собственность и инвестиционная инфраструктура в Казахстане, Саудовской Аравии и Африке.",
+      "Мы создаём глубокотехнологичные компании из Центральной Азии для всего мира — исследования, интеллектуальная собственность и инвестиции в Казахстане, Саудовской Аравии и Африке.",
   },
   nav: {
     home: "Главная",
@@ -688,9 +688,9 @@ const ru: Dictionary = {
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · SDG-aligned",
   hero: {
     eyebrow: "NSART · Technology Interaction",
-    title: "Глубокотехнологичные венчуры из Центральной Азии — для всего мира.",
+    title: "Глубокотехнологичные компании из Центральной Азии — для всего мира.",
     subtitle:
-      "R&D, интеллектуальная собственность и инвестиционная инфраструктура в Казахстане, Саудовской Аравии и Африке.",
+      "Исследования, интеллектуальная собственность и инвестиции в Казахстане, Саудовской Аравии и Африке.",
     ctaPrimary: "Выберите путь",
     ctaSecondary: "Акселератор Miras",
     stats: [
@@ -703,13 +703,13 @@ const ru: Dictionary = {
   audience: {
     eyebrow: "Три точки входа",
     heading: "Построено под то, как вы оцениваете технологии.",
-    sub: "Инвесторы, клиенты и основатели ищут разные сигналы доверия. Выберите путь, который подходит вам.",
+    sub: "Инвесторы, клиенты и основатели ищут разные подтверждения. Выберите путь, который подходит вам.",
     cards: [
       {
         key: "investors",
         tag: "Для инвесторов",
-        title: "Суверенный deep-tech по повестке ЦУР",
-        text: "Портфель глубоких технологий по повестке ЦУР, акселератор Miras, принципы ESG и этичного ИИ.",
+        title: "Независимый deep-tech по целям устойчивого развития",
+        text: "Портфель глубоких технологий по целям устойчивого развития, акселератор Miras и понятные принципы ESG и этичного ИИ.",
         href: "/investors",
         cta: "Инвестиционная стратегия",
       },
@@ -717,7 +717,7 @@ const ru: Dictionary = {
         key: "enterprise",
         tag: "Для бизнеса и государства",
         title: "Технологии, отвечающие вашим стандартам",
-        text: "ИИ, GovTech, умная инфраструктура и суверенные дата-центры с международной сертификацией.",
+        text: "ИИ, GovTech, умная инфраструктура и независимые дата-центры — с международной сертификацией.",
         href: "/enterprise",
         cta: "Смотреть услуги",
       },
@@ -725,7 +725,7 @@ const ru: Dictionary = {
         key: "founders",
         tag: "Для основателей и R&D",
         title: "От исследования к выручке",
-        text: "Полный жизненный цикл ИС, оценка и доступ к инвестициям — для основателей, университетов и R&D-центров.",
+        text: "Полный путь интеллектуальной собственности — защита, оценка и доступ к инвестициям — для основателей, университетов и R&D-центров.",
         href: "/founders",
         cta: "Оценка ИС",
       },
@@ -734,30 +734,30 @@ const ru: Dictionary = {
   technologies: {
     eyebrow: "Технологии",
     heading: "Мы проектируем, строим и сертифицируем глубокие технологии.",
-    sub: "От суверенных дата-центров и ИИ-вычислений до GovTech-платформ — по международным стандартам и с возможностью аудита.",
+    sub: "От независимых дата-центров и ИИ-вычислений до GovTech-платформ — по международным стандартам и легко проверяемые.",
     items: [
       {
         title: "Искусственный интеллект",
-        text: "AI Agent Factory, доменные госагенты, ML на озёрах данных в реальном времени и обучение крупных моделей на суверенной GPU-инфраструктуре.",
+        text: "AI Agent Factory, государственные ИИ-агенты, машинное обучение на данных в реальном времени и обучение крупных моделей на собственной GPU-инфраструктуре.",
       },
       {
         title: "Умная инфраструктура",
-        text: "Зелёные высокоплотные вычисления — кластеры NVIDIA H200, открытые экзафлопсные стеки и энергоэффективный дизайн.",
+        text: "Зелёные высокоплотные вычисления — кластеры NVIDIA H200, открытые экзафлопсные системы и энергоэффективный дизайн.",
       },
       {
         title: "GovTech",
-        text: "20+ лет опыта электронного правительства как масштабируемые модули: цифровая идентичность, обмен данными, безбумажные услуги.",
+        text: "20+ лет опыта электронного правительства в виде готовых модулей: цифровая идентичность, обмен данными и безбумажные услуги.",
       },
       {
         title: "Дата-центры",
-        text: "Tamdy Cloud — проект под Tier III/IV, PUE ~1,2, криогенный холод СПГ и лидирующая в ЦА практика TIA-942 / Uptime.",
+        text: "Tamdy Cloud — проект под Tier III/IV, PUE ~1,2, охлаждение на СПГ и лидирующая в ЦА экспертиза TIA-942 / Uptime.",
       },
     ],
   },
   mirasTeaser: {
     eyebrow: "Miras Accelerator",
-    heading: "Инфраструктура коммерциализации глубоких технологий.",
-    text: "Совместное предприятие NSART и PNOD, Miras помогает зрелым технологиям преодолеть разрыв готовности — соединяя инженерию глубоких технологий с управлением и комплаенсом, полным сопровождением жизненного цикла ИС и путём к инвестициям.",
+    heading: "Инфраструктура, превращающая глубокие технологии в бизнес.",
+    text: "Miras — совместное предприятие NSART и PNOD. Оно помогает зрелым технологиям стать реальным бизнесом — соединяя инженерию, управление и комплаенс, полное сопровождение ИС и понятный путь к инвестициям.",
     aligned: "В соответствии с Vision 2030, повесткой ОИС, Digital Cooperation Organization и ЦУР ООН.",
     cta: "О Miras Accelerator",
   },
@@ -771,7 +771,7 @@ const ru: Dictionary = {
         title: "Tamdy Cloud",
         location: "СЭЗ «Курык», Мангистау · проект под Tier III/IV",
         status: "В разработке",
-        text: "Зелёный энерго-цифровой кластер, использующий криогенный холод соседнего СПГ-регазификационного терминала как основное охлаждение — почти нулевая предельная стоимость. Энергоснабжение — газотурбинная станция с интеграцией солнечной генерации, структурировано под зелёные облигации.",
+        text: "Зелёный энерго-цифровой кластер. Он использует холод соседнего СПГ-терминала для охлаждения, поэтому охлаждение почти ничего не стоит. Питание — газотурбинная станция с солнечной генерацией; проект подготовлен под зелёные облигации.",
         metrics: [
           { v: "10–100 МВт", l: "Планируемая ИТ-мощность" },
           { v: "PUE ~1,2", l: "Целевая энергоэффективность" },
@@ -784,7 +784,7 @@ const ru: Dictionary = {
         title: "Суверенные экзафлопс-вычисления",
         location: "Казахстан · открытый стек",
         status: "Работает",
-        text: "NVIDIA H200 SXM (HBM3e, 141 ГБ, 4,8 ТБ/с) с NVLink 4.0 для обучения и инференса. Открытый экзафлопсный стек — Slurm + OpenMPI, ROCm/CUDA OSS, OpenStack, Lustre/GPFS — суверенно, аудируемо, без vendor lock-in.",
+        text: "GPU NVIDIA H200 SXM (HBM3e, 141 ГБ, 4,8 ТБ/с) с NVLink 4.0 для обучения и инференса. Открытый экзафлопсный стек — Slurm + OpenMPI, ROCm/CUDA, OpenStack, Lustre/GPFS — полностью независимо, аудируемо, без привязки к вендору.",
         metrics: [
           { v: "H200 SXM", l: "141 ГБ HBM3e на GPU" },
           { v: "4,8 ТБ/с", l: "Пропускная способность памяти" },
@@ -797,7 +797,7 @@ const ru: Dictionary = {
         title: "Saudi AI & GovTech Lab",
         location: "СП: NSART · NITEC · PNOD · King Saud University",
         status: "В разработке",
-        text: "В соответствии с Vision 2030: AI Agent Factory переиспользуемых доменных госагентов, Smart Data Ukimet на базе 400+ национальных баз, проактивная Digital Family Card и программа повышения квалификации госслужащих по ИИ и данным.",
+        text: "По рамкам Vision 2030: AI Agent Factory переиспользуемых государственных агентов, Smart Data Ukimet на базе 400+ национальных баз, проактивная Digital Family Card и обучение госслужащих по ИИ и данным.",
         metrics: [
           { v: "400+", l: "Объединённых национальных баз" },
           { v: "Top-25", l: "Рейтинг ООН e-Gov (KZ)" },
@@ -810,7 +810,7 @@ const ru: Dictionary = {
         title: "Глобальный экспорт GovTech",
         location: "NITEC + InfoTech (Пакистан) · 3 региона",
         status: "Активно",
-        text: "Обмен данными, цифровая идентичность и безбумажные госуслуги, экспортируемые в три региона через Scalable Solution Modules — включая совместное участие в тендерах Всемирного банка и ADB. Финтех и сертификация через Pixel DMC; миграция в облако с Dataset, Eagale Soft и KT Cloud Lab.",
+        text: "Мы экспортируем обмен данными, цифровую идентичность и безбумажные госуслуги в три региона с помощью готовых модулей — включая совместные заявки на тендеры Всемирного банка и ADB. Финтех и сертификация — через Pixel DMC; миграция в облако — с Dataset, Eagale Soft и KT Cloud Lab.",
         metrics: [
           { v: "3 региона", l: "География экспорта" },
           { v: "ВБ · ADB", l: "Совместные тендеры" },
@@ -823,29 +823,29 @@ const ru: Dictionary = {
   markets: {
     eyebrow: "Рынки",
     heading: "Работаем в четырёх регионах.",
-    sub: "Мост между Центральной Азией и миром — там, где спрос развивающихся рынков встречается с институциональным капиталом.",
+    sub: "Мост между Центральной Азией и миром — там, где спрос новых рынков встречается с крупными инвестициями.",
     items: [
-      { name: "Центральная Азия", desc: "База в Казахстане — суверенный HPC, GovTech и зелёные дата-центры." },
-      { name: "MENA", desc: "Саудовская Аравия — GovTech-лаборатории, соответствие Vision 2030, GRC-партнёрства." },
-      { name: "Южная Азия", desc: "Пакистан — экспорт GovTech, платёжные шлюзы и дистрибуция сертификаций." },
-      { name: "Африка", desc: "Инфраструктура развивающихся рынков, ESG-инвестиции и развитие компетенций." },
+      { name: "Центральная Азия", desc: "Наша база в Казахстане — независимые суперкомпьютеры, GovTech и зелёные дата-центры." },
+      { name: "MENA", desc: "Саудовская Аравия — GovTech-лаборатории, проекты по Vision 2030 и партнёрства по управлению и комплаенсу." },
+      { name: "Южная Азия", desc: "Пакистан — экспорт GovTech, платёжные шлюзы и сертификация." },
+      { name: "Африка", desc: "Инфраструктура новых рынков, ответственные инвестиции и обучение." },
     ],
   },
   partners: {
     eyebrow: "Партнёры",
-    heading: "Экосистема государств, науки и капитала.",
-    sub: "Сгруппированы по роли — от государственной инфраструктуры до GRC, устойчивого развития и выхода на рынки.",
+    heading: "Сеть государств, науки и инвесторов.",
+    sub: "Сгруппированы по роли — от государственной инфраструктуры до управления, устойчивого развития и выхода на рынки.",
     groups: [
       { name: "Государство и инфраструктура", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
       { name: "Технологии и облако", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
-      { name: "Наука и образование (DeepTech origin)", members: ["King Saud University", "Вузы и НИИ Казахстана", "Artisan Education"] },
-      { name: "GRC, аудит и устойчивое развитие", members: ["PNOD Auditing Co.", "MSTDAM"] },
+      { name: "Наука и образование (deep-tech origin)", members: ["King Saud University", "Вузы и НИИ Казахстана", "Artisan Education"] },
+      { name: "Управление, аудит и устойчивое развитие", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "Торговля и выход на рынки", members: ["QazTrade", "Партнёры MENA", "Партнёры Южной Азии", "Партнёры Африки"] },
     ],
     spotlight: [
       {
         name: "PNOD Auditing Co.",
-        role: "GRC, аудит и управление ИИ (14 лет экспертизы; ISO/IEC 42001), глубокое знание регуляторной среды Саудовской Аравии. Со-учредитель совместного предприятия Miras Accelerator.",
+        role: "Управление, аудит и контроль ИИ (14 лет опыта; ISO/IEC 42001), глубокое знание регуляторной среды Саудовской Аравии. Со-учредитель совместного предприятия Miras Accelerator.",
       },
       {
         name: "MSTDAM",
@@ -857,7 +857,7 @@ const ru: Dictionary = {
       },
       {
         name: "King Saud University",
-        role: "Якорный академический партнёр в Саудовской Аравии — DeepTech-исследования, совместные R&D и Saudi AI & GovTech Lab.",
+        role: "Главный академический партнёр в Саудовской Аравии — deep-tech-исследования, совместные R&D и Saudi AI & GovTech Lab.",
       },
     ],
     logos: [
@@ -920,7 +920,7 @@ const ru: Dictionary = {
         n: "01",
         title: "Vision 3P",
         sub: "Стратегическое видение",
-        text: "По принципу конвоя — приоритет на People (команду), Process (процесс) и Product (продукт).",
+        text: "Один принцип: сначала People (команда), затем простой Process (процесс) и качественный Product (продукт).",
         tags: ["People", "Process", "Product"],
       },
       {
@@ -966,14 +966,14 @@ const ru: Dictionary = {
       },
       {
         title: "NSART Corporate Innovations",
-        text: "R&D, пилотные внедрения и программы открытых инноваций для корпоративных клиентов.",
+        text: "Исследования, пилотные проекты и программы открытых инноваций для бизнес-клиентов.",
       },
     ],
   },
   certifications: {
     eyebrow: "Сертификаты и соответствие",
-    heading: "Сигналы доверия — подтверждённые.",
-    sub: "Постоянная строка доверия для всех аудиторий — качество, экология, инфраструктура и управление.",
+    heading: "Доказательства, которые можно проверить.",
+    sub: "Независимые доказательства для всех аудиторий — качество, экология, инфраструктура и управление.",
     items: [
       { name: "ISO 9001", meaning: "Менеджмент качества." },
       { name: "ISO 14001", meaning: "Экологический менеджмент — нац. + межд. Прямая связь с ESG." },
@@ -996,61 +996,61 @@ const ru: Dictionary = {
     emailLabel: "Написать нам",
   },
   footer: {
-    tagline: "Глубокотехнологичные венчуры из Центральной Азии — для всего мира.",
+    tagline: "Глубокотехнологичные компании из Центральной Азии — для всего мира.",
     company: "Компания",
     audiences: "Аудитории",
     contactTitle: "Контакты",
     rights: "NSART · Technology Interaction. Все права защищены.",
     confidential:
-      "Раздел Miras Accelerator представлен только на публичном уровне — без бюджетов, целевых сумм фондов и внутренних деталей.",
+      "Мы показываем Miras Accelerator только на публичном уровне — без бюджетов, сумм фондов и внутренних деталей.",
   },
   investorsPage: {
     badge: "Институциональным и импакт-инвесторам",
-    title: "Инвестируйте в суверенную глубокотехнологичную инфраструктуру по повестке ЦУР.",
+    title: "Инвестируйте в независимую глубокотехнологичную инфраструктуру по целям устойчивого развития.",
     intro:
-      "Мы структурируем и снижаем риски инвестиций в зелёные дата-центры, ИИ-вычисления и GovTech на развивающихся рынках — на принципах ESG, этичного ИИ и международной сертификации. Акселератор Miras — наш специализированный механизм привлечения капитала.",
+      "Мы делаем инвестиции в зелёные дата-центры, ИИ-вычисления и GovTech на новых рынках более безопасными — с надёжными экологическими стандартами, ответственным ИИ и международной сертификацией. Акселератор Miras — это то, как мы привлекаем капитал.",
     ctas: ["Инвестиционная стратегия", "Акселератор Miras", "Запросить ESG-бриф по почте"],
     audienceNote:
       "Для IsDB, EBRD, ADB, Всемирного банка, фондов под эгидой ООН и частных импакт-инвесторов.",
     sdg: {
       heading: "В соответствии с Целями устойчивого развития ООН",
-      sub: "NSART и акселератор Miras находятся на пересечении признанных мандатов — привязка к ЦУР делается без раскрытия финансовых параметров.",
+      sub: "NSART и акселератор Miras соответствуют широко признанным целям — привязка к ЦУР без раскрытия финансовых деталей.",
       items: [
         { goal: "ЦУР 4 и 9", desc: "Образование, технологии, промышленность и инновации — подготовка инженеров, трансфер технологий." },
         { goal: "ЦУР 7 и 13", desc: "Чистая энергия и климат — зелёный дата-центр, солнечная генерация, снижение углеродного следа." },
         { goal: "ЦУР 8", desc: "Достойный труд и экономический рост — поддержка МСП и создание рабочих мест." },
         { goal: "ЦУР 11", desc: "Устойчивые города — умная инфраструктура и GovTech." },
-        { goal: "ЦУР 17", desc: "Партнёрства — многосторонние соглашения с институтами развития и госорганами." },
+        { goal: "ЦУР 17", desc: "Партнёрства — соглашения с банками развития и госорганами." },
       ],
     },
     esg: {
       heading: "ESG и зелёное финансирование",
       sub: "Прямой язык банков развития.",
       points: [
-        { title: "Tamdy Cloud, PUE ~1,2", text: "Криогенный холод СПГ как основное охлаждение, интеграция солнечной генерации." },
-        { title: "Готовность к зелёным облигациям", text: "Структурировано под green bonds и мандаты банков развития." },
+        { title: "Tamdy Cloud, PUE ~1,2", text: "Охлаждение на СПГ как основная система, со встроенной солнечной генерацией." },
+        { title: "Готовность к зелёным облигациям", text: "Подготовлено под зелёные облигации и финансирование банков развития." },
         { title: "Этичный ИИ и приватность", text: "Прозрачность, отсутствие предвзятости, человеческий контроль; обработка данных в логике GDPR." },
-        { title: "Суверенные открытые стеки", text: "Аудируемо, без vendor lock-in." },
+        { title: "Независимые открытые системы", text: "Аудируемо, без привязки к вендору." },
       ],
     },
     metricsHeading: "Цифры",
-    cta: { heading: "Запросите инвест-материалы", text: "One-pager и дек по e-mail. Конфиденциальные параметры онлайн не публикуются.", button: "Связаться с инвест-командой" },
+    cta: { heading: "Запросите инвест-материалы", text: "Пришлём one-pager и презентацию по email. Конфиденциальные детали онлайн не публикуем.", button: "Связаться с инвест-командой" },
   },
   enterprisePage: {
     badge: "Частному и государственному сектору",
     title: "Технологии, отвечающие вашим стандартам — национальным и международным.",
     intro:
-      "От суверенных дата-центров и ИИ-вычислений до GovTech-платформ — мы проектируем, строим и сертифицируем технологии для государственного и частного секторов, а также находим, оцениваем и внедряем новые разработки в ваши процессы.",
+      "От независимых дата-центров и ИИ-вычислений до GovTech-платформ — мы проектируем, строим и сертифицируем технологии для государственного и частного секторов, а также находим, тестируем и внедряем новые разработки в ваши процессы.",
     ctas: ["Запросить технологический аудит", "Запустить пилот", "AI-услуги"],
     services: {
       heading: "Каталог услуг",
       items: [
-        { title: "AI-системы", text: "Доменные агенты, ML и системы принятия решений на суверенных вычислениях." },
+        { title: "AI-системы", text: "ИИ-агенты, машинное обучение и системы принятия решений на собственных вычислениях." },
         { title: "Умная инфраструктура", text: "Высокоплотные энергоэффективные вычисления и связность." },
         { title: "GovTech", text: "Цифровая идентичность, обмен данными и безбумажные услуги." },
         { title: "Сертификация дата-центров", text: "TIA-942 и Uptime Tier III/IV — полный цикл." },
         { title: "Корпоративные инновации", text: "Технологический скаутинг и интеграция в ваши процессы." },
-        { title: "SpaceTech / NajmSat", text: "Отличительная космическая компетенция — спутниковые и наземные системы." },
+        { title: "SpaceTech / NajmSat", text: "Редкая космическая экспертиза — спутниковые и наземные системы." },
       ],
     },
     standards: {
@@ -1066,16 +1066,16 @@ const ru: Dictionary = {
       ],
     },
     pilot: {
-      heading: "Низкопороговый пилот",
-      text: "PoC за 6–8 недель с понятным шаблоном объёма работ — проверьте до того, как принять обязательства.",
+      heading: "Простой способ начать",
+      text: "Proof of concept за 6–8 недель с понятным планом — проверьте идею до того, как брать обязательства.",
       button: "Запустить пилот",
     },
   },
   foundersPage: {
     badge: "Основателям, университетам и R&D-центрам",
-    title: "От исследования к выручке — защитите, оцените и развивайте нематериальные активы.",
+    title: "От исследования к выручке — защитите, оцените и развивайте идеи и ноу-хау.",
     intro:
-      "Для стартапов, зрелых компаний, университетов и R&D-центров: мы ведём полный жизненный цикл интеллектуальной собственности — оценку, защиту и определение стоимости — и открываем путь к инвестициям и развитию бизнеса через акселератор Miras.",
+      "Для стартапов, зрелых компаний, университетов и R&D-центров: мы ведём весь путь интеллектуальной собственности — оценку, защиту и определение стоимости — и открываем путь к инвестициям и росту через акселератор Miras.",
     ctas: ["Оценка ИС", "Подать заявку в Miras", "Связаться с командой"],
     lifecycle: {
       heading: "Жизненный цикл ИС",
@@ -1093,7 +1093,7 @@ const ru: Dictionary = {
     },
     university: {
       heading: "Отдельный трек для университетов и R&D-центров",
-      text: "DeepTech origin — трансфер технологий, спин-офф из науки, защита и коммерциализация результатов исследований.",
+      text: "Корни в deep-tech — вывод исследований на рынок, спин-оффы из науки, защита и продажа результатов исследований.",
       anchors: "Партнёры-якоря: King Saud University (Саудовская Аравия) и научные институты и вузы Казахстана.",
     },
     form: {
@@ -1113,14 +1113,14 @@ const ru: Dictionary = {
     badge: "О компании",
     title: "Мы превращаем глубокотехнологичные идеи в реальные бизнесы.",
     intro:
-      "NSART — венчурная студия, специализирующаяся на DeepTech-проектах: поиск инвестиционных возможностей, построение стратегических партнёрств, структурирование венчуров и выход на рынки Центральной Азии, MENA, Южной Азии и Африки.",
+      "NSART — венчурная студия, сфокусированная на deep-tech-проектах: поиск инвестиционных возможностей, построение партнёрств, создание компаний и выход на рынки Центральной Азии, MENA, Южной Азии и Африки.",
     missionHeading: "Наша миссия",
     missionText:
-      "Соединить науку и коммерцию: брать зрелые исследования, превращать их в венчурно-готовые компании и подключать их к международному капиталу и институциональным мандатам.",
+      "Соединить науку и бизнес: брать проверенные исследования, превращать их в инвестиционно-готовые компании и подключать к международному капиталу и институтам.",
     valuesHeading: "Что мы отстаиваем",
     values: [
-      { title: "Суверенно по дизайну", text: "Открытые стеки, без vendor lock-in, аудит для регуляторов и инвесторов." },
-      { title: "Доказательства, а не риторика", text: "Каждое утверждение подкреплено сертификатом, метрикой или развёрнутым кейсом." },
+      { title: "Независимость по дизайну", text: "Открытые системы, без привязки к вендору, лёгкий аудит для регуляторов и инвесторов." },
+      { title: "Доказательства, а не риторика", text: "Каждое утверждение подкреплено сертификатом, цифрой или работающим проектом." },
       { title: "В соответствии с глобальными мандатами", text: "ЦУР, ESG, готовность к капиталу банков развития." },
       { title: "Многоязычность по умолчанию", text: "EN · AR · RU · KK — для рынков, где мы работаем." },
     ],
@@ -1129,12 +1129,12 @@ const ru: Dictionary = {
     badge: "Технологический стек",
     title: "Глубокие технологии — спроектированы и сертифицированы.",
     intro:
-      "От суверенных дата-центров и ИИ-вычислений до GovTech и умной инфраструктуры — по международным стандартам, с возможностью аудита и интеграции с государственными и корпоративными средами.",
+      "От независимых дата-центров и ИИ-вычислений до GovTech и умной инфраструктуры — по международным стандартам, с полным аудитом и интеграцией с государственными и корпоративными системами.",
     pillars: [
       {
         title: "Искусственный интеллект",
-        text: "AI Agent Factory, доменные госагенты, ML на озёрах данных в реальном времени и обучение крупных моделей на суверенной GPU-инфраструктуре (NVIDIA H200, открытый экзафлопсный стек).",
-        items: ["Agent Factory", "Доменные LLM", "Real-time ML", "Суверенный GPU"],
+        text: "AI Agent Factory, государственные ИИ-агенты, машинное обучение на данных в реальном времени и обучение крупных моделей на собственной GPU-инфраструктуре (NVIDIA H200, открытый экзафлопсный стек).",
+        items: ["Agent Factory", "Доменные LLM", "Real-time ML", "Собственные GPU"],
       },
       {
         title: "Умная инфраструктура",
@@ -1148,16 +1148,16 @@ const ru: Dictionary = {
       },
       {
         title: "Дата-центры",
-        text: "Tamdy Cloud — проект под Tier III/IV, PUE ~1,2, криогенный холод СПГ и лидирующая в Центральной Азии практика TIA-942 / Uptime.",
-        items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "Криогенный холод СПГ"],
+        text: "Tamdy Cloud — проект под Tier III/IV, PUE ~1,2, охлаждение на СПГ и лидирующая в Центральной Азии экспертиза TIA-942 / Uptime.",
+        items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "Охлаждение на СПГ"],
       },
     ],
   },
   ipPage: {
     badge: "Интеллектуальная собственность и нематериальные активы",
-    title: "Защитите, оцените и монетизируйте свои нематериальные активы.",
+    title: "Защитите, оцените и зарабатывайте на идеях и ноу-хау.",
     intro:
-      "Полное сопровождение жизненного цикла интеллектуальной собственности — ПО, цифровые сервисы, результаты R&D, агропромышленные комплексы, космические технологии. От аудита и защиты до оценки, лицензирования и пути к инвестициям.",
+      "Полная поддержка интеллектуальной собственности — ПО, цифровые сервисы, результаты R&D, агропромышленные проекты и космические технологии. От аудита и защиты до оценки, лицензирования и пути к инвестициям.",
     lifecycleHeading: "Жизненный цикл ИС",
     steps: [
       { n: "1", title: "Оценка", text: "Аудит активов и скоринг готовности (TRL / CRL / MRL); выявление охраноспособных объектов." },
@@ -1168,25 +1168,25 @@ const ru: Dictionary = {
     assetsHeading: "Типы активов",
     assets: ["ПО", "Цифровые сервисы", "Результаты R&D", "Агропромышленные комплексы", "Космические технологии"],
     ctaHeading: "Выведите активы на следующий этап.",
-    ctaText: "Начните с оценки ИС — мы составим карту портфеля и подскажем оптимальный путь защиты и монетизации.",
+    ctaText: "Начните с оценки ИС — мы составим карту портфеля и подскажем лучший способ защиты и заработка.",
     ctaButton: "Заказать оценку ИС",
   },
   marketsPage: {
     badge: "География работы",
     title: "Четыре региона. Один мост.",
     intro:
-      "NSART работает на пересечении спроса развивающихся рынков и институционального капитала — Центральная Азия как база, Саудовская Аравия и MENA как коридор роста, Южная Азия и Африка как горизонт экспансии.",
+      "NSART работает там, где спрос новых рынков встречается с крупными инвестициями — Центральная Азия как база, Саудовская Аравия и MENA как направление роста, а Южная Азия и Африка — куда мы расширяемся дальше.",
     regionsHeading: "Регионы",
     regions: [
       {
         name: "Центральная Азия",
         kicker: "База",
-        desc: "Казахстан: суверенный HPC, GovTech-референс и зелёные дата-центры. 20+ лет опыта электронного правительства, Top-25 рейтинг ООН по e-Gov.",
+        desc: "Казахстан: независимые суперкомпьютеры, проверенный GovTech и зелёные дата-центры. 20+ лет опыта электронного правительства и Top-25 в рейтинге ООН по e-Gov.",
       },
       {
         name: "MENA",
         kicker: "Коридор роста",
-        desc: "Саудовская Аравия: GovTech-лаборатории по повестке Vision 2030, GRC-партнёрства с PNOD и совместное предприятие Miras Accelerator.",
+        desc: "Саудовская Аравия: GovTech-лаборатории по Vision 2030, партнёрства по управлению и комплаенсу с PNOD и совместное предприятие Miras Accelerator.",
       },
       {
         name: "Южная Азия",
@@ -1196,18 +1196,18 @@ const ru: Dictionary = {
       {
         name: "Африка",
         kicker: "Фронтир",
-        desc: "Инфраструктура развивающихся рынков, ESG-инвестиции, развитие компетенций и Scalable Solution Modules для правительств.",
+        desc: "Инфраструктура новых рынков, ответственные инвестиции, обучение и готовые модули для правительств.",
       },
     ],
     gatewayHeading: "NSART Gateway",
     gatewayText:
-      "Специализированный продукт для выхода на рынки Центральной Азии, Южной Азии, MENA и Африки — локальное присутствие, регуляторная навигация и партнёрские экосистемы.",
+      "Продукт для выхода на рынки Центральной Азии, Южной Азии, MENA и Африки — локальное присутствие, помощь с регулированием и партнёрские сети.",
   },
   partnersPage: {
     badge: "Экосистема",
-    title: "Экосистема государств, науки и капитала.",
+    title: "Сеть государств, науки и инвесторов.",
     intro:
-      "Мы работаем с пятью группами партнёров — государство и инфраструктура, технологии и облако, наука и образование, GRC и устойчивое развитие, торговля и выход на рынки.",
+      "Мы работаем с пятью группами партнёров — государство и инфраструктура, технологии и облако, наука и образование, управление и устойчивое развитие, торговля и выход на рынки.",
     spotlightHeading: "Ключевые партнёры",
     logoHeading: "Избранные партнёры",
   },
@@ -1225,18 +1225,18 @@ const ru: Dictionary = {
     formSuccess: "Спасибо — мы скоро свяжемся с вами.",
     audienceOptions: ["Инвестор", "Бизнес / Государство", "Основатель / R&D", "Партнёр", "Другое"],
     directHeading: "Или свяжитесь напрямую",
-    location: "Алматы, Казахстан",
+    location: "Астана, Казахстан",
     privacy: "Отправляя форму, вы соглашаетесь, что мы можем с вами связаться. Мы не передаём данные третьим лицам.",
   },
   mirasPage: {
     badge: "Совместное предприятие · NSART × PNOD",
-    title: "Miras Accelerator — инфраструктура коммерциализации глубоких технологий.",
+    title: "Miras Accelerator — инфраструктура, превращающая глубокие технологии в бизнес.",
     intro:
-      "Совместное предприятие NSART и PNOD, Miras помогает зрелым технологиям преодолеть разрыв готовности — соединяя инженерию глубоких технологий с управлением и комплаенсом, полным сопровождением жизненного цикла ИС и путём к инвестициям, в соответствии с Vision 2030, повесткой ОИС и ЦУР ООН.",
+      "Miras — совместное предприятие NSART и PNOD. Оно помогает зрелым технологиям стать реальным бизнесом — соединяя инженерию, управление и комплаенс, полное сопровождение ИС и понятный путь к инвестициям, в соответствии с Vision 2030, повесткой ОИС и ЦУР ООН.",
     ctas: ["О Miras", "Подать заявку в трек", "Стать партнёром"],
     problem: {
       heading: "Какой разрыв закрывает Miras",
-      text: "Технология может быть научно зрелой, но у организации не хватает коммерческой, регуляторной и производственной инфраструктуры для внедрения. Miras закрывает этот разрыв через модель готовности по трём измерениям.",
+      text: "Технология может быть научно готова, но у компании не хватает коммерческой, регуляторной и производственной базы, чтобы её применить. Miras закрывает этот разрыв с помощью модели готовности из трёх частей.",
       dims: [
         { code: "TRL", title: "Технологическая готовность", q: "Доказана ли технология в нужном масштабе?" },
         { code: "CRL", title: "Коммерческая готовность", q: "Есть ли путь к выручке, ценообразование и контрактная модель?" },
@@ -1246,17 +1246,17 @@ const ru: Dictionary = {
     tracks: {
       heading: "Три трека",
       items: [
-        { n: "Трек 1", title: "Deep-Tech Cohort", text: "Акселерация команд от диагностики до подготовки к инвестициям и демо-дню." },
-        { n: "Трек 2", title: "Regulatory Sandbox", text: "Тестирование решений в регулируемой среде — CleanTech, GovTech, агентный ИИ, дата-маркетплейс — на суверенной GPU-инфраструктуре." },
-        { n: "Трек 3", title: "IP Portfolio & Founders", text: "Полный жизненный цикл ИС и развитие основателей — от диагностики до лицензирования и витрины ИС." },
+        { n: "Трек 1", title: "Deep-Tech Cohort", text: "Мы ведём команды от первой диагностики до готовности к инвестициям и демо-дня." },
+        { n: "Трек 2", title: "Regulatory Sandbox", text: "Тестирование решений в контролируемой регулируемой среде — CleanTech, GovTech, ИИ-агенты, дата-маркетплейс — на собственной GPU-инфраструктуре." },
+        { n: "Трек 3", title: "IP Portfolio & Founders", text: "Весь путь ИС и поддержка основателей — от диагностики до лицензирования и витрины ИС." },
       ],
     },
     positioning: {
       heading: "Стратегическое позиционирование",
-      text: "Miras выстроен на пересечении признанных мандатов — Saudi Vision 2030, повестки ОИС, Digital Cooperation Organization и Целей устойчивого развития ООН. Это язык, понятный институтам развития, и его можно использовать без раскрытия коммерческих параметров.",
+      text: "Miras построен вокруг широко признанных целей — Saudi Vision 2030, повестки ОИС, Digital Cooperation Organization и Целей устойчивого развития ООН. Это язык, понятный институтам развития, и его можно использовать без раскрытия коммерческих деталей.",
     },
     confidential:
-      "Конфиденциальность: раздел держится на публичном уровне. Бюджеты, целевые суммы фондов, имена руководителей и советников, конкретные инвесторы и детали обращений к госорганам — внутренние данные.",
+      "Конфиденциальность: раздел остаётся на публичном уровне. Бюджеты, суммы фондов, имена руководителей и советников, конкретные инвесторы и детали переговоров с госорганами — внутренние данные.",
   },
 };
 
@@ -1268,7 +1268,7 @@ const ar: DeepPartial<Dictionary> = {
   meta: {
     title: "NSART · التفاعل التقني",
     description:
-      "مشاريع تقنية عميقة من آسيا الوسطى إلى العالم. البحث والتطوير، والملكية الفكرية، والبنية التحتية الاستثمارية في كازاخستان والمملكة العربية السعودية وأفريقيا.",
+      "نبني شركات تقنية عميقة من آسيا الوسطى إلى العالم — البحث والتطوير والملكية الفكرية والاستثمار في كازاخستان والسعودية وأفريقيا.",
   },
   nav: {
     home: "الرئيسية",
@@ -1300,7 +1300,7 @@ const ar: DeepPartial<Dictionary> = {
     eyebrow: "NSART · التفاعل التقني",
     title: "مشاريع التقنيات العميقة من آسيا الوسطى إلى العالم.",
     subtitle:
-      "البحث والتطوير، والملكية الفكرية، والبنية التحتية الاستثمارية في كازاخستان والمملكة العربية السعودية وأفريقيا.",
+      "البحث والتطوير والملكية الفكرية والاستثمار في كازاخستان والسعودية وأفريقيا.",
     ctaPrimary: "اختر مسارك",
     ctaSecondary: "استكشف مسرّعة مِراس",
     stats: [
@@ -1313,9 +1313,9 @@ const ar: DeepPartial<Dictionary> = {
   technologies: {
     eyebrow: "التقنيات",
     heading: "نُصمّم ونبني ونعتمد التقنيات العميقة.",
-    sub: "من مراكز البيانات السيادية والحوسبة بالذكاء الاصطناعي إلى منصّات الحكومة الرقمية — وفق المعايير الدولية وقابلة للتدقيق.",
+    sub: "من مراكز البيانات المستقلة والحوسبة بالذكاء الاصطناعي إلى منصّات الحكومة الرقمية — وفق المعايير الدولية وقابلة للتدقيق.",
     items: [
-      { title: "الذكاء الاصطناعي", text: "مصنع وكلاء الذكاء الاصطناعي، وكلاء حكوميون متخصّصون، تعلّم آلي على بحيرات بيانات لحظية، وتدريب نماذج كبيرة على بنية GPU سيادية." },
+      { title: "الذكاء الاصطناعي", text: "مصنع وكلاء الذكاء الاصطناعي، وكلاء حكوميون متخصّصون، تعلّم آلي على بحيرات بيانات لحظية، وتدريب نماذج كبيرة على بنية GPU مستقلة." },
       { title: "البنية التحتية الذكية", text: "حوسبة خضراء عالية الكثافة — عناقيد NVIDIA H200، حزم برمجية مفتوحة بأداء إكزافلوبس، وتصميم موفّر للطاقة." },
       { title: "الحكومة الرقمية", text: "أكثر من 20 عامًا من الخبرة في الحكومة الإلكترونية كموديولات قابلة للتوسيع: الهوية الرقمية وتبادل البيانات والخدمات الإلكترونية." },
       { title: "مراكز البيانات", text: "Tamdy Cloud — تصميم Tier III/IV، PUE ~1,2، تبريد بالغاز المسال، والممارسة الرائدة في TIA-942 / Uptime في آسيا الوسطى." },
@@ -1369,7 +1369,7 @@ const ar: DeepPartial<Dictionary> = {
       {
         key: "investors",
         tag: "للمستثمرين",
-        title: "تقنيات عميقة سيادية متوافقة مع أهداف التنمية المستدامة",
+        title: "تقنيات عميقة مستقلة متوافقة مع أهداف التنمية المستدامة",
         text: "محفظة تقنيات عميقة متوافقة مع أهداف التنمية المستدامة، ومسرّعة مِراس، وأطر ESG والذكاء الاصطناعي الأخلاقي.",
         href: "/investors",
         cta: "أطروحتنا الاستثمارية",
@@ -1378,7 +1378,7 @@ const ar: DeepPartial<Dictionary> = {
         key: "enterprise",
         tag: "للشركات والحكومات",
         title: "تقنية تلبّي معاييرك",
-        text: "الذكاء الاصطناعي والحكومة الرقمية والبنية التحتية الذكية ومراكز البيانات السيادية، معتمدة وفق المعايير الدولية.",
+        text: "الذكاء الاصطناعي والحكومة الرقمية والبنية التحتية الذكية ومراكز البيانات المستقلة، معتمدة وفق المعايير الدولية.",
         href: "/enterprise",
         cta: "استكشف الخدمات",
       },
@@ -1394,7 +1394,7 @@ const ar: DeepPartial<Dictionary> = {
   },
   mirasTeaser: {
     eyebrow: "مسرّعة مِراس",
-    heading: "بنية تحتية لتسويق التقنيات العميقة.",
+    heading: "بنية تحتية لتحويل التقنيات العميقة إلى أعمال.",
     text: "مسرّعة مِراس، وهي مشروع مشترك بين NSART وPNOD، تساعد التقنيات الناضجة على تجاوز فجوة الجاهزية — بالجمع بين هندسة التقنيات العميقة والحوكمة والامتثال، ودعم دورة حياة الملكية الفكرية كاملةً، ومسار نحو الاستثمار.",
     aligned: "بما يتوافق مع رؤية 2030 ومنظمة التعاون الإسلامي ومنظمة التعاون الرقمي وأهداف التنمية المستدامة.",
     cta: "داخل مسرّعة مِراس",
@@ -1419,10 +1419,10 @@ const ar: DeepPartial<Dictionary> = {
       },
       {
         tag: "HPC والذكاء الاصطناعي",
-        title: "حوسبة سيادية بأداء إكزافلوبس",
+        title: "حوسبة مستقلة بأداء إكزافلوبس",
         location: "كازاخستان · حزمة برمجية مفتوحة",
         status: "عاملة",
-        text: "NVIDIA H200 SXM (HBM3e، 141 جيجابايت، 4,8 تيرابايت/ث) مع NVLink 4.0 للتدريب والاستدلال. حزمة إكزافلوبس مفتوحة — Slurm + OpenMPI، ROCm/CUDA OSS، OpenStack، Lustre/GPFS — سيادية، قابلة للتدقيق، دون قفل المورد.",
+        text: "NVIDIA H200 SXM (HBM3e، 141 جيجابايت، 4,8 تيرابايت/ث) مع NVLink 4.0 للتدريب والاستدلال. حزمة إكزافلوبس مفتوحة — Slurm + OpenMPI، ROCm/CUDA OSS، OpenStack، Lustre/GPFS — مستقلة، قابلة للتدقيق، دون قفل المورد.",
         metrics: [
           { v: "H200 SXM", l: "141 جيجابايت HBM3e لكل GPU" },
           { v: "4,8 تيرابايت/ث", l: "عرض النطاق للذاكرة" },
@@ -1463,8 +1463,8 @@ const ar: DeepPartial<Dictionary> = {
     heading: "نعمل في أربع مناطق.",
     sub: "جسر بين آسيا الوسطى والعالم — حيث يلتقي طلب الأسواق الناشئة برأس المال المؤسسي.",
     items: [
-      { name: "آسيا الوسطى", desc: "كازاخستان: HPC سيادي، مرجع GovTech، ومراكز بيانات خضراء." },
-      { name: "MENA", desc: "السعودية: مختبرات GovTech بما يتوافق مع رؤية 2030 وشراكات GRC." },
+      { name: "آسيا الوسطى", desc: "كازاخستان: HPC مستقل، مرجع GovTech، ومراكز بيانات خضراء." },
+      { name: "MENA", desc: "السعودية: مختبرات GovTech بما يتوافق مع رؤية 2030 وشراكات الحوكمة." },
       { name: "جنوب آسيا", desc: "باكستان: تصدير الحكومة الرقمية، بوّابات مالية، وتوزيع شهادات." },
       { name: "أفريقيا", desc: "بنية تحتية للأسواق الناشئة، استثمار متوافق مع ESG، وبناء القدرات." },
     ],
@@ -1472,16 +1472,16 @@ const ar: DeepPartial<Dictionary> = {
   partners: {
     eyebrow: "الشركاء",
     heading: "منظومة من الحكومات والعلم ورأس المال.",
-    sub: "مُجمَّعة حسب الدور — من البنية التحتية الحكومية إلى GRC والاستدامة ودخول الأسواق.",
+    sub: "مُجمَّعة حسب الدور — من البنية التحتية الحكومية إلى الحوكمة والاستدامة ودخول الأسواق.",
     groups: [
       { name: "الحكومة والبنية التحتية", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
       { name: "التقنية والسحابة", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
       { name: "العلم والتعليم (DeepTech)", members: ["جامعة الملك سعود", "جامعات ومعاهد كازاخستان", "Artisan Education"] },
-      { name: "GRC والتدقيق والاستدامة", members: ["PNOD Auditing Co.", "MSTDAM"] },
+      { name: "الحوكمة والتدقيق والاستدامة", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "التجارة ودخول الأسواق", members: ["QazTrade", "شركاء MENA", "شركاء جنوب آسيا", "شركاء أفريقيا"] },
     ],
     spotlight: [
-      { name: "PNOD Auditing Co.", role: "GRC والتدقيق وحوكمة الذكاء الاصطناعي (14 عامًا من الخبرة؛ ISO/IEC 42001)، مع معرفة عميقة بالبيئة التنظيمية السعودية. شريك مؤسّس لمشروع مسرّعة مِراس." },
+      { name: "PNOD Auditing Co.", role: "الحوكمة والتدقيق ومراقبة الذكاء الاصطناعي (14 عامًا من الخبرة؛ ISO/IEC 42001)، مع معرفة عميقة بالبيئة التنظيمية السعودية. شريك مؤسّس لمشروع مسرّعة مِراس." },
       { name: "MSTDAM", role: "منصّة استدامة بيئية — قياس البصمة الكربونية وزراعة الأشجار وتقارير ESG (السعودية). شريك الأجندة الخضراء وESG." },
       { name: "NITEC", role: "تقنيات المعلومات الوطنية — المشغّل الحكومي لخدمات الحكومة الإلكترونية والهوية الرقمية في كازاخستان." },
       { name: "جامعة الملك سعود", role: "شريك أكاديمي رئيسي في السعودية لأبحاث DeepTech والبحث والتطوير المشترك ومختبر الذكاء الاصطناعي والحكومة الرقمية." },
@@ -1521,9 +1521,9 @@ const ar: DeepPartial<Dictionary> = {
   },
   investorsPage: {
     badge: "للمستثمرين المؤسسيين وذوي الأثر",
-    title: "استثمر في بنية تحتية سيادية للتقنيات العميقة متوافقة مع أهداف التنمية المستدامة.",
+    title: "استثمر في بنية تحتية مستقلة للتقنيات العميقة متوافقة مع أهداف التنمية المستدامة.",
     intro:
-      "نُهيكل الاستثمارات ونُقلّل مخاطرها في مراكز البيانات الخضراء والحوسبة بالذكاء الاصطناعي والحكومة الرقمية عبر الأسواق الناشئة — مبنية على مبادئ ESG والذكاء الاصطناعي الأخلاقي والاعتماد الدولي. مسرّعة مِراس هي أداتنا المخصّصة لجمع رأس المال.",
+      "نجعل الاستثمار في مراكز البيانات الخضراء والحوسبة بالذكاء الاصطناعي والحكومة الرقمية في الأسواق الجديدة أكثر أمانًا — بمعايير بيئية قوية وذكاء اصطناعي مسؤول واعتماد دولي. ومسرّعة مِراس هي وسيلتنا لجمع رأس المال.",
     ctas: ["اطّلع على أطروحتنا الاستثمارية", "تعرّف على مسرّعة مِراس", "اطلب ملخّص ESG عبر البريد"],
     audienceNote: "للبنك الإسلامي للتنمية، EBRD، ADB، البنك الدولي، صناديق الأمم المتحدة، والمستثمرين ذوي الأثر.",
     sdg: {
@@ -1544,7 +1544,7 @@ const ar: DeepPartial<Dictionary> = {
         { title: "Tamdy Cloud، PUE ~1,2", text: "تبريد رئيسي بالغاز المسال مع توليد شمسي مدمج." },
         { title: "جاهزية السندات الخضراء", text: "مهيّكل للسندات الخضراء ومهمّات بنوك التنمية." },
         { title: "ذكاء اصطناعي أخلاقي وخصوصية", text: "الشفافية وعدم الانحياز والإشراف البشري؛ معالجة بيانات على نمط GDPR." },
-        { title: "حزم مفتوحة سيادية", text: "قابلة للتدقيق، دون قفل المورد." },
+        { title: "حزم مفتوحة مستقلة", text: "قابلة للتدقيق، دون قفل المورد." },
       ],
     },
     metricsHeading: "الأرقام",
@@ -1554,12 +1554,12 @@ const ar: DeepPartial<Dictionary> = {
     badge: "للقطاعين العام والخاص",
     title: "تقنية تلبّي معاييرك — الوطنية والدولية.",
     intro:
-      "من مراكز البيانات السيادية والحوسبة بالذكاء الاصطناعي إلى منصّات الحكومة الرقمية، نُصمّم ونبني ونعتمد التقنية للقطاعين العام والخاص — ونستكشف الابتكارات الناشئة ونقيّمها وندمجها في عملياتكم.",
+      "من مراكز البيانات المستقلة والحوسبة بالذكاء الاصطناعي إلى منصّات الحكومة الرقمية، نُصمّم ونبني ونعتمد التقنية للقطاعين العام والخاص — ونستكشف الابتكارات الناشئة ونقيّمها وندمجها في عملياتكم.",
     ctas: ["اطلب تدقيقًا تقنيًا", "ابدأ مشروعًا تجريبيًا", "استكشف خدمات الذكاء الاصطناعي"],
     services: {
       heading: "كتالوج الخدمات",
       items: [
-        { title: "أنظمة الذكاء الاصطناعي", text: "وكلاء متخصّصون، تعلّم آلي، وأنظمة قرار على حوسبة سيادية." },
+        { title: "أنظمة الذكاء الاصطناعي", text: "وكلاء متخصّصون، تعلّم آلي، وأنظمة قرار على حوسبة مستقلة." },
         { title: "البنية التحتية الذكية", text: "حوسبة عالية الكثافة وموفّرة للطاقة وشبكية." },
         { title: "الحكومة الرقمية", text: "الهوية الرقمية وتبادل البيانات والخدمات الإلكترونية." },
         { title: "اعتماد مراكز البيانات", text: "TIA-942 وUptime Tier III/IV — دورة كاملة." },
@@ -1625,7 +1625,7 @@ const ar: DeepPartial<Dictionary> = {
   },
   mirasPage: {
     badge: "مشروع مشترك · NSART × PNOD",
-    title: "مسرّعة مِراس — بنية تحتية لتسويق التقنيات العميقة.",
+    title: "مسرّعة مِراس — بنية تحتية لتحويل التقنيات العميقة إلى أعمال.",
     intro:
       "مسرّعة مِراس، وهي مشروع مشترك بين NSART وPNOD، تساعد التقنيات الناضجة على تجاوز فجوة الجاهزية — بالجمع بين هندسة التقنيات العميقة والحوكمة والامتثال، ودعم دورة حياة الملكية الفكرية كاملةً، ومسار نحو الاستثمار، بما يتوافق مع رؤية 2030 ومنظمة التعاون الإسلامي وأهداف التنمية المستدامة.",
     ctas: ["تعرّف على مِراس", "قدّم إلى أحد المسارات", "كن شريكًا لنا"],
@@ -1642,7 +1642,7 @@ const ar: DeepPartial<Dictionary> = {
       heading: "ثلاثة مسارات",
       items: [
         { n: "المسار 1", title: "Deep-Tech Cohort", text: "تسريع الفِرَق من التشخيص إلى الاستعداد للاستثمار ويوم العرض." },
-        { n: "المسار 2", title: "Regulatory Sandbox", text: "اختبار الحلول في بيئة منظّمة — CleanTech، GovTech، الذكاء الاصطناعي الوكيلي، سوق البيانات — على بنية GPU سيادية." },
+        { n: "المسار 2", title: "Regulatory Sandbox", text: "اختبار الحلول في بيئة منظّمة — CleanTech، GovTech، الذكاء الاصطناعي الوكيلي، سوق البيانات — على بنية GPU مستقلة." },
         { n: "المسار 3", title: "IP Portfolio & Founders", text: "دورة حياة كاملة للملكية الفكرية وتطوير المؤسسين — من التشخيص إلى الترخيص ومعرض الملكية الفكرية." },
       ],
     },
@@ -1661,8 +1661,8 @@ const ar: DeepPartial<Dictionary> = {
     missionText: "الجسر بين العلم والتجارة — نأخذ أبحاثًا ناضجة، نهيكلها كشركات بدرجة مشروع ونصلها برأس المال الدولي والمهمّات المؤسسية.",
     valuesHeading: "ما نؤمن به",
     values: [
-      { title: "السيادة بالتصميم", text: "حزم مفتوحة دون قفل المورد، قابلة للتدقيق من المنظّمين والمستثمرين." },
-      { title: "الأدلّة قبل البلاغة", text: "كل ادّعاء مدعوم بشهادة أو مقياس أو مرجع منشور." },
+      { title: "الاستقلالية بالتصميم", text: "أنظمة مفتوحة دون قفل المورد، قابلة للتدقيق من المنظّمين والمستثمرين." },
+      { title: "الأدلّة قبل البلاغة", text: "كل ادّعاء مدعوم بشهادة أو رقم أو مشروع فعلي." },
       { title: "بما يتوافق مع المهمّات العالمية", text: "متوافق مع أهداف التنمية المستدامة وجاهز لـESG ومُهيّكل لرأس مال بنوك التنمية." },
       { title: "متعدّد اللغات افتراضيًا", text: "EN · AR · RU · KK — مبني للأسواق التي نخدمها." },
     ],
@@ -1670,9 +1670,9 @@ const ar: DeepPartial<Dictionary> = {
   technologiesPage: {
     badge: "حزمة التقنية",
     title: "تقنية عميقة — مُهندَسة ومُعتمَدة.",
-    intro: "من مراكز البيانات السيادية وحوسبة الذكاء الاصطناعي إلى الحكومة الرقمية والبنية التحتية الذكية — وفق المعايير الدولية وقابلة للتدقيق من النهاية إلى النهاية.",
+    intro: "من مراكز البيانات المستقلة وحوسبة الذكاء الاصطناعي إلى الحكومة الرقمية والبنية التحتية الذكية — وفق المعايير الدولية وقابلة للتدقيق من النهاية إلى النهاية.",
     pillars: [
-      { title: "الذكاء الاصطناعي", text: "مصنع وكلاء الذكاء الاصطناعي، وكلاء حكوميون متخصّصون، تعلّم آلي على بحيرات بيانات لحظية، وتدريب نماذج كبيرة على بنية GPU سيادية (NVIDIA H200).", items: ["Agent Factory", "Domain LLMs", "Real-time ML", "Sovereign GPU"] },
+      { title: "الذكاء الاصطناعي", text: "مصنع وكلاء الذكاء الاصطناعي، وكلاء حكوميون متخصّصون، تعلّم آلي على بحيرات بيانات لحظية، وتدريب نماذج كبيرة على بنية GPU مستقلة (NVIDIA H200).", items: ["Agent Factory", "Domain LLMs", "Real-time ML", "Sovereign GPU"] },
       { title: "البنية التحتية الذكية", text: "حوسبة عالية الكثافة، شبكات AIoT وM2M، منصّات التوائم الرقمية والاتصال للبيئات الحضرية والصناعية.", items: ["AIoT & M2M", "Digital Twins", "Smart Field", "تصميم موفّر للطاقة"] },
       { title: "الحكومة الرقمية", text: "أكثر من 20 عامًا من خبرة الحكومة الإلكترونية كموديولات: الهوية الرقمية وتبادل البيانات والخدمات الإلكترونية والأمن السيبراني.", items: ["e-Gov", "Digital ID", "Data exchange", "Cyber Security"] },
       { title: "مراكز البيانات", text: "Tamdy Cloud — تصميم Tier III/IV، PUE ~1,2، تبريد بالغاز المسال، والممارسة الرائدة في TIA-942 / Uptime في آسيا الوسطى.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "تبريد بالغاز المسال"] },
@@ -1701,8 +1701,8 @@ const ar: DeepPartial<Dictionary> = {
     intro: "NSART تعمل على تقاطع طلب الأسواق الناشئة ورأس المال المؤسسي — آسيا الوسطى مقرًا، السعودية وMENA ممر نمو، جنوب آسيا وأفريقيا جبهات توسّع.",
     regionsHeading: "المناطق",
     regions: [
-      { name: "آسيا الوسطى", kicker: "المقر الرئيسي", desc: "كازاخستان: HPC سيادي ومرجع GovTech ومراكز بيانات خضراء. أكثر من 20 عامًا من خبرة الحكومة الإلكترونية وتصنيف Top-25 لدى الأمم المتحدة." },
-      { name: "MENA", kicker: "ممر النمو", desc: "السعودية: مختبرات GovTech بما يتوافق مع رؤية 2030 وشراكات GRC مع PNOD ومسرّعة مِراس." },
+      { name: "آسيا الوسطى", kicker: "المقر الرئيسي", desc: "كازاخستان: HPC مستقل ومرجع GovTech ومراكز بيانات خضراء. أكثر من 20 عامًا من خبرة الحكومة الإلكترونية وتصنيف Top-25 لدى الأمم المتحدة." },
+      { name: "MENA", kicker: "ممر النمو", desc: "السعودية: مختبرات GovTech بما يتوافق مع رؤية 2030 وشراكات الحوكمة مع PNOD ومسرّعة مِراس." },
       { name: "جنوب آسيا", kicker: "التوسّع", desc: "باكستان: تصدير GovTech مع NITEC + InfoTech، بوّابات مالية عبر Pixel DMC، توزيع شهادات." },
       { name: "أفريقيا", kicker: "الجبهة", desc: "بنية تحتية للأسواق الناشئة، استثمار متوافق مع ESG، بناء قدرات، وموديولات حلول قابلة للتوسيع." },
     ],
@@ -1712,7 +1712,7 @@ const ar: DeepPartial<Dictionary> = {
   partnersPage: {
     badge: "المنظومة",
     title: "منظومة من الحكومات والعلم ورأس المال.",
-    intro: "نعمل عبر خمس مجموعات شركاء — الدولة والبنية التحتية، التقنية والسحابة، العلم والتعليم، GRC والاستدامة، التجارة ودخول الأسواق.",
+    intro: "نعمل عبر خمس مجموعات شركاء — الدولة والبنية التحتية، التقنية والسحابة، العلم والتعليم، الحوكمة والاستدامة، التجارة ودخول الأسواق.",
     spotlightHeading: "شركاء بارزون",
     logoHeading: "شركاء مختارون",
   },
@@ -1730,7 +1730,7 @@ const ar: DeepPartial<Dictionary> = {
     formSuccess: "شكرًا — سنعود إليك قريبًا.",
     audienceOptions: ["مستثمر", "شركة / حكومة", "مؤسّس / بحث وتطوير", "شريك", "أخرى"],
     directHeading: "أو تواصل مباشرة",
-    location: "ألماتي، كازاخستان",
+    location: "أستانا، كازاخستان",
     privacy: "بالإرسال أنت توافق على أن نتواصل معك. لا نُشارك البيانات مع جهات خارجية.",
   },
 };
@@ -1743,7 +1743,7 @@ const kk: DeepPartial<Dictionary> = {
   meta: {
     title: "NSART · Technology Interaction",
     description:
-      "Орталық Азиядан әлемге — терең технологиялық венчурлар. Қазақстан, Сауд Арабиясы және Африкадағы R&D, зияткерлік меншік және инвестициялық инфрақұрылым.",
+      "Орталық Азиядан әлемге — терең технологиялық компаниялар. Қазақстан, Сауд Арабиясы және Африкадағы R&D, зияткерлік меншік және инвестициялық инфрақұрылым.",
   },
   nav: {
     home: "Басты бет",
@@ -1773,9 +1773,9 @@ const kk: DeepPartial<Dictionary> = {
   },
   hero: {
     eyebrow: "NSART · Technology Interaction",
-    title: "Орталық Азиядан әлемге — терең технологиялық венчурлар.",
+    title: "Орталық Азиядан әлемге — терең технологиялық компаниялар.",
     subtitle:
-      "Қазақстан, Сауд Арабиясы және Африкадағы R&D, зияткерлік меншік және инвестициялық инфрақұрылым.",
+      "Қазақстанда, Сауд Арабиясында және Африкада R&D жүргіземіз, зияткерлік меншікті дамытамыз және инвестициялық инфрақұрылым саламыз.",
     ctaPrimary: "Жолыңызды таңдаңыз",
     ctaSecondary: "Miras акселераторы",
     stats: [
@@ -1788,12 +1788,12 @@ const kk: DeepPartial<Dictionary> = {
   technologies: {
     eyebrow: "Технологиялар",
     heading: "Терең технологияларды жобалаймыз, құрамыз және сертификаттаймыз.",
-    sub: "Егемен деректер орталықтарынан және ЖИ-есептеулерден GovTech платформаларына дейін — халықаралық стандарттар бойынша, аудитке жарамды.",
+    sub: "Тәуелсіз деректер орталықтарынан және ЖИ-есептеулерден GovTech платформаларына дейін — халықаралық стандарттар бойынша, аудитке жарамды.",
     items: [
-      { title: "Жасанды интеллект", text: "AI Agent Factory, мемлекеттік доменді агенттер, real-time деректер көлдеріндегі ML және егемен GPU-инфрақұрылымда ірі модельдерді оқыту." },
-      { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты жасыл есептеулер — NVIDIA H200 кластерлері, ашық экзафлопстық стектер, энергия тиімді дизайн." },
-      { title: "GovTech", text: "Электрондық үкіметтегі 20+ жыл тәжірибе масштабталатын модульдер ретінде — цифрлық сәйкестік, деректер алмасу, қағазсыз қызметтер." },
-      { title: "Деректер орталықтары", text: "Tamdy Cloud — Tier III/IV жобасы, PUE ~1,2, СПГ криогендік суыту және Орталық Азиядағы TIA-942 / Uptime көшбасшы тәжірибесі." },
+      { title: "Жасанды интеллект", text: "AI Agent Factory, мемлекеттік салаға арналған агенттер, real-time деректер көлдеріндегі ML және өзіміздің GPU-инфрақұрылымда ірі модельдерді оқыту." },
+      { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты жасыл есептеулер — NVIDIA H200 кластерлері, ашық стектер, энергия тиімді дизайн." },
+      { title: "GovTech", text: "Электрондық үкіметтегі 20 жылдан астам тәжірибе дайын модульдер ретінде — цифрлық ID, деректер алмасу, қағазсыз қызметтер." },
+      { title: "Деректер орталықтары", text: "Tamdy Cloud — Tier III/IV жобасы, PUE ~1,2, СПГ негізіндегі суыту және Орталық Азиядағы TIA-942 / Uptime көшбасшы тәжірибесі." },
     ],
   },
   verticals: {
@@ -1813,7 +1813,7 @@ const kk: DeepPartial<Dictionary> = {
     sub: "NSART әр жобада қолданатын төрт фреймворк — стратегиядан орындауға дейін.",
     items: [
       { n: "01", title: "Vision 3P", sub: "Стратегиялық көзқарас", text: "Конвой заңы бойынша — People, Process, Product.", tags: ["People", "Process", "Product"] },
-      { n: "02", title: "Venture Development", sub: "Интеграцияланған даму циклі", text: "Толық венчурлық цикл — идеядан масштабтауға дейін.", tags: ["Value Creation", "Value Protection", "Structuring", "Operations"] },
+      { n: "02", title: "Venture Development", sub: "Толық даму циклі", text: "Идеядан масштабтауға дейін — толық цикл.", tags: ["Value Creation", "Value Protection", "Structuring", "Operations"] },
       { n: "03", title: "GIST Planning", sub: "Икемді стратегиялық жоспарлау", text: "Ұзақ мерзімді мақсаттардан анық қадамдар мен орындауға дейін.", tags: ["Goals", "Ideas", "Steps", "Tasks"] },
       { n: "04", title: "CIVTI Assessment", sub: "Жобаларды бағалау жүйесі", text: "Құны, техникалық күрделілігі және инвестициясы бойынша идеяларды кешенді талдау.", tags: ["Current Ideas", "Value", "Complexity", "Investment"] },
     ],
@@ -1825,7 +1825,7 @@ const kk: DeepPartial<Dictionary> = {
       { period: "2007–2010", title: "Стратегиялық консалтинг және нарық зерттеулері" },
       { period: "2010–2015", title: "ПҚ әзірлеу және GovTech жобалары" },
       { period: "2015–2023", title: "Бизнес-шешімдер «кілт астына» және өнімдер жасау" },
-      { period: "2023–қазіргі уақыт", title: "Толық циклді венчурлік студия" },
+      { period: "2023–қазіргі уақыт", title: "Толық циклді венчурлік студия — идеядан кіріске дейін" },
     ],
   },
   products: {
@@ -1839,13 +1839,13 @@ const kk: DeepPartial<Dictionary> = {
   audience: {
     eyebrow: "Үш кіру нүктесі",
     heading: "Технологияны бағалау тәсіліңізге сай жасалған.",
-    sub: "Инвесторлар, клиенттер мен құрылтайшылар әртүрлі сенім сигналдарын іздейді. Өзіңізге сай жолды таңдаңыз.",
+    sub: "Инвесторларға, клиенттерге және құрылтайшыларға керегі әртүрлі. Өзіңізге сай жолды таңдаңыз.",
     cards: [
       {
         key: "investors",
         tag: "Инвесторларға",
-        title: "ТДМ-ге сай егемен терең технологиялар",
-        text: "ТДМ-ге сай терең технологиялар портфелі, Miras акселераторы, ESG және этикалық ЖИ қағидаттары.",
+        title: "ТДМ-ге сай тәуелсіз терең технологиялар",
+        text: "ТДМ-ге сай терең технологиялар портфелі, Miras акселераторы, ESG және этикалық ЖИ қағидалары.",
         href: "/investors",
         cta: "Инвестициялық стратегия",
       },
@@ -1853,7 +1853,7 @@ const kk: DeepPartial<Dictionary> = {
         key: "enterprise",
         tag: "Бизнес пен мемлекетке",
         title: "Стандарттарыңызға сай технологиялар",
-        text: "ЖИ, GovTech, ақылды инфрақұрылым және халықаралық стандарттармен сертификатталған егемен деректер орталықтары.",
+        text: "ЖИ, GovTech, ақылды инфрақұрылым және халықаралық стандарттармен сертификатталған тәуелсіз деректер орталықтары.",
         href: "/enterprise",
         cta: "Қызметтерді қарау",
       },
@@ -1861,7 +1861,7 @@ const kk: DeepPartial<Dictionary> = {
         key: "founders",
         tag: "Құрылтайшылар мен R&D",
         title: "Зерттеуден кіріске дейін",
-        text: "Зияткерлік меншіктің толық өмірлік циклі, бағалау және инвестицияға қолжетімділік — құрылтайшылар, университеттер мен R&D орталықтарына.",
+        text: "Зияткерлік меншікті қорғау, бағалау және инвестицияға жол ашу — құрылтайшылар, университеттер мен R&D орталықтарына.",
         href: "/founders",
         cta: "ЗМ бағалауы",
       },
@@ -1869,22 +1869,22 @@ const kk: DeepPartial<Dictionary> = {
   },
   mirasTeaser: {
     eyebrow: "Miras Accelerator",
-    heading: "Терең технологияларды коммерцияландыру инфрақұрылымы.",
-    text: "NSART пен PNOD-тың бірлескен кәсіпорны Miras жетілген технологияларға дайындық алшақтығын еңсеруге көмектеседі — терең технологиялар инженериясын басқару мен комплаенспен, ЗМ-нің толық өмірлік циклін сүйемелдеумен және инвестицияға жол ашумен ұштастырады.",
+    heading: "Терең технологияларды бизнеске айналдыратын инфрақұрылым.",
+    text: "Miras — NSART пен PNOD-тың бірлескен кәсіпорны. Ол жетілген технологияларды нарыққа шығаруға көмектеседі: инженерияны басқару мен талаптарға сай етуді, ЗМ қолдауын және инвестицияға жол ашуды бір орынға жинайды.",
     aligned: "Vision 2030, ОИС, Digital Cooperation Organization және БҰҰ ТДМ-ге сай.",
     cta: "Miras туралы",
   },
   cases: {
     eyebrow: "Уәде емес — дәлел",
     heading: "Таңдаулы жобалар, 2024–2025.",
-    sub: "Қазақстан, Сауд Арабиясы және одан тыс жерлердегі нақты жобалар — біздің ең күшті дәлеліміз.",
+    sub: "Қазақстандағы, Сауд Арабиясындағы және одан тыс жерлердегі нақты жобалар — біздің ең күшті дәлеліміз.",
     items: [
       {
         tag: "Жасыл есептеулер",
         title: "Tamdy Cloud",
         location: "Құрық АЭА, Маңғыстау · Tier III/IV жобасы",
         status: "Әзірленуде",
-        text: "Көршілес СПГ регазификация терминалының криогендік суығын негізгі суыту ретінде пайдаланатын жасыл энерго-цифрлық кластер — суытудың шекті құны нөлге жуық. Күн генерациясы біріктірілген газ-турбиналық станциядан қуат алады, жасыл облигациялар бойынша құрылымдалған.",
+        text: "Жасыл энерго-цифрлық кластер. Көршілес СПГ терминалының суығын негізгі суыту ретінде пайдаланады — суытуға қосымша шығын жоқтың қасы. Қуатын газ-турбиналы станциядан алады, оған күн станциясы қосылған; жасыл облигациялар бойынша құрылымдалған.",
         metrics: [
           { v: "10–100 МВт", l: "Жоспарлы IT-қуат" },
           { v: "PUE ~1,2", l: "Мақсатты тиімділік" },
@@ -1894,10 +1894,10 @@ const kk: DeepPartial<Dictionary> = {
       },
       {
         tag: "HPC және ЖИ",
-        title: "Егемен экзафлопстық есептеулер",
+        title: "Тәуелсіз экзафлопстық есептеулер",
         location: "Қазақстан · ашық стек",
         status: "Жұмыс істеп тұр",
-        text: "NVIDIA H200 SXM (HBM3e, 141 ГБ, 4,8 ТБ/с) NVLink 4.0 — оқыту мен инференске. Ашық экзафлопстық стек — Slurm + OpenMPI, ROCm/CUDA OSS, OpenStack, Lustre/GPFS — егемен, аудитке жарамды, vendor lock-in жоқ.",
+        text: "NVIDIA H200 SXM (HBM3e, 141 ГБ, 4,8 ТБ/с) NVLink 4.0 — оқыту мен инференске. Ашық стек — Slurm + OpenMPI, ROCm/CUDA OSS, OpenStack, Lustre/GPFS — тәуелсіз, аудитке жарамды, бір вендорға байлау жоқ.",
         metrics: [
           { v: "H200 SXM", l: "GPU басына 141 ГБ HBM3e" },
           { v: "4,8 ТБ/с", l: "Жад өткізу қабілеті" },
@@ -1910,7 +1910,7 @@ const kk: DeepPartial<Dictionary> = {
         title: "Saudi AI & GovTech Lab",
         location: "БК: NSART · NITEC · PNOD · King Saud University",
         status: "Әзірленуде",
-        text: "Vision 2030-ға сай: қайта пайдаланылатын доменді мемлекеттік агенттердің AI Agent Factory, 400+ ұлттық деректер базасы негізіндегі Smart Data Ukimet, белсенді Digital Family Card және мемлекеттік қызметкерлерге ЖИ мен деректер бойынша біліктілікті арттыру бағдарламасы.",
+        text: "Vision 2030-ға сай: мемлекеттік салаға арналған, қайта пайдаланылатын ЖИ агенттерінің AI Agent Factory; 400-ден астам ұлттық деректер базасы негізіндегі Smart Data Ukimet; белсенді Digital Family Card; мемлекеттік қызметкерлерге арналған ЖИ мен деректер бойынша оқыту бағдарламасы.",
         metrics: [
           { v: "400+", l: "Бірлестірілген ұлттық дерекқорлар" },
           { v: "Top-25", l: "БҰҰ e-Gov рейтингі (KZ)" },
@@ -1923,7 +1923,7 @@ const kk: DeepPartial<Dictionary> = {
         title: "Жаһандық GovTech экспорты",
         location: "NITEC + InfoTech (Пәкістан) · 3 өңір",
         status: "Белсенді",
-        text: "Деректер алмасу, цифрлық сәйкестік және қағазсыз мемлекеттік қызметтер Scalable Solution Modules арқылы үш өңірге экспортталады — оның ішінде Дүниежүзілік банк пен ADB тендерлеріне бірлесіп қатысу.",
+        text: "Деректер алмасу, цифрлық ID және қағазсыз мемлекеттік қызметтер үш өңірге Scalable Solution Modules арқылы экспортталады — Дүниежүзілік банк пен ADB тендерлеріне бірге қатысуды қоса.",
         metrics: [
           { v: "3 өңір", l: "Экспорт географиясы" },
           { v: "ДБ · ADB", l: "Бірлескен тендерлер" },
@@ -1936,30 +1936,30 @@ const kk: DeepPartial<Dictionary> = {
   markets: {
     eyebrow: "Нарықтар",
     heading: "Төрт өңірде жұмыс істейміз.",
-    sub: "Орталық Азия мен әлем арасындағы көпір — дамушы нарық сұранысы институционалдық капиталмен кездесетін жер.",
+    sub: "Орталық Азия мен әлем арасындағы көпір — дамушы нарық сұранысы ірі капиталмен кездесетін жер.",
     items: [
-      { name: "Орталық Азия", desc: "Қазақстандағы база — егемен HPC, GovTech және жасыл деректер орталықтары." },
-      { name: "MENA", desc: "Сауд Арабиясы — GovTech лабораториялары, Vision 2030 сәйкестігі, GRC серіктестіктері." },
+      { name: "Орталық Азия", desc: "Қазақстандағы база — тәуелсіз HPC, GovTech және жасыл деректер орталықтары." },
+      { name: "MENA", desc: "Сауд Арабиясы — GovTech лабораториялары, Vision 2030-ға сай, басқару және сәйкестік бойынша серіктестіктер." },
       { name: "Оңтүстік Азия", desc: "Пәкістан — GovTech экспорты, төлем шлюздары және сертификаттарды тарату." },
-      { name: "Африка", desc: "Дамушы нарықтардың инфрақұрылымы, ESG-инвестициялар және құзыреттіліктерді дамыту." },
+      { name: "Африка", desc: "Дамушы нарықтардың инфрақұрылымы, ESG-инвестициялар және мамандар дайындау." },
     ],
   },
   partners: {
     eyebrow: "Серіктестер",
     heading: "Мемлекеттер, ғылым және капитал экожүйесі.",
-    sub: "Рөлдер бойынша топтастырылған — мемлекеттік инфрақұрылымнан GRC, тұрақты даму мен нарықтарға шығуға дейін.",
+    sub: "Рөлдер бойынша топтастырылған — мемлекеттік инфрақұрылымнан басқару мен сәйкестікке, тұрақты дамуға және нарықтарға шығуға дейін.",
     groups: [
       { name: "Мемлекет және инфрақұрылым", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
       { name: "Технологиялар және бұлт", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
       { name: "Ғылым және білім (DeepTech)", members: ["King Saud University", "Қазақстан жоғары оқу орындары", "Artisan Education"] },
-      { name: "GRC, аудит және тұрақты даму", members: ["PNOD Auditing Co.", "MSTDAM"] },
+      { name: "Басқару, аудит және тұрақты даму", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "Сауда және нарықтарға шығу", members: ["QazTrade", "MENA серіктестері", "Оңтүстік Азия серіктестері", "Африка серіктестері"] },
     ],
     spotlight: [
-      { name: "PNOD Auditing Co.", role: "GRC, аудит және ЖИ басқару (14 жыл тәжірибе; ISO/IEC 42001), Сауд Арабиясының реттеуші ортасын терең білу. Miras Accelerator бірлескен кәсіпорнының тең құрылтайшысы." },
+      { name: "PNOD Auditing Co.", role: "Басқару, аудит және ЖИ-ні басқару (14 жыл тәжірибе; ISO/IEC 42001), Сауд Арабиясының реттеу ортасын жақсы біледі. Miras Accelerator бірлескен кәсіпорнының тең құрылтайшысы." },
       { name: "MSTDAM", role: "Экологиялық тұрақтылық платформасы — көміртегі ізін өлшеу, ағаш отырғызу, ESG есептілігі (Сауд Арабиясы). «Жасыл» күн тәртібі мен ESG бойынша серіктес." },
-      { name: "NITEC", role: "Ұлттық ақпараттық технологиялар — Қазақстанның электрондық үкімет сервистері мен цифрлық сәйкестік инфрақұрылымының мемлекеттік операторы." },
-      { name: "King Saud University", role: "Сауд Арабиясындағы DeepTech зерттеулер, бірлескен R&D және Saudi AI & GovTech Lab бойынша негізгі академиялық серіктес." },
+      { name: "NITEC", role: "Ұлттық ақпараттық технологиялар — Қазақстанның электрондық үкімет сервистері мен цифрлық ID инфрақұрылымының мемлекеттік операторы." },
+      { name: "King Saud University", role: "Сауд Арабиясындағы терең технологиялар бойынша зерттеулер, бірлескен R&D және Saudi AI & GovTech Lab бойынша негізгі академиялық серіктес." },
     ],
   },
   certifications: {
@@ -1988,7 +1988,7 @@ const kk: DeepPartial<Dictionary> = {
     emailLabel: "Бізге жазыңыз",
   },
   footer: {
-    tagline: "Орталық Азиядан әлемге — терең технологиялық венчурлар.",
+    tagline: "Орталық Азиядан әлемге — терең технологиялық компаниялар.",
     company: "Компания",
     audiences: "Аудиториялар",
     contactTitle: "Байланыс",
@@ -1996,14 +1996,14 @@ const kk: DeepPartial<Dictionary> = {
   },
   investorsPage: {
     badge: "Институционалдық және импакт-инвесторларға",
-    title: "ТДМ-ге сай егемен терең технологиялық инфрақұрылымға инвестиция салыңыз.",
+    title: "ТДМ-ге сай тәуелсіз терең технологиялық инфрақұрылымға инвестиция салыңыз.",
     intro:
-      "Біз дамушы нарықтардағы жасыл деректер орталықтарына, ЖИ есептеулеріне және GovTech-ке инвестицияларды құрылымдап, тәуекелін азайтамыз — ESG, этикалық ЖИ және халықаралық сертификаттау қағидаттарына негізделген. Miras акселераторы — капитал тарту үшін арнайы құралымыз.",
+      "Біз дамушы нарықтардағы жасыл деректер орталықтарына, ЖИ есептеулеріне және GovTech-ке инвестицияларды құрылымдаймыз және тәуекелін азайтамыз — ESG, этикалық ЖИ және халықаралық сертификаттарға сай. Miras акселераторы — капитал тарту үшін арнайы құралымыз.",
     ctas: ["Инвестициялық стратегия", "Miras акселераторы", "ESG-брифті поштамен сұрау"],
     audienceNote: "IsDB, EBRD, ADB, Дүниежүзілік банк, БҰҰ қорлары және жеке импакт-инвесторларға арналған.",
     sdg: {
       heading: "БҰҰ-ның Тұрақты даму мақсаттарына сай",
-      sub: "NSART және Miras акселераторы танылған мандаттардың қиылысында — қаржылық параметрлерді ашпай ТДМ-ге байланыс.",
+      sub: "NSART және Miras акселераторы танылған мандаттардың қиылысында тұр — қаржы көрсеткіштерін ашпай-ақ ТДМ-ге байланысын көрсетуге болады.",
       items: [
         { goal: "ТДМ 4 және 9", desc: "Білім, технология, өнеркәсіп пен инновация — инженерлерді даярлау, технология трансфері." },
         { goal: "ТДМ 7 және 13", desc: "Таза энергия мен климат — жасыл дата-орталық, күн генерациясы, көміртегі ізін азайту." },
@@ -2016,29 +2016,29 @@ const kk: DeepPartial<Dictionary> = {
       heading: "ESG және жасыл қаржыландыру",
       sub: "Даму банктерінің тікелей тілі.",
       points: [
-        { title: "Tamdy Cloud, PUE ~1,2", text: "СПГ криогендік суығы негізгі суыту ретінде, біріктірілген күн генерациясы." },
-        { title: "Жасыл облигацияларға дайын", text: "Green bonds және даму банктерінің мандаттарына құрылымдалған." },
-        { title: "Этикалық ЖИ және құпиялылық", text: "Ашықтық, бейтараптық, адам бақылауы; GDPR логикасында деректерді өңдеу." },
-        { title: "Егемен ашық стектер", text: "Аудитке жарамды, vendor lock-in жоқ." },
+        { title: "Tamdy Cloud, PUE ~1,2", text: "Негізгі суыту — СПГ суығы; күн станциясы қосылған." },
+        { title: "Жасыл облигацияларға дайын", text: "Green bonds және даму банктерінің талаптарына сай құрылымдалған." },
+        { title: "Этикалық ЖИ және құпиялылық", text: "Ашықтық, бейтараптық, адам бақылауы; деректерді GDPR қағидалары бойынша өңдеу." },
+        { title: "Тәуелсіз ашық стектер", text: "Аудитке жарамды, бір вендорға байлау жоқ." },
       ],
     },
     metricsHeading: "Сандар",
-    cta: { heading: "Инвестициялық материалдарды сұраңыз", text: "One-pager және дек поштамен. Құпия параметрлер онлайн жарияланбайды.", button: "Инвест-командамен байланысу" },
+    cta: { heading: "Инвестициялық материалдарды сұраңыз", text: "One-pager және питч-дек поштамен. Құпия көрсеткіштер онлайн жарияланбайды.", button: "Инвест-командамен байланысу" },
   },
   enterprisePage: {
     badge: "Жеке және мемлекеттік секторға",
     title: "Сіздің стандарттарыңызға сай технологиялар — ұлттық және халықаралық.",
     intro:
-      "Егемен деректер орталықтары мен ЖИ есептеулерінен GovTech платформаларына дейін — біз мемлекеттік және жеке сектор үшін технологияларды жобалаймыз, құрамыз және сертификаттаймыз, сондай-ақ жаңа әзірлемелерді тауып, бағалап, процестеріңізге енгіземіз.",
+      "Тәуелсіз деректер орталықтары мен ЖИ есептеулерінен GovTech платформаларына дейін — мемлекеттік және жеке секторға арналған технологияларды жобалаймыз, құрамыз және сертификаттаймыз. Жаңа әзірлемелерді тауып, бағалап, процестеріңізге енгіземіз.",
     ctas: ["Технологиялық аудит сұрау", "Пилот бастау", "ЖИ қызметтері"],
     services: {
       heading: "Қызметтер каталогы",
       items: [
-        { title: "ЖИ-жүйелер", text: "Доменді агенттер, ML және егемен есептеулердегі шешім қабылдау жүйелері." },
-        { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты энергия тиімді есептеулер мен байланыс." },
-        { title: "GovTech", text: "Цифрлық сәйкестік, деректер алмасу және қағазсыз қызметтер." },
+        { title: "ЖИ-жүйелер", text: "Салалық агенттер, ML және тәуелсіз есептеулердегі шешім қабылдау жүйелері." },
+        { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты, энергия тиімді есептеулер мен байланыс." },
+        { title: "GovTech", text: "Цифрлық ID, деректер алмасу және қағазсыз қызметтер." },
         { title: "Деректер орталығын сертификаттау", text: "TIA-942 және Uptime Tier III/IV — толық цикл." },
-        { title: "Корпоративтік инновация", text: "Технологиялық скаутинг және процестерге интеграция." },
+        { title: "Корпоративтік инновация", text: "Жаңа технологияларды табу және процестерге енгізу." },
         { title: "SpaceTech / NajmSat", text: "Ерекше ғарыштық құзыреттілік — спутниктік және жердегі жүйелер." },
       ],
     },
@@ -2047,16 +2047,16 @@ const kk: DeepPartial<Dictionary> = {
       items: ["ISO 9001", "ISO 14001", "ISO 10015", "TIA-942", "Uptime Tier III/IV", "ҚР техрегламенттеуі", "GDPR логикасындағы деректер"],
     },
     scouting: {
-      heading: "Технологиялық скаутингтің үш қадамы",
+      heading: "Жаңа технологияны табудың үш қадамы",
       steps: [
-        { n: "01", title: "Скаутинг", text: "Процестеріңізге қатысты жаңа технологияларды табу." },
-        { n: "02", title: "Бағалау (CIVTI)", text: "Біздің әдіснамамызбен сәйкестікті, дайындықты және әсерді бағалау." },
-        { n: "03", title: "Интеграция", text: "Тексерілген инновацияларды процестер мен жүйелерге енгізу." },
+        { n: "01", title: "Скаутинг", text: "Процестеріңізге қатысты жаңа технологияларды табамыз." },
+        { n: "02", title: "Бағалау (CIVTI)", text: "Әдіснамамызбен сәйкестікті, дайындықты және әсерді бағалаймыз." },
+        { n: "03", title: "Интеграция", text: "Тексерілген технологияны процестер мен жүйелеріңізге енгіземіз." },
       ],
     },
     pilot: {
       heading: "Қол жетімді пилот",
-      text: "6–8 аптада PoC және анық scope-of-work үлгісі — міндеттемелер алғанға дейін тексеру.",
+      text: "6–8 аптада PoC және анық scope-of-work — ірі міндеттемеге дейін тексеру.",
       button: "Пилот бастау",
     },
   },
@@ -2064,16 +2064,16 @@ const kk: DeepPartial<Dictionary> = {
     badge: "Құрылтайшылар, университеттер мен R&D орталықтарына",
     title: "Зерттеуден кіріске дейін — материалдық емес активтеріңізді қорғаңыз, бағалаңыз және дамытыңыз.",
     intro:
-      "Стартаптар, тұрақты компаниялар, университеттер мен R&D орталықтары үшін: біз зияткерлік меншіктің толық өмірлік циклін жүргіземіз — бағалау, қорғау және құнын анықтау — әрі Miras акселераторы арқылы инвестиция мен бизнесті дамытуға жол ашамыз.",
+      "Стартаптар, тұрақты компаниялар, университеттер мен R&D орталықтары үшін: зияткерлік меншіктің толық циклін жүргіземіз — бағалау, қорғау және құнын анықтау. Miras акселераторы арқылы инвестиция мен бизнесті дамытуға жол ашамыз.",
     ctas: ["ЗМ бағалауы", "Miras акселераторына өтінім", "Командамен байланысу"],
     lifecycle: {
       heading: "ЗМ-нің өмірлік циклі",
-      sub: "Төрт қадам және NSART әрқайсысында не істейді.",
+      sub: "Төрт қадам және әр қадамда NSART не істейді.",
       steps: [
-        { n: "1", title: "Бағалау", text: "Активтер аудиті және дайындық скоринг — TRL / CRL / MRL — қорғалатын объектілерді анықтау." },
-        { n: "2", title: "Қорғау", text: "Патенттер, тауар таңбалары, ноу-хау, ПҚ тіркеу, бірнеше юрисдикциядағы стратегия." },
+        { n: "1", title: "Бағалау", text: "Активтер аудиті және дайындықты бағалау — TRL / CRL / MRL. Нені қорғау керектігін анықтаймыз." },
+        { n: "2", title: "Қорғау", text: "Патенттер, тауар таңбалары, ноу-хау, ПҚ тіркеу — бірнеше елде." },
         { n: "3", title: "Құны", text: "DCF және нарықтық аналогтар әдістерімен материалдық емес активтерді бағалау." },
-        { n: "4", title: "Монетизация", text: "Лицензиялау, мәмілелерді құрылымдау және Miras акселераторы арқылы инвестицияға жол." },
+        { n: "4", title: "Кіріске айналдыру", text: "Лицензиялау, мәмілелерді құрылымдау және Miras акселераторы арқылы инвестицияға жол ашу." },
       ],
     },
     assets: {
@@ -2082,7 +2082,7 @@ const kk: DeepPartial<Dictionary> = {
     },
     university: {
       heading: "Университеттер мен R&D орталықтарына арналған жеке трек",
-      text: "DeepTech origin — технология трансфері, ғылымнан спин-офф, зерттеу нәтижелерін қорғау және коммерцияландыру.",
+      text: "Біздің бастауымыз — терең технологиялар: технология трансфері, ғылымнан спин-офф, зерттеу нәтижелерін қорғау және бизнеске айналдыру.",
       anchors: "Якорь серіктестер: King Saud University (Сауд Арабиясы) және Қазақстанның ғылыми институттары мен жоғары оқу орындары.",
     },
     form: {
@@ -2100,44 +2100,44 @@ const kk: DeepPartial<Dictionary> = {
   },
   mirasPage: {
     badge: "Бірлескен кәсіпорын · NSART × PNOD",
-    title: "Miras Accelerator — терең технологияларды коммерцияландыру инфрақұрылымы.",
+    title: "Miras Accelerator — терең технологияларды бизнеске айналдыратын инфрақұрылым.",
     intro:
-      "NSART пен PNOD-тың бірлескен кәсіпорны Miras жетілген технологияларға дайындық алшақтығын еңсеруге көмектеседі — терең технологиялар инженериясын басқару мен комплаенспен, ЗМ-нің толық өмірлік циклін сүйемелдеумен және инвестицияға жол ашумен ұштастырады; Vision 2030, ОИС және БҰҰ ТДМ-ге сай.",
+      "Miras — NSART пен PNOD-тың бірлескен кәсіпорны. Ол жетілген технологияларды нарыққа шығаруға көмектеседі: инженерияны басқару мен талаптарға сай етуді, ЗМ қолдауын және инвестицияға жол ашуды бір орынға жинайды. Vision 2030, ОИС және БҰҰ ТДМ-ге сай.",
     ctas: ["Miras туралы", "Трекке өтінім", "Серіктес болу"],
     problem: {
       heading: "Miras қандай алшақтықты жабады",
-      text: "Технология ғылыми тұрғыда жетілген болуы мүмкін, бірақ ұйымда енгізу үшін коммерциялық, реттеуші және өндірістік инфрақұрылым жетіспейді. Miras осы алшақтықты үш өлшемді дайындық моделі арқылы жабады.",
+      text: "Технология ғылыми жағынан дайын болуы мүмкін, бірақ оны ұйымға енгізу үшін коммерциялық, реттеу және өндіріс жағынан дайындық жетіспейді. Miras осы алшақтықты үш өлшемді дайындық моделі арқылы жабады.",
       dims: [
         { code: "TRL", title: "Технологиялық дайындық", q: "Технология қажетті ауқымда дәлелденген бе?" },
-        { code: "CRL", title: "Коммерциялық дайындық", q: "Кіріске, баға белгілеуге және келісімшарт моделіне жол бар ма?" },
+        { code: "CRL", title: "Коммерциялық дайындық", q: "Кіріс, баға және келісімшарт моделі бар ма?" },
         { code: "MRL", title: "Өндірістік дайындық", q: "Өнімді шығаруға, сертификаттауға және жеткізуге бола ма?" },
       ],
     },
     tracks: {
       heading: "Үш трек",
       items: [
-        { n: "Трек 1", title: "Deep-Tech Cohort", text: "Командаларды диагностикадан инвестицияға дайындыққа және демо-күнге жеделдету." },
-        { n: "Трек 2", title: "Regulatory Sandbox", text: "Реттелетін ортада шешімдерді тестілеу — CleanTech, GovTech, агенттік ЖИ, дата-маркетплейс — егемен GPU-инфрақұрылымда." },
-        { n: "Трек 3", title: "IP Portfolio & Founders", text: "ЗМ-нің толық өмірлік циклі және құрылтайшыларды дамыту — диагностикадан лицензиялауға және ЗМ дүкеніне дейін." },
+        { n: "Трек 1", title: "Deep-Tech Cohort", text: "Командаларды диагностикадан инвестицияға дайындыққа және демо-күнге жеделдетеміз." },
+        { n: "Трек 2", title: "Regulatory Sandbox", text: "Реттелетін ортада шешімдерді тестілейміз — CleanTech, GovTech, агенттік ЖИ, дата-маркетплейс — өзіміздің GPU-инфрақұрылымда." },
+        { n: "Трек 3", title: "IP Portfolio & Founders", text: "ЗМ толық циклі және құрылтайшыларды дамыту — диагностикадан лицензиялауға және ЗМ дүкеніне дейін." },
       ],
     },
     positioning: {
       heading: "Стратегиялық позициялау",
-      text: "Miras танылған мандаттардың қиылысында құрылған — Vision 2030, ОИС, Digital Cooperation Organization және БҰҰ ТДМ. Бұл — даму институттарына түсінікті тіл, оны коммерциялық параметрлерді ашпай қолдануға болады.",
+      text: "Miras танылған мандаттардың қиылысында құрылған — Vision 2030, ОИС, Digital Cooperation Organization және БҰҰ ТДМ. Бұл — даму институттарына түсінікті тіл, оны коммерциялық көрсеткіштерді ашпай қолдануға болады.",
     },
-    confidential: "Құпиялылық: бөлім жалпыға қолжетімді деңгейде ұсталады. Бюджеттер, қорлардың мақсатты сомалары, басшылар мен кеңесшілердің есімдері, нақты инвесторлар және мемлекеттік органдарға өтініш беру егжей-тегжейлері — ішкі деректер.",
+    confidential: "Құпиялылық: бөлім жалпыға қолжетімді деңгейде ұсталады. Бюджеттер, қорлардың мақсатты сомалары, басшылар мен кеңесшілердің есімдері, нақты инвесторлар және мемлекеттік органдарға өтініштер — ішкі деректер.",
   },
   aboutPage: {
     badge: "Компания туралы",
-    title: "Біз DeepTech идеяларын нақты бизнеске айналдырамыз.",
+    title: "Біз терең технологиялардың идеяларын нақты бизнеске айналдырамыз.",
     intro:
-      "NSART — DeepTech жобаларына маманданған венчурлік студия: инвестициялық мүмкіндіктерді табу, стратегиялық серіктестіктер құру, венчурларды құрылымдау және Орталық Азия, MENA, Оңтүстік Азия мен Африка нарықтарына шығу.",
+      "NSART — терең технологияларға маманданған венчурлік студия: инвестициялық мүмкіндіктерді табамыз, стратегиялық серіктестіктер құрамыз, компанияларды құрылымдаймыз және Орталық Азия, MENA, Оңтүстік Азия мен Африка нарықтарына шығарамыз.",
     missionHeading: "Біздің миссия",
-    missionText: "Ғылым мен коммерцияны байланыстыру — жетілген зерттеулерді алып, оларды венчурға дайын компаниялар ретінде құрылымдау және халықаралық капитал мен институционалдық мандаттарға қосу.",
+    missionText: "Ғылым мен бизнесті байланыстыру — жетілген зерттеулерді алып, оларды нақты компанияларға айналдыру және халықаралық капитал мен ірі мандаттарға қосу.",
     valuesHeading: "Біз қандай қағидаларды ұстанамыз",
     values: [
-      { title: "Дизайн бойынша егемен", text: "Ашық стектер, vendor lock-in жоқ, реттеушілер мен инвесторлар үшін аудитке жарамды." },
-      { title: "Сөзден гөрі дәлел", text: "Әр бекіту сертификатпен, метрикамен немесе енгізілген кейспен расталған." },
+      { title: "Бастапқыдан тәуелсіз", text: "Ашық стектер, бір вендорға байлау жоқ, реттеушілер мен инвесторлар үшін аудитке жарамды." },
+      { title: "Сөзден гөрі дәлел", text: "Әр пікір сертификатпен, метрикамен немесе енгізілген кейспен расталған." },
       { title: "Жаһандық мандаттарға сай", text: "ТДМ, ESG, даму банктерінің капиталына дайын." },
       { title: "Әдепкі бойынша көптілді", text: "EN · AR · RU · KK — біз жұмыс істейтін нарықтар үшін." },
     ],
@@ -2145,56 +2145,56 @@ const kk: DeepPartial<Dictionary> = {
   technologiesPage: {
     badge: "Технологиялық стек",
     title: "Терең технологиялар — жобаланған және сертификатталған.",
-    intro: "Егемен дата-орталықтары мен ЖИ-есептеулерден GovTech және ақылды инфрақұрылымға дейін — халықаралық стандарттар бойынша, ұштан-ұшқа аудитке жарамды.",
+    intro: "Тәуелсіз дата-орталықтары мен ЖИ-есептеулерден GovTech және ақылды инфрақұрылымға дейін — халықаралық стандарттар бойынша, ұштан-ұшқа аудитке жарамды.",
     pillars: [
-      { title: "Жасанды интеллект", text: "AI Agent Factory, доменді мемлекеттік агенттер, real-time деректер көлдеріндегі ML, егемен GPU-инфрақұрылымда ірі модельдерді оқыту.", items: ["Agent Factory", "Доменді LLM", "Real-time ML", "Егемен GPU"] },
+      { title: "Жасанды интеллект", text: "AI Agent Factory, мемлекеттік салаға арналған агенттер, real-time деректер көлдеріндегі ML, өзіміздің GPU-инфрақұрылымда ірі модельдерді оқыту.", items: ["Agent Factory", "Салалық LLM", "Real-time ML", "Тәуелсіз GPU"] },
       { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты есептеулер, AIoT және M2M желілері, цифрлық егіздер платформалары мен қалалық байланыс.", items: ["AIoT және M2M", "Цифрлық егіздер", "Smart Field", "Энергия тиімді дизайн"] },
-      { title: "GovTech", text: "Электрондық үкіметтегі 20+ жыл тәжірибе модульдер ретінде: цифрлық сәйкестік, деректер алмасу, қағазсыз қызметтер, киберқауіпсіздік.", items: ["e-Gov", "Цифрлық ID", "Деректер алмасу", "Киберқауіпсіздік"] },
-      { title: "Дата-орталықтар", text: "Tamdy Cloud — Tier III/IV жобасы, PUE ~1,2, СПГ криогендік суыту, Орталық Азиядағы көшбасшы TIA-942 / Uptime тәжірибе.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "СПГ криогендік суыту"] },
+      { title: "GovTech", text: "Электрондық үкіметтегі 20 жылдан астам тәжірибе модульдер ретінде: цифрлық ID, деректер алмасу, қағазсыз қызметтер, киберқауіпсіздік.", items: ["e-Gov", "Цифрлық ID", "Деректер алмасу", "Киберқауіпсіздік"] },
+      { title: "Дата-орталықтар", text: "Tamdy Cloud — Tier III/IV жобасы, PUE ~1,2, СПГ негізіндегі суыту, Орталық Азиядағы көшбасшы TIA-942 / Uptime тәжірибе.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "СПГ негізіндегі суыту"] },
     ],
   },
   ipPage: {
     badge: "Зияткерлік меншік және материалдық емес активтер",
-    title: "Активтеріңізді қорғаңыз, бағалаңыз және монетизациялаңыз.",
-    intro: "ЗМ-нің толық өмірлік циклін сүйемелдеу — ПҚ, цифрлық сервистер, R&D нәтижелері, агроөнеркәсіптік кешендер, ғарыштық технологиялар.",
-    lifecycleHeading: "ЗМ-нің өмірлік циклі",
+    title: "Активтеріңізді қорғаңыз, бағалаңыз және кіріске айналдырыңыз.",
+    intro: "ЗМ толық циклін сүйемелдейміз — ПҚ, цифрлық сервистер, R&D нәтижелері, агроөнеркәсіптік кешендер, ғарыштық технологиялар.",
+    lifecycleHeading: "ЗМ толық циклі",
     steps: [
-      { n: "1", title: "Бағалау", text: "Активтер аудиті және дайындық скоринг (TRL / CRL / MRL); қорғалатын объектілерді анықтау." },
-      { n: "2", title: "Қорғау", text: "Патенттер, тауар таңбалары, ноу-хау, ПҚ тіркеу, бірнеше юрисдикциядағы стратегия." },
+      { n: "1", title: "Бағалау", text: "Активтер аудиті және дайындықты бағалау (TRL / CRL / MRL); нені қорғау керектігін анықтаймыз." },
+      { n: "2", title: "Қорғау", text: "Патенттер, тауар таңбалары, ноу-хау, ПҚ тіркеу — бірнеше елде." },
       { n: "3", title: "Құны", text: "DCF және нарықтық аналогтар әдістерімен бағалау — мәмілелер, қаражат тарту, серіктестіктер үшін." },
-      { n: "4", title: "Монетизация", text: "Лицензиялау, мәмілелерді құрылымдау және Miras акселераторы арқылы инвестицияға жол." },
+      { n: "4", title: "Кіріске айналдыру", text: "Лицензиялау, мәмілелерді құрылымдау және Miras акселераторы арқылы инвестицияға жол ашу." },
     ],
     assetsHeading: "Біз жұмыс істейтін актив түрлері",
     assets: ["ПҚ", "Цифрлық сервистер", "R&D нәтижелері", "Агроөнеркәсіптік кешендер", "Ғарыштық технологиялар"],
     ctaHeading: "Активтеріңізді келесі кезеңге шығарыңыз.",
-    ctaText: "ЗМ бағалауынан бастаңыз — біз портфельді картаға саламыз және қорғау мен монетизация жолын ұсынамыз.",
+    ctaText: "ЗМ бағалауынан бастаңыз — біз портфельді картаға саламыз және қорғау мен кіріске айналдыру жолын ұсынамыз.",
     ctaButton: "ЗМ бағалауын алу",
   },
   marketsPage: {
     badge: "Жұмыс географиясы",
     title: "Төрт өңір. Бір көпір.",
-    intro: "NSART дамушы нарықтардың сұранысы мен институционалдық капиталдың қиылысында жұмыс істейді — Орталық Азия базасы ретінде, Сауд Арабиясы мен MENA өсу дәлізі, Оңтүстік Азия мен Африка кеңею шегі.",
+    intro: "NSART дамушы нарықтардың сұранысы мен ірі капиталдың қиылысында жұмыс істейді — Орталық Азия базасы ретінде, Сауд Арабиясы мен MENA өсу дәлізі, Оңтүстік Азия мен Африка кеңею шегі.",
     regionsHeading: "Өңірлер",
     regions: [
-      { name: "Орталық Азия", kicker: "База", desc: "Қазақстан: егемен HPC, GovTech референс, жасыл деректер орталықтары. Электрондық үкіметтегі 20+ жыл тәжірибе, БҰҰ Top-25." },
-      { name: "MENA", kicker: "Өсу дәлізі", desc: "Сауд Арабиясы: Vision 2030-ға сай GovTech лабораториялары, PNOD-пен GRC-серіктестіктер, Miras Accelerator БК." },
+      { name: "Орталық Азия", kicker: "База", desc: "Қазақстан: тәуелсіз HPC, GovTech референс, жасыл деректер орталықтары. Электрондық үкіметтегі 20 жылдан астам тәжірибе, БҰҰ Top-25." },
+      { name: "MENA", kicker: "Өсу дәлізі", desc: "Сауд Арабиясы: Vision 2030-ға сай GovTech лабораториялары, PNOD-пен басқару және сәйкестік бойынша серіктестіктер, Miras Accelerator БК." },
       { name: "Оңтүстік Азия", kicker: "Кеңею", desc: "Пәкістан: NITEC + InfoTech-пен GovTech экспорты, Pixel DMC арқылы төлем шлюздері, сертификаттарды тарату." },
-      { name: "Африка", kicker: "Шек", desc: "Дамушы нарықтардың инфрақұрылымы, ESG-инвестициялар, құзыреттілікті дамыту, үкіметтер үшін Scalable Solution Modules." },
+      { name: "Африка", kicker: "Шек", desc: "Дамушы нарықтардың инфрақұрылымы, ESG-инвестициялар, мамандар дайындау, үкіметтер үшін Scalable Solution Modules." },
     ],
     gatewayHeading: "NSART Gateway",
-    gatewayText: "Орталық Азия, Оңтүстік Азия, MENA және Африка нарықтарына шығу үшін арнайы өнім — жергілікті болу, реттеуші навигация және серіктестер экожүйелері.",
+    gatewayText: "Орталық Азия, Оңтүстік Азия, MENA және Африка нарықтарына шығу үшін арнайы өнім — жергілікті өкілдік, реттеу мәселелерін шешу және серіктестер экожүйесі.",
   },
   partnersPage: {
     badge: "Экожүйе",
     title: "Мемлекеттер, ғылым және капитал экожүйесі.",
-    intro: "Біз бес серіктес тобымен жұмыс істейміз — мемлекет пен инфрақұрылым, технология мен бұлт, ғылым мен білім, GRC және тұрақты даму, сауда мен нарықтарға шығу.",
+    intro: "Біз бес серіктес тобымен жұмыс істейміз — мемлекет пен инфрақұрылым, технология мен бұлт, ғылым мен білім, басқару мен тұрақты даму, сауда мен нарықтарға шығу.",
     spotlightHeading: "Негізгі серіктестер",
     logoHeading: "Таңдаулы серіктестер",
   },
   contactPage: {
     badge: "Байланыс",
     title: "Өзіңізге сай әңгімені бастаңыз.",
-    intro: "Инвесторлар, бизнес пен мемлекет, құрылтайшылар мен R&D үшін бөлек жолдар. Екі жұмыс күні ішінде жауап береміз.",
+    intro: "Инвесторларға, бизнеске және мемлекетке, құрылтайшылар мен R&D-ге бөлек жолдар бар. Екі жұмыс күні ішінде жауап береміз.",
     formHeading: "Хабарлама жіберіңіз",
     formName: "Аты-жөні",
     formEmail: "Email",
@@ -2205,7 +2205,7 @@ const kk: DeepPartial<Dictionary> = {
     formSuccess: "Рақмет — біз сізге жақын арада хабарласамыз.",
     audienceOptions: ["Инвестор", "Бизнес / Мемлекет", "Құрылтайшы / R&D", "Серіктес", "Басқа"],
     directHeading: "Немесе тікелей байланыс",
-    location: "Алматы, Қазақстан",
+    location: "Астана, Қазақстан",
     privacy: "Жіберу арқылы біздің сізбен байланысуымызға келісім бересіз. Деректерді үшінші тұлғаларға бермейміз.",
   },
 };
