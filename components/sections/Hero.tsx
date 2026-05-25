@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
-import { HeroOrbit } from "./HeroOrbit";
+import { HeroInfrastructure } from "./HeroInfrastructure";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -90,7 +90,7 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.2, ease }}
             className="relative mx-auto w-full max-w-md lg:max-w-none"
           >
-            <HeroOrbit />
+            <HeroInfrastructure />
           </motion.div>
         </div>
 
