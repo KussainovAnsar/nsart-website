@@ -103,7 +103,7 @@ const en = {
       },
       {
         title: "Data Centers",
-        text: "Tamdy Cloud — Tier III/IV design, PUE ~1.2, LNG-based cooling, and the leading TIA-942 / Uptime expertise in Central Asia.",
+        text: "AI & Green cloud — Tier III/IV design, PUE ~1.2, LNG-based cooling, and the leading TIA-942 / Uptime expertise in Central Asia.",
       },
     ],
   },
@@ -121,7 +121,7 @@ const en = {
     items: [
       {
         tag: "Green compute",
-        title: "Tamdy Cloud",
+        title: "AI & Green cloud",
         location: "Kuryk SEZ, Mangystau · Tier III/IV design",
         status: "In development",
         text: "A green energy-and-data cluster. It uses cold from a nearby LNG terminal for cooling, so cooling costs almost nothing. Powered by a gas-turbine plant with solar, and set up for green-bond financing.",
@@ -382,7 +382,7 @@ const en = {
       heading: "ESG & green finance",
       sub: "The direct language of development banks.",
       points: [
-        { title: "Tamdy Cloud, PUE ~1.2", text: "LNG-based cooling as the main system, with built-in solar power." },
+        { title: "AI & Green cloud, PUE ~1.2", text: "LNG-based cooling as the main system, with built-in solar power." },
         { title: "Green-bond ready", text: "Set up for green-bond financing and development-bank funding." },
         { title: "Ethical AI & privacy", text: "Transparent, no bias, human oversight; GDPR-style data handling." },
         { title: "Independent, open systems", text: "Auditable, with no vendor lock-in." },
@@ -511,7 +511,7 @@ const en = {
       },
       {
         title: "Data Centers",
-        text: "Tamdy Cloud — Tier III/IV design, PUE ~1.2, LNG-based cooling, and the leading TIA-942 / Uptime expertise in Central Asia.",
+        text: "AI & Green cloud — Tier III/IV design, PUE ~1.2, LNG-based cooling, and the leading TIA-942 / Uptime expertise in Central Asia.",
         items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1.2", "LNG-based cooling"],
       },
     ],
@@ -750,7 +750,7 @@ const ru: Dictionary = {
       },
       {
         title: "Дата-центры",
-        text: "Tamdy Cloud — проект под Tier III/IV, PUE ~1,2, охлаждение на СПГ и лидирующая в ЦА экспертиза TIA-942 / Uptime.",
+        text: "AI & Green cloud — проект под Tier III/IV, PUE ~1,2, охлаждение на СПГ и лидирующая в ЦА экспертиза TIA-942 / Uptime.",
       },
     ],
   },
@@ -768,7 +768,7 @@ const ru: Dictionary = {
     items: [
       {
         tag: "Зелёные вычисления",
-        title: "Tamdy Cloud",
+        title: "AI & Green cloud",
         location: "СЭЗ «Курык», Мангистау · проект под Tier III/IV",
         status: "В разработке",
         text: "Зелёный энерго-цифровой кластер. Он использует холод соседнего СПГ-терминала для охлаждения, поэтому охлаждение почти ничего не стоит. Питание — газотурбинная станция с солнечной генерацией; проект подготовлен под зелёные облигации.",
@@ -1027,7 +1027,7 @@ const ru: Dictionary = {
       heading: "ESG и зелёное финансирование",
       sub: "Прямой язык банков развития.",
       points: [
-        { title: "Tamdy Cloud, PUE ~1,2", text: "Охлаждение на СПГ как основная система, со встроенной солнечной генерацией." },
+        { title: "AI & Green cloud, PUE ~1,2", text: "Охлаждение на СПГ как основная система, со встроенной солнечной генерацией." },
         { title: "Готовность к зелёным облигациям", text: "Подготовлено под зелёные облигации и финансирование банков развития." },
         { title: "Этичный ИИ и приватность", text: "Прозрачность, отсутствие предвзятости, человеческий контроль; обработка данных в логике GDPR." },
         { title: "Независимые открытые системы", text: "Аудируемо, без привязки к вендору." },
@@ -1148,7 +1148,7 @@ const ru: Dictionary = {
       },
       {
         title: "Дата-центры",
-        text: "Tamdy Cloud — проект под Tier III/IV, PUE ~1,2, охлаждение на СПГ и лидирующая в Центральной Азии экспертиза TIA-942 / Uptime.",
+        text: "AI & Green cloud — проект под Tier III/IV, PUE ~1,2, охлаждение на СПГ и лидирующая в Центральной Азии экспертиза TIA-942 / Uptime.",
         items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "Охлаждение на СПГ"],
       },
     ],
@@ -1318,7 +1318,7 @@ const ar: DeepPartial<Dictionary> = {
       { title: "الذكاء الاصطناعي", text: "مصنع وكلاء الذكاء الاصطناعي، وكلاء حكوميون متخصّصون، تعلّم آلي على بحيرات بيانات لحظية، وتدريب نماذج كبيرة على بنية GPU مستقلة." },
       { title: "البنية التحتية الذكية", text: "حوسبة خضراء عالية الكثافة — عناقيد NVIDIA H200، حزم برمجية مفتوحة بأداء إكزافلوبس، وتصميم موفّر للطاقة." },
       { title: "الحكومة الرقمية", text: "أكثر من 20 عامًا من الخبرة في الحكومة الإلكترونية كموديولات قابلة للتوسيع: الهوية الرقمية وتبادل البيانات والخدمات الإلكترونية." },
-      { title: "مراكز البيانات", text: "Tamdy Cloud — تصميم Tier III/IV، PUE ~1,2، تبريد بالغاز المسال، والممارسة الرائدة في TIA-942 / Uptime في آسيا الوسطى." },
+      { title: "مراكز البيانات", text: "AI & Green cloud — تصميم Tier III/IV، PUE ~1,2، تبريد بالغاز المسال، والممارسة الرائدة في TIA-942 / Uptime في آسيا الوسطى." },
     ],
   },
   verticals: {
@@ -1406,7 +1406,7 @@ const ar: DeepPartial<Dictionary> = {
     items: [
       {
         tag: "حوسبة خضراء",
-        title: "Tamdy Cloud",
+        title: "AI & Green cloud",
         location: "المنطقة الاقتصادية الحرة كوريق، منطقة منغيستاو · تصميم Tier III/IV",
         status: "قيد التطوير",
         text: "مجمّع طاقة-رقمي أخضر يستخدم البرودة المُتولّدة من إعادة تغويز الغاز المسال كتبريد رئيسي — تكلفة هامشية للتبريد قريبة من الصفر. مدعوم بمحطّة توربينات غازية مع توليد شمسي مدمج، مهيّكل للتمويل بالسندات الخضراء.",
@@ -1541,7 +1541,7 @@ const ar: DeepPartial<Dictionary> = {
       heading: "ESG والتمويل الأخضر",
       sub: "اللغة المباشرة لبنوك التنمية.",
       points: [
-        { title: "Tamdy Cloud، PUE ~1,2", text: "تبريد رئيسي بالغاز المسال مع توليد شمسي مدمج." },
+        { title: "AI & Green cloud، PUE ~1,2", text: "تبريد رئيسي بالغاز المسال مع توليد شمسي مدمج." },
         { title: "جاهزية السندات الخضراء", text: "مهيّكل للسندات الخضراء ومهمّات بنوك التنمية." },
         { title: "ذكاء اصطناعي أخلاقي وخصوصية", text: "الشفافية وعدم الانحياز والإشراف البشري؛ معالجة بيانات على نمط GDPR." },
         { title: "حزم مفتوحة مستقلة", text: "قابلة للتدقيق، دون قفل المورد." },
@@ -1675,7 +1675,7 @@ const ar: DeepPartial<Dictionary> = {
       { title: "الذكاء الاصطناعي", text: "مصنع وكلاء الذكاء الاصطناعي، وكلاء حكوميون متخصّصون، تعلّم آلي على بحيرات بيانات لحظية، وتدريب نماذج كبيرة على بنية GPU مستقلة (NVIDIA H200).", items: ["Agent Factory", "Domain LLMs", "Real-time ML", "Sovereign GPU"] },
       { title: "البنية التحتية الذكية", text: "حوسبة عالية الكثافة، شبكات AIoT وM2M، منصّات التوائم الرقمية والاتصال للبيئات الحضرية والصناعية.", items: ["AIoT & M2M", "Digital Twins", "Smart Field", "تصميم موفّر للطاقة"] },
       { title: "الحكومة الرقمية", text: "أكثر من 20 عامًا من خبرة الحكومة الإلكترونية كموديولات: الهوية الرقمية وتبادل البيانات والخدمات الإلكترونية والأمن السيبراني.", items: ["e-Gov", "Digital ID", "Data exchange", "Cyber Security"] },
-      { title: "مراكز البيانات", text: "Tamdy Cloud — تصميم Tier III/IV، PUE ~1,2، تبريد بالغاز المسال، والممارسة الرائدة في TIA-942 / Uptime في آسيا الوسطى.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "تبريد بالغاز المسال"] },
+      { title: "مراكز البيانات", text: "AI & Green cloud — تصميم Tier III/IV، PUE ~1,2، تبريد بالغاز المسال، والممارسة الرائدة في TIA-942 / Uptime في آسيا الوسطى.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "تبريد بالغاز المسال"] },
     ],
   },
   ipPage: {
@@ -1793,7 +1793,7 @@ const kk: DeepPartial<Dictionary> = {
       { title: "Жасанды интеллект", text: "AI Agent Factory, мемлекеттік салаға арналған агенттер, real-time деректер көлдеріндегі ML және өзіміздің GPU-инфрақұрылымда ірі модельдерді оқыту." },
       { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты жасыл есептеулер — NVIDIA H200 кластерлері, ашық стектер, энергия тиімді дизайн." },
       { title: "GovTech", text: "Электрондық үкіметтегі 20 жылдан астам тәжірибе дайын модульдер ретінде — цифрлық ID, деректер алмасу, қағазсыз қызметтер." },
-      { title: "Деректер орталықтары", text: "Tamdy Cloud — Tier III/IV жобасы, PUE ~1,2, СПГ негізіндегі суыту және Орталық Азиядағы TIA-942 / Uptime көшбасшы тәжірибесі." },
+      { title: "Деректер орталықтары", text: "AI & Green cloud — Tier III/IV жобасы, PUE ~1,2, СПГ негізіндегі суыту және Орталық Азиядағы TIA-942 / Uptime көшбасшы тәжірибесі." },
     ],
   },
   verticals: {
@@ -1881,7 +1881,7 @@ const kk: DeepPartial<Dictionary> = {
     items: [
       {
         tag: "Жасыл есептеулер",
-        title: "Tamdy Cloud",
+        title: "AI & Green cloud",
         location: "Құрық АЭА, Маңғыстау · Tier III/IV жобасы",
         status: "Әзірленуде",
         text: "Жасыл энерго-цифрлық кластер. Көршілес СПГ терминалының суығын негізгі суыту ретінде пайдаланады — суытуға қосымша шығын жоқтың қасы. Қуатын газ-турбиналы станциядан алады, оған күн станциясы қосылған; жасыл облигациялар бойынша құрылымдалған.",
@@ -2016,7 +2016,7 @@ const kk: DeepPartial<Dictionary> = {
       heading: "ESG және жасыл қаржыландыру",
       sub: "Даму банктерінің тікелей тілі.",
       points: [
-        { title: "Tamdy Cloud, PUE ~1,2", text: "Негізгі суыту — СПГ суығы; күн станциясы қосылған." },
+        { title: "AI & Green cloud, PUE ~1,2", text: "Негізгі суыту — СПГ суығы; күн станциясы қосылған." },
         { title: "Жасыл облигацияларға дайын", text: "Green bonds және даму банктерінің талаптарына сай құрылымдалған." },
         { title: "Этикалық ЖИ және құпиялылық", text: "Ашықтық, бейтараптық, адам бақылауы; деректерді GDPR қағидалары бойынша өңдеу." },
         { title: "Тәуелсіз ашық стектер", text: "Аудитке жарамды, бір вендорға байлау жоқ." },
@@ -2150,7 +2150,7 @@ const kk: DeepPartial<Dictionary> = {
       { title: "Жасанды интеллект", text: "AI Agent Factory, мемлекеттік салаға арналған агенттер, real-time деректер көлдеріндегі ML, өзіміздің GPU-инфрақұрылымда ірі модельдерді оқыту.", items: ["Agent Factory", "Салалық LLM", "Real-time ML", "Тәуелсіз GPU"] },
       { title: "Ақылды инфрақұрылым", text: "Жоғары тығыздықты есептеулер, AIoT және M2M желілері, цифрлық егіздер платформалары мен қалалық байланыс.", items: ["AIoT және M2M", "Цифрлық егіздер", "Smart Field", "Энергия тиімді дизайн"] },
       { title: "GovTech", text: "Электрондық үкіметтегі 20 жылдан астам тәжірибе модульдер ретінде: цифрлық ID, деректер алмасу, қағазсыз қызметтер, киберқауіпсіздік.", items: ["e-Gov", "Цифрлық ID", "Деректер алмасу", "Киберқауіпсіздік"] },
-      { title: "Дата-орталықтар", text: "Tamdy Cloud — Tier III/IV жобасы, PUE ~1,2, СПГ негізіндегі суыту, Орталық Азиядағы көшбасшы TIA-942 / Uptime тәжірибе.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "СПГ негізіндегі суыту"] },
+      { title: "Дата-орталықтар", text: "AI & Green cloud — Tier III/IV жобасы, PUE ~1,2, СПГ негізіндегі суыту, Орталық Азиядағы көшбасшы TIA-942 / Uptime тәжірибе.", items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "СПГ негізіндегі суыту"] },
     ],
   },
   ipPage: {
