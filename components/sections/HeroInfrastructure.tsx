@@ -22,7 +22,7 @@ export function HeroInfrastructure() {
   return (
     <div className="relative aspect-square w-full overflow-visible">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(63,134,201,0.16),transparent_42%)]" />
-      <svg viewBox="0 0 520 520" className="relative h-full w-full">
+      <svg viewBox="10 -10 500 500" className="relative h-full w-full">
         <defs>
           <radialGradient id="globeFill" cx="42%" cy="34%" r="62%">
             <stop offset="0%" stopColor="#3f86c9" stopOpacity="0.42" />
