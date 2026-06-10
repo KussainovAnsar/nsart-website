@@ -174,7 +174,22 @@ export function Hero() {
           transition={{ duration: 0.65, delay: 0.32, ease }}
           className="mt-5 flex flex-wrap gap-2"
         >
-          {["ISO 9001", "ISO 14001", "ISO 10015", "TIA-942", "Uptime Tier III/IV", "UN e-Gov Top-25", "SDG-aligned"].map(
+          {[
+            "ISO 9001",
+            "IVS 210",
+            "IAS 38",
+            "ISA 620",
+            "ISO 56000 series",
+            "CEN/TS 16555-4",
+            "ISO/IEC 27002",
+            "ISO 55001",
+            "ISO 14001",
+            "ISO 10015",
+            "TIA-942",
+            "Uptime Tier III/IV",
+            "UN e-Gov Top-25",
+            "SDG-aligned",
+          ].map(
             (item) => (
               <span
                 key={item}
