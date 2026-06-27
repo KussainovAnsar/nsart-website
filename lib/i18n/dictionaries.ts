@@ -22,6 +22,7 @@ const en = {
     markets: "Markets",
     partners: "Partners",
     contact: "Contact",
+    apply: "Apply",
   },
   navGroups: {
     company: "Company",
@@ -600,6 +601,73 @@ const en = {
     privacy: "By submitting, you agree we may contact you. We don't share data with third parties.",
   },
 
+  /* -------- Application / questionnaire page -------- */
+  applyPage: {
+    badge: "Application",
+    title: "Tell us about your company or project.",
+    intro:
+      "A short questionnaire so the NSART team can understand your case and respond with the right next step. It takes about two minutes.",
+    formHeading: "Questionnaire",
+    submit: "Send application",
+    success: "Thank you — your application is ready to send. We will get back to you shortly.",
+    privacy:
+      "By submitting, you agree we may contact you. We don't share data with third parties.",
+    requiredHint: "Please fill in the required fields.",
+    contactNote: "Direct contact",
+    questions: {
+      category: {
+        label: "1. Category",
+        options: [
+          "Individual",
+          "Legal entity (RK resident)",
+          "Legal entity (non-resident)",
+        ],
+      },
+      company: { label: "2. Company / project name" },
+      industry: {
+        label: "3. Your industry",
+        options: [
+          "IT / Software",
+          "Telecom / Connectivity",
+          "Industrial / Manufacturing",
+          "Energy / Utilities",
+          "Smart City / Infrastructure",
+          "Aerospace / Satellite",
+          "Fintech",
+          "Healthcare",
+          "Other",
+        ],
+      },
+      stage: {
+        label: "4. Current stage",
+        options: [
+          "Seed / Pre-seed",
+          "Series A / B",
+          "Operational (cash flow positive)",
+          "Scaling / Expansion",
+        ],
+      },
+      request: {
+        label: "5. Your request to NSART",
+        options: [
+          "Seeking funding",
+          "Entering new markets",
+          "Joint R&D / technology partnership",
+          "Turnkey solution",
+        ],
+      },
+      budget: {
+        label: "6. Budget / investment volume",
+        options: ["Up to $50K", "$50K–$250K", "$250K–$1M", "$1M+"],
+      },
+      equity: {
+        label: "7. Readiness for equity participation",
+        options: ["Yes", "No", "Negotiable"],
+      },
+      contact: { label: "8. Contact (full name, phone, Telegram)" },
+    },
+  },
+
   /* -------- Miras Accelerator page -------- */
   mirasPage: {
     badge: "Joint venture · NSART × PNOD",
@@ -672,6 +740,7 @@ const ru: Dictionary = {
     markets: "Рынки",
     partners: "Партнёры",
     contact: "Контакты",
+    apply: "Анкета",
   },
   navGroups: { company: "Компания", audiences: "Аудитории" },
   common: {
@@ -1228,6 +1297,71 @@ const ru: Dictionary = {
     location: "Астана, Казахстан",
     privacy: "Отправляя форму, вы соглашаетесь, что мы можем с вами связаться. Мы не передаём данные третьим лицам.",
   },
+  applyPage: {
+    badge: "Анкета",
+    title: "Расскажите о вашей компании или проекте.",
+    intro:
+      "Короткая анкета, чтобы команда NSART поняла вашу задачу и предложила подходящий следующий шаг. Займёт около двух минут.",
+    formHeading: "Анкета",
+    submit: "Отправить анкету",
+    success: "Спасибо — анкета готова к отправке. Мы скоро свяжемся с вами.",
+    privacy:
+      "Отправляя форму, вы соглашаетесь, что мы можем с вами связаться. Мы не передаём данные третьим лицам.",
+    requiredHint: "Пожалуйста, заполните обязательные поля.",
+    contactNote: "Прямой контакт",
+    questions: {
+      category: {
+        label: "1. Категория",
+        options: [
+          "Физическое лицо",
+          "Юридическое лицо (резидент РК)",
+          "Юридическое лицо (нерезидент)",
+        ],
+      },
+      company: { label: "2. Название вашей компании / проекта" },
+      industry: {
+        label: "3. Ваша отрасль",
+        options: [
+          "IT / Software",
+          "Telecom / Connectivity",
+          "Industrial / Manufacturing",
+          "Energy / Utilities",
+          "Smart City / Infrastructure",
+          "Aerospace / Satellite",
+          "Fintech",
+          "Healthcare",
+          "Другое",
+        ],
+      },
+      stage: {
+        label: "4. Текущий этап",
+        options: [
+          "Seed / Pre-seed",
+          "Series A / B",
+          "Operational (cash flow positive)",
+          "Scaling / Expansion",
+        ],
+      },
+      request: {
+        label: "5. Ваш запрос к NSART",
+        options: [
+          "Поиск финансирования",
+          "Выход на новые рынки",
+          "Совместная R&D / технологическое партнёрство",
+          "Готовое решение под ключ",
+        ],
+      },
+      budget: {
+        label: "6. Бюджет / объём инвестиций",
+        options: ["До $50K", "$50K–$250K", "$250K–$1M", "$1M+"],
+      },
+      equity: {
+        label: "7. Готовность к долевому участию",
+        options: ["Да", "Нет", "Обсуждаемо"],
+      },
+      contact: { label: "8. Контакт (ФИО, телефон, Telegram)" },
+    },
+  },
   mirasPage: {
     badge: "Совместное предприятие · NSART × PNOD",
     title: "Miras Accelerator — инфраструктура, превращающая глубокие технологии в бизнес.",
@@ -1282,6 +1416,7 @@ const ar: DeepPartial<Dictionary> = {
     markets: "الأسواق",
     partners: "الشركاء",
     contact: "تواصل معنا",
+    apply: "تقديم طلب",
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · متوافق مع أهداف التنمية المستدامة",
@@ -1733,6 +1868,71 @@ const ar: DeepPartial<Dictionary> = {
     location: "أستانا، كازاخستان",
     privacy: "بالإرسال أنت توافق على أن نتواصل معك. لا نُشارك البيانات مع جهات خارجية.",
   },
+  applyPage: {
+    badge: "استبيان",
+    title: "أخبرنا عن شركتك أو مشروعك.",
+    intro:
+      "استبيان قصير ليفهم فريق NSART حالتك ويقترح الخطوة التالية المناسبة. يستغرق نحو دقيقتين.",
+    formHeading: "الاستبيان",
+    submit: "إرسال الطلب",
+    success: "شكرًا — طلبك جاهز للإرسال. سنعود إليك قريبًا.",
+    privacy:
+      "بالإرسال أنت توافق على أن نتواصل معك. لا نُشارك البيانات مع جهات خارجية.",
+    requiredHint: "يرجى تعبئة الحقول المطلوبة.",
+    contactNote: "تواصل مباشر",
+    questions: {
+      category: {
+        label: "1. الفئة",
+        options: [
+          "فرد",
+          "كيان قانوني (مقيم في كازاخستان)",
+          "كيان قانوني (غير مقيم)",
+        ],
+      },
+      company: { label: "2. اسم الشركة / المشروع" },
+      industry: {
+        label: "3. مجالك",
+        options: [
+          "IT / Software",
+          "Telecom / Connectivity",
+          "Industrial / Manufacturing",
+          "Energy / Utilities",
+          "Smart City / Infrastructure",
+          "Aerospace / Satellite",
+          "Fintech",
+          "Healthcare",
+          "أخرى",
+        ],
+      },
+      stage: {
+        label: "4. المرحلة الحالية",
+        options: [
+          "Seed / Pre-seed",
+          "Series A / B",
+          "Operational (cash flow positive)",
+          "Scaling / Expansion",
+        ],
+      },
+      request: {
+        label: "5. طلبك إلى NSART",
+        options: [
+          "البحث عن تمويل",
+          "دخول أسواق جديدة",
+          "بحث وتطوير مشترك / شراكة تقنية",
+          "حل جاهز متكامل",
+        ],
+      },
+      budget: {
+        label: "6. الميزانية / حجم الاستثمار",
+        options: ["حتى ‎$50K", "$50K–$250K", "$250K–$1M", "$1M+"],
+      },
+      equity: {
+        label: "7. الاستعداد للمشاركة في الملكية",
+        options: ["نعم", "لا", "قابل للنقاش"],
+      },
+      contact: { label: "8. جهة الاتصال (الاسم الكامل، الهاتف، تيليجرام)" },
+    },
+  },
 };
 
 /* ------------------------------------------------------------------ */
@@ -1757,6 +1957,7 @@ const kk: DeepPartial<Dictionary> = {
     markets: "Нарықтар",
     partners: "Серіктестер",
     contact: "Байланыс",
+    apply: "Анкета",
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · ТДМ-ге сай",
@@ -2207,6 +2408,71 @@ const kk: DeepPartial<Dictionary> = {
     directHeading: "Немесе тікелей байланыс",
     location: "Астана, Қазақстан",
     privacy: "Жіберу арқылы біздің сізбен байланысуымызға келісім бересіз. Деректерді үшінші тұлғаларға бермейміз.",
+  },
+  applyPage: {
+    badge: "Анкета",
+    title: "Компанияңыз немесе жобаңыз туралы айтып беріңіз.",
+    intro:
+      "NSART командасы сіздің мәселеңізді түсініп, келесі дұрыс қадамды ұсынуы үшін қысқа анкета. Шамамен екі минут алады.",
+    formHeading: "Анкета",
+    submit: "Анкетаны жіберу",
+    success: "Рақмет — анкета жіберуге дайын. Біз сізге жақын арада хабарласамыз.",
+    privacy:
+      "Жіберу арқылы біздің сізбен байланысуымызға келісім бересіз. Деректерді үшінші тұлғаларға бермейміз.",
+    requiredHint: "Міндетті өрістерді толтырыңыз.",
+    contactNote: "Тікелей байланыс",
+    questions: {
+      category: {
+        label: "1. Санат",
+        options: [
+          "Жеке тұлға",
+          "Заңды тұлға (ҚР резиденті)",
+          "Заңды тұлға (резидент емес)",
+        ],
+      },
+      company: { label: "2. Компанияңыздың / жобаңыздың атауы" },
+      industry: {
+        label: "3. Сіздің саланыз",
+        options: [
+          "IT / Software",
+          "Telecom / Connectivity",
+          "Industrial / Manufacturing",
+          "Energy / Utilities",
+          "Smart City / Infrastructure",
+          "Aerospace / Satellite",
+          "Fintech",
+          "Healthcare",
+          "Басқа",
+        ],
+      },
+      stage: {
+        label: "4. Ағымдағы кезең",
+        options: [
+          "Seed / Pre-seed",
+          "Series A / B",
+          "Operational (cash flow positive)",
+          "Scaling / Expansion",
+        ],
+      },
+      request: {
+        label: "5. NSART-қа сұранысыңыз",
+        options: [
+          "Қаржыландыру іздеу",
+          "Жаңа нарықтарға шығу",
+          "Бірлескен R&D / технологиялық серіктестік",
+          "Дайын шешім (под ключ)",
+        ],
+      },
+      budget: {
+        label: "6. Бюджет / инвестиция көлемі",
+        options: ["$50K дейін", "$50K–$250K", "$250K–$1M", "$1M+"],
+      },
+      equity: {
+        label: "7. Үлестік қатысуға дайындық",
+        options: ["Иә", "Жоқ", "Талқыланады"],
+      },
+      contact: { label: "8. Байланыс (Аты-жөні, телефон, Telegram)" },
+    },
   },
 };
 

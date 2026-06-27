@@ -151,6 +151,7 @@ export function Header() {
           </div>
 
           <NavLink href="/contact" scrolled={scrolled}>{t.nav.contact}</NavLink>
+          <NavLink href="/apply" scrolled={scrolled}>{t.nav.apply}</NavLink>
           {/* Языковой переключатель прямо в навигации */}
           <div className="ml-2 flex items-center">
             <LanguageSwitcher tone={scrolled ? "dark" : "light"} />
@@ -215,6 +216,7 @@ export function Header() {
                 <MobileLink href="/markets">{t.nav.markets}</MobileLink>
                 <MobileLink href="/partners">{t.nav.partners}</MobileLink>
                 <MobileLink href="/contact">{t.nav.contact}</MobileLink>
+                <MobileLink href="/apply">{t.nav.apply}</MobileLink>
               </div>
             </div>
             <div className="flex items-center justify-between gap-2 border-t border-sand-300 px-4 py-3">
