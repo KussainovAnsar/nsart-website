@@ -151,7 +151,6 @@ export function Header() {
           </div>
 
           <NavLink href="/contact" scrolled={scrolled}>{t.nav.contact}</NavLink>
-          <NavLink href="/apply" scrolled={scrolled}>{t.nav.apply}</NavLink>
           {/* Языковой переключатель прямо в навигации */}
           <div className="ml-2 flex items-center">
             <LanguageSwitcher tone={scrolled ? "dark" : "light"} />
@@ -159,7 +158,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2.5">
-          <Button href="/contact" size="md" className="hidden md:inline-flex">
+          <Button href="/apply" size="md" className="hidden md:inline-flex">
             {t.common.getInTouch}
           </Button>
           <button
@@ -216,12 +215,11 @@ export function Header() {
                 <MobileLink href="/markets">{t.nav.markets}</MobileLink>
                 <MobileLink href="/partners">{t.nav.partners}</MobileLink>
                 <MobileLink href="/contact">{t.nav.contact}</MobileLink>
-                <MobileLink href="/apply">{t.nav.apply}</MobileLink>
               </div>
             </div>
             <div className="flex items-center justify-between gap-2 border-t border-sand-300 px-4 py-3">
               <LanguageSwitcher placement="top" compact />
-              <Button href="/contact" withArrow className="min-w-0 shrink px-4 py-2.5 text-center text-xs leading-tight">
+              <Button href="/apply" withArrow className="min-w-0 shrink px-4 py-2.5 text-center text-xs leading-tight">
                 {t.common.getInTouch}
               </Button>
             </div>

@@ -26,6 +26,14 @@ const TEXT_FIELDS: QuestionKey[] = ["company", "contact"];
 /** Fields the visitor must fill before submitting. */
 const REQUIRED: QuestionKey[] = ["category", "contact"];
 
+/* Where applications are delivered. Submissions are sent server-side via
+   FormSubmit; the first one triggers a one-time activation email to the
+   primary address below. All three inboxes receive every application. */
+const FORM_PRIMARY = "ansar02012004@gmail.com";
+const FORM_CC = "A.kozhanbet@nsart.kz,nur@nsart.kz";
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${FORM_PRIMARY}`;
+const ALL_RECIPIENTS = `${FORM_PRIMARY},${FORM_CC}`;
+
 export default function ApplyPage() {
   const { t } = useLanguage();
   const page = t.applyPage;
@@ -36,12 +44,13 @@ export default function ApplyPage() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
+  const [sending, setSending] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string>>({});
 
   const set = (key: string, value: string) =>
     setAnswers((prev) => ({ ...prev, [key]: value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const missing = REQUIRED.some((k) => !answers[k]?.trim());
     if (missing) {
@@ -49,12 +58,37 @@ export default function ApplyPage() {
       return;
     }
     setError(false);
+    setSending(true);
 
-    const lines = ORDER.map((key) => `${questions[key].label}: ${answers[key] || "—"}`);
-    const subject = encodeURIComponent("NSART — Анкета / Application");
-    const body = encodeURIComponent(lines.join("\n"));
-    window.location.href = `mailto:${t.contact.email}?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    const payload: Record<string, string> = {
+      _subject: "NSART — Новая анкета / New application",
+      _cc: FORM_CC,
+      _captcha: "false",
+      _template: "table",
+    };
+    ORDER.forEach((key) => {
+      payload[questions[key].label] = answers[key]?.trim() || "—";
+    });
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(`status ${res.status}`);
+      setSubmitted(true);
+    } catch {
+      // Network/endpoint failure — fall back to the visitor's mail client so
+      // the application is never lost.
+      const lines = ORDER.map((key) => `${questions[key].label}: ${answers[key] || "—"}`);
+      const subject = encodeURIComponent("NSART — Анкета / Application");
+      const body = encodeURIComponent(lines.join("\n"));
+      window.location.href = `mailto:${ALL_RECIPIENTS}?subject=${subject}&body=${body}`;
+      setSubmitted(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -179,7 +213,8 @@ export default function ApplyPage() {
 
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-navy-950 px-6 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:-translate-y-0.5 cursor-pointer"
+                  disabled={sending}
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-navy-950 px-6 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:-translate-y-0.5 cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {page.submit}
                   <ArrowRight className="h-4 w-4 rtl:rotate-180" />
