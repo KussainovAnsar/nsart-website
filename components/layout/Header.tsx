@@ -44,7 +44,6 @@ export function Header() {
 
   const company = [
     { href: "/about", label: t.nav.about },
-    { href: "/team", label: t.nav.team },
     { href: "/technologies", label: t.nav.technologies },
     { href: "/ip", label: t.nav.ip },
     { href: "/markets", label: t.nav.markets },
@@ -107,6 +106,8 @@ export function Header() {
               </div>
             )}
           </div>
+
+          <NavLink href="/team" scrolled={scrolled}>{t.nav.team}</NavLink>
 
           <NavLink href="/miras" scrolled={scrolled}>{t.nav.miras}</NavLink>
 
@@ -198,6 +199,9 @@ export function Header() {
               </button>
             </div>
             <div className="flex-1 overflow-y-auto px-5 py-6">
+              <div className="mb-5 flex flex-col">
+                <MobileLink href="/team">{t.nav.team}</MobileLink>
+              </div>
               <p className="eyebrow mb-2 text-navy-400">{t.navGroups.audiences}</p>
               <div className="flex flex-col">
                 {audiences.map((a) => (
@@ -210,7 +214,6 @@ export function Header() {
               <p className="eyebrow mb-2 text-navy-400">{t.navGroups.company}</p>
               <div className="flex flex-col">
                 <MobileLink href="/about">{t.nav.about}</MobileLink>
-                <MobileLink href="/team">{t.nav.team}</MobileLink>
                 <MobileLink href="/technologies">{t.nav.technologies}</MobileLink>
                 <MobileLink href="/ip">{t.nav.ip}</MobileLink>
                 <MobileLink href="/miras">{t.nav.miras}</MobileLink>
