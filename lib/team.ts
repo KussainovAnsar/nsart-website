@@ -64,9 +64,32 @@ export const team: TeamMember[] = [
   },
   {
     slug: "ainara",
-    name: { en: "Ainara", ru: "Айнара" },
+    name: { en: "Ainara Nurpiisova", ru: "Айнара Нурпиисова" },
     role: "Finance & Accounting Manager",
     photo: "/team/ainara.jpg",
+    years: { en: "20+ years in finance & accounting", ru: "20+ лет в бухгалтерии и финансах" },
+    bio: {
+      en: "A certified accountant of Kazakhstan with over 20 years in accounting and tax. An economist by training (Eurasian Humanities Institute, Astana). She has run the books for insurance, trade and service companies — from primary documentation to reporting and inventory audits. She also holds a diploma in international accounting standards.",
+      ru: "Профессиональный бухгалтер РК с более чем 20-летним опытом в бухгалтерском и налоговом учёте. Экономист по образованию (Евразийский гуманитарный институт, Астана). Вела учёт в страховых, торговых и сервисных компаниях — от первичной документации до отчётности и инвентаризаций. Имеет диплом по международным стандартам учёта.",
+    },
+    skills: {
+      en: [
+        "Accounting",
+        "Tax law",
+        "Financial analysis",
+        "Primary documentation",
+        "Accounting software",
+        "Reporting & inventory",
+      ],
+      ru: [
+        "Бухгалтерский учёт",
+        "Налоговое законодательство",
+        "Финансовый анализ",
+        "Первичная документация",
+        "Бухгалтерские программы",
+        "Отчётность и инвентаризация",
+      ],
+    },
   },
   {
     slug: "aidar",
