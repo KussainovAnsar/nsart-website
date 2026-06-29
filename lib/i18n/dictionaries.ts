@@ -23,6 +23,7 @@ const en = {
     partners: "Partners",
     contact: "Contact",
     apply: "Apply",
+    team: "Team",
   },
   navGroups: {
     company: "Company",
@@ -668,6 +669,16 @@ const en = {
     },
   },
 
+  /* -------- Team page -------- */
+  teamPage: {
+    badge: "Team",
+    title: "The people behind NSART.",
+    intro:
+      "A focused team across IP, finance, engineering and operations — turning deep technology into real business.",
+    skillsLabel: "Key skills",
+    soon: "Bio coming soon.",
+  },
+
   /* -------- Miras Accelerator page -------- */
   mirasPage: {
     badge: "Joint venture · NSART × PNOD",
@@ -741,6 +752,7 @@ const ru: Dictionary = {
     partners: "Партнёры",
     contact: "Контакты",
     apply: "Анкета",
+    team: "Команда",
   },
   navGroups: { company: "Компания", audiences: "Аудитории" },
   common: {
@@ -1362,6 +1374,14 @@ const ru: Dictionary = {
       contact: { label: "8. Контакт (ФИО, телефон, Telegram)" },
     },
   },
+  teamPage: {
+    badge: "Команда",
+    title: "Люди, которые делают NSART.",
+    intro:
+      "Сфокусированная команда: интеллектуальная собственность, финансы, инженерия и операции — превращаем глубокие технологии в реальный бизнес.",
+    skillsLabel: "Ключевые навыки",
+    soon: "Биография скоро.",
+  },
   mirasPage: {
     badge: "Совместное предприятие · NSART × PNOD",
     title: "Miras Accelerator — инфраструктура, превращающая глубокие технологии в бизнес.",
@@ -1417,6 +1437,7 @@ const ar: DeepPartial<Dictionary> = {
     partners: "الشركاء",
     contact: "تواصل معنا",
     apply: "تقديم طلب",
+    team: "الفريق",
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · متوافق مع أهداف التنمية المستدامة",
@@ -1933,6 +1954,14 @@ const ar: DeepPartial<Dictionary> = {
       contact: { label: "8. جهة الاتصال (الاسم الكامل، الهاتف، تيليجرام)" },
     },
   },
+  teamPage: {
+    badge: "الفريق",
+    title: "الأشخاص خلف NSART.",
+    intro:
+      "فريق مُركَّز عبر الملكية الفكرية والتمويل والهندسة والعمليات — نحوّل التقنيات العميقة إلى أعمال حقيقية.",
+    skillsLabel: "المهارات الرئيسية",
+    soon: "السيرة الذاتية قريبًا.",
+  },
 };
 
 /* ------------------------------------------------------------------ */
@@ -1958,6 +1987,7 @@ const kk: DeepPartial<Dictionary> = {
     partners: "Серіктестер",
     contact: "Байланыс",
     apply: "Анкета",
+    team: "Команда",
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · ТДМ-ге сай",
@@ -2473,6 +2503,14 @@ const kk: DeepPartial<Dictionary> = {
       },
       contact: { label: "8. Байланыс (Аты-жөні, телефон, Telegram)" },
     },
+  },
+  teamPage: {
+    badge: "Команда",
+    title: "NSART артындағы адамдар.",
+    intro:
+      "ЗМ, қаржы, инженерия және операциялар бойынша шоғырланған команда — терең технологияларды нақты бизнеске айналдырамыз.",
+    skillsLabel: "Негізгі дағдылар",
+    soon: "Өмірбаяны жақында.",
   },
 };
 

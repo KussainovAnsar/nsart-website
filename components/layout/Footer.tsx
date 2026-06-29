@@ -48,6 +48,7 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <FooterLink href="/about">{t.nav.about}</FooterLink>
+              <FooterLink href="/team">{t.nav.team}</FooterLink>
               <FooterLink href="/technologies">{t.nav.technologies}</FooterLink>
               <FooterLink href="/ip">{t.nav.ip}</FooterLink>
               <FooterLink href="/miras">{t.nav.miras}</FooterLink>
