@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter, Sora, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/providers/LanguageProvider";
@@ -59,9 +60,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const host = (await headers()).get("host")?.split(":")[0];
+  const isAixcHost = host === "aixc.nsartgateway.com";
+
   return (
     <html
       lang="en"
@@ -69,11 +73,15 @@ export default function RootLayout({
       className={`${inter.variable} ${sora.variable} ${plexArabic.variable} antialiased`}
     >
       <body className="min-h-dvh bg-white text-ink">
-        <LanguageProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </LanguageProvider>
+        {isAixcHost ? (
+          children
+        ) : (
+          <LanguageProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </LanguageProvider>
+        )}
       </body>
     </html>
   );
