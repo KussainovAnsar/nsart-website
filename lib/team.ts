@@ -124,9 +124,5 @@ export const team: TeamMember[] = [
         "Telegram-боты и автоматизация",
       ],
     },
-    fact: {
-      en: "On the side he builds RoboStar — a Russian-language LEGO EV3 coding environment with an AI tutor that teaches kids robotics.",
-      ru: "В свободное время делает RoboStar — среду программирования LEGO EV3 на русском с ИИ-наставником, которая учит детей робототехнике.",
-    },
   },
 ];
