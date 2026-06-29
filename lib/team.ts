@@ -99,8 +99,34 @@ export const team: TeamMember[] = [
   },
   {
     slug: "ansar",
-    name: { en: "Ansar", ru: "Ансар" },
+    name: { en: "Ansar Kussainov", ru: "Ансар Кусаинов" },
     role: "AI Solutions Engineer",
     photo: "/team/ansar.jpg",
+    bio: {
+      en: "A software engineer building AI-native products for Kazakhstan and the CIS — marketplaces, operations automation and AI tooling, localized for RU/KK. A graduate of Astana IT University (BSc, Software Engineering) and Nazarbayev Intellectual School. He works end-to-end, from research and design to code, infrastructure and operations — spanning web and mobile interfaces (React, React Native, Angular) to AI agents, bots and data pipelines. His work includes the ShineX services marketplace, a B2B operations-automation platform and an AI grant-scoring agent.",
+      ru: "Инженер-программист, создающий AI-native продукты для Казахстана и СНГ — маркетплейсы, автоматизацию операций и инструменты на основе ИИ, локализованные под RU/KK. Выпускник Astana IT University (бакалавр, Software Engineering) и Nazarbayev Intellectual School. Работает end-to-end: от исследования и дизайна до кода, инфраструктуры и эксплуатации — от веб- и мобильных интерфейсов (React, React Native, Angular) до ИИ-агентов, ботов и пайплайнов данных. Среди проектов — маркетплейс услуг ShineX, B2B-платформа автоматизации операций и ИИ-агент для оценки грантов.",
+    },
+    skills: {
+      en: [
+        "React & React Native",
+        "Next.js / TypeScript",
+        "AI agents (OpenAI / Anthropic)",
+        "Python / FastAPI",
+        "Supabase / PostgreSQL",
+        "Telegram bots & automation",
+      ],
+      ru: [
+        "React и React Native",
+        "Next.js / TypeScript",
+        "ИИ-агенты (OpenAI / Anthropic)",
+        "Python / FastAPI",
+        "Supabase / PostgreSQL",
+        "Telegram-боты и автоматизация",
+      ],
+    },
+    fact: {
+      en: "On the side he builds RoboStar — a Russian-language LEGO EV3 coding environment with an AI tutor that teaches kids robotics.",
+      ru: "В свободное время делает RoboStar — среду программирования LEGO EV3 на русском с ИИ-наставником, которая учит детей робототехнике.",
+    },
   },
 ];
