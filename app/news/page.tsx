@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowRight, MapPin } from "lucide-react";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Reveal } from "@/components/ui/Reveal";
 import { NewsCover } from "@/components/news/NewsCover";
-import { sortedNews } from "@/lib/news";
+import { sortedNews, pickNews, newsUi } from "@/lib/news";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
 export default function NewsPage() {
+  const { locale } = useLanguage();
   const [lead, ...rest] = sortedNews;
 
   return (
@@ -24,7 +26,7 @@ export default function NewsPage() {
             transition={{ duration: 0.6, ease }}
             className="inline-flex items-center gap-1.5 rounded-full bg-accent-600/20 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-300"
           >
-            Новости
+            {newsUi.badge[locale]}
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 18 }}
@@ -32,7 +34,7 @@ export default function NewsPage() {
             transition={{ duration: 0.7, delay: 0.08, ease }}
             className="mt-6 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-[3.2rem]"
           >
-            Новости NSART
+            {newsUi.title[locale]}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 18 }}
@@ -40,8 +42,7 @@ export default function NewsPage() {
             transition={{ duration: 0.7, delay: 0.16, ease }}
             className="mt-6 text-lg leading-relaxed text-navy-100/80"
           >
-            Партнёрства, запуски и события — как NSART строит глубокотехнологичные
-            проекты в Казахстане, MENA и Южной Азии.
+            {newsUi.intro[locale]}
           </motion.p>
         </div>
       </section>
@@ -57,27 +58,33 @@ export default function NewsPage() {
                 className="group grid overflow-hidden rounded-3xl border border-sand-300 bg-sand-50 shadow-sm transition-shadow hover:shadow-[var(--shadow-lift)] md:grid-cols-2"
               >
                 <div className="relative aspect-[16/10] md:aspect-auto">
-                  <NewsCover item={lead} priority />
+                  <NewsCover item={lead} locale={locale} priority />
                 </div>
                 <div className="flex flex-col justify-center gap-4 p-7 sm:p-10">
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-navy-500">
-                    <span className="eyebrow text-accent-600">{lead.tag}</span>
+                    <span className="eyebrow text-accent-600">
+                      {pickNews(lead.tag, locale)}
+                    </span>
                     <span aria-hidden>·</span>
-                    <time dateTime={lead.date}>{lead.displayDate}</time>
+                    <time dateTime={lead.date}>
+                      {pickNews(lead.displayDate, locale)}
+                    </time>
                     {lead.location && (
                       <span className="inline-flex items-center gap-1">
                         <MapPin className="h-3.5 w-3.5" />
-                        {lead.location}
+                        {pickNews(lead.location, locale)}
                       </span>
                     )}
                   </div>
                   <h2 className="text-2xl font-extrabold leading-tight text-navy-950 sm:text-3xl">
-                    {lead.title}
+                    {pickNews(lead.title, locale)}
                   </h2>
-                  <p className="leading-relaxed text-navy-700">{lead.excerpt}</p>
+                  <p className="leading-relaxed text-navy-700">
+                    {pickNews(lead.excerpt, locale)}
+                  </p>
                   <span className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600">
-                    Читать
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                    {newsUi.read[locale]}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:rotate-180" />
                   </span>
                 </div>
               </Link>
@@ -93,23 +100,27 @@ export default function NewsPage() {
                   className="group flex h-full flex-col overflow-hidden rounded-3xl border border-sand-300 bg-white shadow-sm transition-shadow hover:shadow-[var(--shadow-lift)]"
                 >
                   <div className="relative aspect-[16/10]">
-                    <NewsCover item={item} />
+                    <NewsCover item={item} locale={locale} />
                   </div>
                   <div className="flex flex-1 flex-col gap-3 p-6">
                     <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-navy-500">
-                      <span className="eyebrow text-accent-600">{item.tag}</span>
+                      <span className="eyebrow text-accent-600">
+                        {pickNews(item.tag, locale)}
+                      </span>
                       <span aria-hidden>·</span>
-                      <time dateTime={item.date}>{item.displayDate}</time>
+                      <time dateTime={item.date}>
+                        {pickNews(item.displayDate, locale)}
+                      </time>
                     </div>
                     <h3 className="text-lg font-bold leading-snug text-navy-950">
-                      {item.title}
+                      {pickNews(item.title, locale)}
                     </h3>
                     <p className="line-clamp-3 text-sm leading-relaxed text-navy-600">
-                      {item.excerpt}
+                      {pickNews(item.excerpt, locale)}
                     </p>
                     <span className="mt-auto inline-flex items-center gap-1.5 pt-2 text-sm font-semibold text-accent-600">
-                      Читать
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                      {newsUi.read[locale]}
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:rotate-180" />
                     </span>
                   </div>
                 </Link>

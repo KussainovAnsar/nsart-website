@@ -1,5 +1,6 @@
 import { Newspaper } from "lucide-react";
-import type { NewsItem } from "@/lib/news";
+import type { Locale } from "@/lib/i18n/config";
+import { pickNews, type NewsItem } from "@/lib/news";
 
 /**
  * Cover visual for a news item.
@@ -10,18 +11,23 @@ import type { NewsItem } from "@/lib/news";
  */
 export function NewsCover({
   item,
+  locale,
   className = "",
   priority = false,
 }: {
   item: NewsItem;
+  locale: Locale;
   className?: string;
   priority?: boolean;
 }) {
+  const tag = pickNews(item.tag, locale);
+  const title = pickNews(item.title, locale);
+
   if (item.image) {
     return (
       <img
         src={item.image}
-        alt={item.title}
+        alt={title}
         loading={priority ? "eager" : "lazy"}
         className={`h-full w-full object-cover ${className}`}
       />
@@ -39,7 +45,7 @@ export function NewsCover({
         <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-accent-300 ring-1 ring-white/15">
           <Newspaper className="h-5 w-5" />
         </span>
-        <span className="eyebrow text-accent-300/90">{item.tag}</span>
+        <span className="eyebrow text-accent-300/90">{tag}</span>
       </div>
     </div>
   );
