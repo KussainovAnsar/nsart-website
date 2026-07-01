@@ -9,8 +9,8 @@ export type TeamMember = {
   name: L<string>;
   /** Job title — kept in English across locales by design. */
   role: string;
-  /** Path under /public. */
-  photo: string;
+  /** Path under /public. Optional — a monogram placeholder is shown when absent. */
+  photo?: string;
   /** Short experience line, e.g. "20+ years in IP". Optional. */
   years?: L<string>;
   /** 2–4 sentence bio. Empty/undefined => "bio coming soon" placeholder. */
@@ -83,6 +83,62 @@ export const team: TeamMember[] = [
         "Өнім және операциялар",
         "Ғылымды қажетсінетін әзірлеме",
         "B2B / B2C технологиялық өсу",
+      ],
+    },
+  },
+  {
+    slug: "pierre-tayrac",
+    name: {
+      en: "Pierre Tayrac",
+      ru: "Пьер Тейрак",
+      ar: "بيير تيراك",
+      kk: "Пьер Тейрак",
+    },
+    role: "GovTech Advisor (MEA & Europe region)",
+    years: {
+      en: "18+ years in enterprise transformation",
+      ru: "18+ лет в корпоративной трансформации",
+      ar: "أكثر من 18 عامًا في تحول المؤسسات",
+      kk: "корпоративтік трансформацияда 18+ жыл",
+    },
+    bio: {
+      en: "An aerospace engineer turned enterprise-transformation leader, with 18+ years working at the intersection of system architecture, operational execution, and enterprise transformation across Europe and the Middle East. Early roles at Thales and Inetum shaped a structured, disciplined approach to complexity; as President & Managing Director of Sazience, he scaled operations across the Middle East and Africa. Today he is CEO of Farkey Technologies (Dubai), designing structured systems for sustainable scale — with governance, alignment, and long-term stability at the core. He advises NSART on GovTech across the MEA and Europe regions.",
+      ru: "Инженер-аэрокосмик, ставший лидером корпоративной трансформации: 18+ лет на стыке системной архитектуры, операционного исполнения и трансформации предприятий в Европе и на Ближнем Востоке. Ранний опыт в Thales и Inetum сформировал структурный, дисциплинированный подход к сложным задачам; как President & Managing Director компании Sazience он масштабировал операции на Ближнем Востоке и в Африке. Сегодня — CEO Farkey Technologies (Дубай), где проектирует структурированные системы для устойчивого роста, ставя во главу угла управляемость, согласованность и долгосрочную стабильность. Консультирует NSART по GovTech в регионах MEA и Европы.",
+      ar: "مهندس فضائي تحوّل إلى قائد في مجال تحول المؤسسات، بخبرة تتجاوز 18 عامًا عند تقاطع هندسة الأنظمة والتنفيذ التشغيلي وتحول المؤسسات في أوروبا والشرق الأوسط. صقلت أدواره المبكرة في Thales وInetum نهجًا منظمًا ومنضبطًا في التعامل مع التعقيد؛ وبصفته رئيسًا ومديرًا إداريًا لشركة Sazience، وسّع العمليات في الشرق الأوسط وأفريقيا. واليوم، بصفته الرئيس التنفيذي لشركة Farkey Technologies (دبي)، يصمّم أنظمة منظمة تدعم النمو المستدام، مع إعطاء الأولوية للحوكمة والمواءمة والاستقرار طويل الأمد. ويقدّم الاستشارة لـ NSART في مجال GovTech عبر منطقتي الشرق الأوسط وأفريقيا وأوروبا.",
+      kk: "Аэроғарыш инженері болып, кейін корпоративтік трансформация көшбасшысына айналған маман: жүйелік сәулет, операциялық орындау және кәсіпорындарды трансформациялау тоғысында Еуропа мен Таяу Шығыста 18 жылдан астам тәжірибесі бар. Thales пен Inetum компанияларындағы алғашқы жұмысы күрделі міндеттерге құрылымды әрі тәртіпті көзқарасын қалыптастырды; Sazience компаниясының President & Managing Director ретінде операцияларды Таяу Шығыс пен Африкада кеңейтті. Бүгінде — Farkey Technologies (Дубай) компаниясының CEO-сы, тұрақты өсуге арналған құрылымдалған жүйелерді жобалайды әрі басқарылу, үйлесімділік пен ұзақ мерзімді тұрақтылықты басты орынға қояды. NSART-қа MEA және Еуропа өңірлері бойынша GovTech саласында кеңес береді.",
+    },
+    skills: {
+      en: [
+        "System architecture",
+        "Enterprise transformation",
+        "Strategy",
+        "Operations management",
+        "Governance & delivery",
+        "Entrepreneurship",
+      ],
+      ru: [
+        "Системная архитектура",
+        "Корпоративная трансформация",
+        "Стратегия",
+        "Операционное управление",
+        "Управляемость и исполнение",
+        "Предпринимательство",
+      ],
+      ar: [
+        "هندسة الأنظمة",
+        "تحول المؤسسات",
+        "الاستراتيجية",
+        "إدارة العمليات",
+        "الحوكمة والتنفيذ",
+        "ريادة الأعمال",
+      ],
+      kk: [
+        "Жүйелік сәулет",
+        "Корпоративтік трансформация",
+        "Стратегия",
+        "Операциялық басқару",
+        "Басқарылу және орындау",
+        "Кәсіпкерлік",
       ],
     },
   },

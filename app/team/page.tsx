@@ -65,12 +65,26 @@ export default function TeamPage() {
                   {/* Photo */}
                   <div className="shrink-0">
                     <div className="relative w-full overflow-hidden rounded-3xl border border-sand-300 bg-sand-100 shadow-sm md:w-[300px]">
-                      <img
-                        src={m.photo}
-                        alt={name}
-                        className="aspect-square w-full object-cover"
-                        loading="lazy"
-                      />
+                      {m.photo ? (
+                        <img
+                          src={m.photo}
+                          alt={name}
+                          className="aspect-square w-full object-cover"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden bg-navy-900">
+                          <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.4]" />
+                          <span className="relative text-5xl font-extrabold tracking-wide text-accent-300/85">
+                            {name
+                              .split(/\s+/)
+                              .map((w) => w[0])
+                              .slice(0, 2)
+                              .join("")
+                              .toUpperCase()}
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </div>
 
