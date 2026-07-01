@@ -24,6 +24,7 @@ const en = {
     contact: "Contact",
     apply: "Apply",
     team: "Team",
+    news: "News",
   },
   navGroups: {
     company: "Company",
@@ -753,6 +754,7 @@ const ru: Dictionary = {
     contact: "Контакты",
     apply: "Анкета",
     team: "Команда",
+    news: "Новости",
   },
   navGroups: { company: "Компания", audiences: "Аудитории" },
   common: {
@@ -1438,6 +1440,7 @@ const ar: DeepPartial<Dictionary> = {
     contact: "تواصل معنا",
     apply: "تقديم طلب",
     team: "الفريق",
+    news: "الأخبار",
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · متوافق مع أهداف التنمية المستدامة",
@@ -1988,6 +1991,7 @@ const kk: DeepPartial<Dictionary> = {
     contact: "Байланыс",
     apply: "Анкета",
     team: "Команда",
+    news: "Жаңалықтар",
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · ТДМ-ге сай",

@@ -109,6 +109,8 @@ export function Header() {
 
           <NavLink href="/team" scrolled={scrolled}>{t.nav.team}</NavLink>
 
+          <NavLink href="/news" scrolled={scrolled}>{t.nav.news}</NavLink>
+
           <NavLink href="/miras" scrolled={scrolled}>{t.nav.miras}</NavLink>
 
           {/* Audiences dropdown */}
@@ -201,6 +203,7 @@ export function Header() {
             <div className="flex-1 overflow-y-auto px-5 py-6">
               <div className="mb-5 flex flex-col">
                 <MobileLink href="/team">{t.nav.team}</MobileLink>
+                <MobileLink href="/news">{t.nav.news}</MobileLink>
               </div>
               <p className="eyebrow mb-2 text-navy-400">{t.navGroups.audiences}</p>
               <div className="flex flex-col">
