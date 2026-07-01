@@ -193,7 +193,7 @@ const en = {
     sub: "Grouped by role — from state infrastructure to governance, sustainability, and market access.",
     groups: [
       { name: "State & infrastructure", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
-      { name: "Technology & cloud", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
+      { name: "Technology & cloud", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC", "Farkey Technologies"] },
       { name: "Science & education (deep-tech origin)", members: ["King Saud University", "KZ universities & institutes", "Artisan Education"] },
       { name: "Governance, audit & sustainability", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "Trade & market access", members: ["QazTrade", "MENA partners", "South Asia partners", "Africa partners"] },
@@ -234,6 +234,7 @@ const en = {
       { name: "4Sight", url: "https://www.4sight.com.pk" },
       { name: "Uneet", url: "https://www.linkedin.com/company/uneet-kz/about/" },
       { name: "Alarcom", url: "https://alarcom.kz/" },
+      { name: "Farkey Technologies", url: "https://farkeytech.com/" },
     ],
   },
   verticals: {
@@ -920,7 +921,7 @@ const ru: Dictionary = {
     sub: "Сгруппированы по роли — от государственной инфраструктуры до управления, устойчивого развития и выхода на рынки.",
     groups: [
       { name: "Государство и инфраструктура", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
-      { name: "Технологии и облако", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
+      { name: "Технологии и облако", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC", "Farkey Technologies"] },
       { name: "Наука и образование (deep-tech origin)", members: ["King Saud University", "Вузы и НИИ Казахстана", "Artisan Education"] },
       { name: "Управление, аудит и устойчивое развитие", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "Торговля и выход на рынки", members: ["QazTrade", "Партнёры MENA", "Партнёры Южной Азии", "Партнёры Африки"] },
@@ -961,6 +962,7 @@ const ru: Dictionary = {
       { name: "4Sight", url: "https://www.4sight.com.pk" },
       { name: "Uneet", url: "https://www.linkedin.com/company/uneet-kz/about/" },
       { name: "Alarcom", url: "https://alarcom.kz/" },
+      { name: "Farkey Technologies", url: "https://farkeytech.com/" },
     ],
   },
   verticals: {
@@ -1634,7 +1636,7 @@ const ar: DeepPartial<Dictionary> = {
     sub: "مُجمَّعة حسب الدور — من البنية التحتية الحكومية إلى الحوكمة والاستدامة ودخول الأسواق.",
     groups: [
       { name: "الحكومة والبنية التحتية", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
-      { name: "التقنية والسحابة", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
+      { name: "التقنية والسحابة", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC", "Farkey Technologies"] },
       { name: "العلم والتعليم (DeepTech)", members: ["جامعة الملك سعود", "جامعات ومعاهد كازاخستان", "Artisan Education"] },
       { name: "الحوكمة والتدقيق والاستدامة", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "التجارة ودخول الأسواق", members: ["QazTrade", "شركاء MENA", "شركاء جنوب آسيا", "شركاء أفريقيا"] },
@@ -2185,7 +2187,7 @@ const kk: DeepPartial<Dictionary> = {
     sub: "Рөлдер бойынша топтастырылған — мемлекеттік инфрақұрылымнан басқару мен сәйкестікке, тұрақты дамуға және нарықтарға шығуға дейін.",
     groups: [
       { name: "Мемлекет және инфрақұрылым", members: ["NITEC", "KT Cloud Lab", "Ghalam", "SpaceLab"] },
-      { name: "Технологиялар және бұлт", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC"] },
+      { name: "Технологиялар және бұлт", members: ["KazDream", "MyCloud", "AiMap", "Eagale Soft", "InfoTech", "Pixel DMC", "Farkey Technologies"] },
       { name: "Ғылым және білім (DeepTech)", members: ["King Saud University", "Қазақстан жоғары оқу орындары", "Artisan Education"] },
       { name: "Басқару, аудит және тұрақты даму", members: ["PNOD Auditing Co.", "MSTDAM"] },
       { name: "Сауда және нарықтарға шығу", members: ["QazTrade", "MENA серіктестері", "Оңтүстік Азия серіктестері", "Африка серіктестері"] },
