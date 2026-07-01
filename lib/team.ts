@@ -152,6 +152,7 @@ export const team: TeamMember[] = [
       kk: "Мохамед Эльбадви",
     },
     role: "Digital transformation & Social venture building Advisor",
+    photo: "/team/mohamed-elbadwi.jpg",
     years: {
       en: "15+ years in digital transformation & venture building",
       ru: "15+ лет в цифровой трансформации и создании венчуров",
