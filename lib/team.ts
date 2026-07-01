@@ -144,8 +144,8 @@ export const team: TeamMember[] = [
   },
   {
     slug: "aidar",
-    name: { en: "Aidar", ru: "Айдар" },
-    role: "Operating Project Manager",
+    name: { en: "Aidar Kozhanbet", ru: "Айдар Кожанбет" },
+    role: "Project Office Operations",
     photo: "/team/aidar.jpg",
   },
   {
