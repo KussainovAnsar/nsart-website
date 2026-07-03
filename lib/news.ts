@@ -77,6 +77,7 @@ export const news: NewsItem[] = [
     id: 31,
     slug: "digital-bridge-2025-infotech-memorandum",
     date: "2025-10-25",
+    image: "/news/digital-bridge-2025-infotech-memorandum.webp",
     tag: { ru: "Партнёрство", en: "Partnership", ar: "شراكة", kk: "Серіктестік" },
     location: {
       ru: "Digital Bridge 2025",
@@ -125,6 +126,7 @@ export const news: NewsItem[] = [
     id: 32,
     slug: "spacelab-visit",
     date: "2025-11-09",
+    image: "/news/spacelab-visit.webp",
     tag: { ru: "Визит", en: "Visit", ar: "زيارة", kk: "Сапар" },
     location: { ru: "Астана", en: "Astana", ar: "أستانا", kk: "Астана" },
     displayDate: {
@@ -168,6 +170,7 @@ export const news: NewsItem[] = [
     id: 33,
     slug: "gujranwala-business-centre-memorandum",
     date: "2025-11-10",
+    image: "/news/gujranwala-business-centre-memorandum.webp",
     tag: { ru: "Партнёрство", en: "Partnership", ar: "شراكة", kk: "Серіктестік" },
     location: {
       ru: "Казахстан — Пакистан",
@@ -216,6 +219,7 @@ export const news: NewsItem[] = [
     id: 34,
     slug: "green-build-central-asia",
     date: "2025-11-20",
+    image: "/news/green-build-central-asia.webp",
     tag: { ru: "Форум", en: "Forum", ar: "منتدى", kk: "Форум" },
     location: { ru: "Астана", en: "Astana", ar: "أستانا", kk: "Астана" },
     displayDate: {
@@ -259,6 +263,7 @@ export const news: NewsItem[] = [
     id: 35,
     slug: "artisan-education-memorandum",
     date: "2025-11-24",
+    image: "/news/artisan-education-memorandum.webp",
     tag: { ru: "Партнёрство", en: "Partnership", ar: "شراكة", kk: "Серіктестік" },
     displayDate: {
       ru: "24 ноября 2025",
@@ -297,6 +302,7 @@ export const news: NewsItem[] = [
     id: 36,
     slug: "kazaid-visit",
     date: "2025-11-25",
+    image: "/news/kazaid-visit.webp",
     tag: { ru: "Визит", en: "Visit", ar: "زيارة", kk: "Сапар" },
     displayDate: {
       ru: "25 ноября 2025",
@@ -339,6 +345,7 @@ export const news: NewsItem[] = [
     id: 37,
     slug: "nsart-gateway-pakistan-agreements",
     date: "2026-02-06",
+    image: "/news/nsart-gateway-pakistan-agreements.webp",
     tag: { ru: "Экспорт", en: "Export", ar: "تصدير", kk: "Экспорт" },
     location: { ru: "Пакистан", en: "Pakistan", ar: "باكستان", kk: "Пәкістан" },
     displayDate: {
@@ -386,6 +393,7 @@ export const news: NewsItem[] = [
     id: 38,
     slug: "riyadh-space-lab-launch",
     date: "2026-02-12",
+    image: "/news/riyadh-space-lab-launch.webp",
     tag: { ru: "SpaceTech", en: "SpaceTech", ar: "SpaceTech", kk: "SpaceTech" },
     location: {
       ru: "Эр-Рияд, Саудовская Аравия",
@@ -438,6 +446,7 @@ export const news: NewsItem[] = [
     id: 39,
     slug: "riyadh-space-lab-official-opening",
     date: "2026-02-15",
+    image: "/news/riyadh-space-lab-official-opening.webp",
     tag: { ru: "SpaceTech", en: "SpaceTech", ar: "SpaceTech", kk: "SpaceTech" },
     location: {
       ru: "Эр-Рияд, Саудовская Аравия",
@@ -490,6 +499,7 @@ export const news: NewsItem[] = [
     id: 40,
     slug: "space-ai-competition-aeroo-jury",
     date: "2026-04-12",
+    image: "/news/space-ai-competition-aeroo-jury.webp",
     tag: { ru: "Событие", en: "Event", ar: "فعالية", kk: "Іс-шара" },
     location: { ru: "Астана", en: "Astana", ar: "أستانا", kk: "Астана" },
     displayDate: {
@@ -533,6 +543,7 @@ export const news: NewsItem[] = [
     id: 41,
     slug: "akkol-investors-meeting",
     date: "2026-05-19",
+    image: "/news/akkol-investors-meeting.webp",
     tag: { ru: "Инвестиции", en: "Investment", ar: "استثمار", kk: "Инвестиция" },
     location: { ru: "Акколь", en: "Akkol", ar: "أقكول", kk: "Ақкөл" },
     displayDate: {
