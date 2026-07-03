@@ -377,6 +377,38 @@ export const team: TeamMember[] = [
     },
   },
   {
+    slug: "ruslan-tleubaev",
+    name: { en: "Ruslan Tleubaev", ru: "Руслан Тлеубаев" },
+    role: "AI Product Management",
+    photo: "/team/ruslan-tleubaev.jpg",
+    bio: {
+      en: "A product manager focused on AI-native digital products, with 4+ years across IT, digital products and B2B, plus a background in e-commerce sales and financial markets. A KIMEP graduate in financial management, he went through the iMost accelerator and built a startup team around equity. He works across the full product cycle — from discovery and system analysis to production-ready release — and explores how AI is reshaping the way digital products are built.",
+      ru: "Продакт-менеджер, сфокусированный на AI-native цифровых продуктах: 4+ года в IT, цифровых продуктах и B2B, плюс опыт в e-commerce-продажах и на финансовых рынках. Выпускник KIMEP по финансовому менеджменту, прошёл акселерацию iMost и собрал команду стартапа под долю. Работает на всём продуктовом цикле — от discovery и системного анализа до готового к продакшену релиза — и изучает, как ИИ меняет процесс создания цифровых продуктов.",
+    },
+    skills: {
+      en: [
+        "Product strategy",
+        "Product discovery",
+        "AI-native products",
+        "System analysis",
+        "B2B sales",
+        "Team building",
+      ],
+      ru: [
+        "Продуктовая стратегия",
+        "Product discovery",
+        "AI-native продукты",
+        "Системный анализ",
+        "B2B-продажи",
+        "Команда и найм",
+      ],
+    },
+    fact: {
+      en: "Fascinated by systems thinking and entrepreneurship — turning ideas and prototypes into working products.",
+      ru: "Увлечён системным мышлением и предпринимательством — превращает идеи и прототипы в работающие продукты.",
+    },
+  },
+  {
     slug: "ansar",
     name: { en: "Ansar Kussainov", ru: "Ансар Кусаинов" },
     role: "AI Solutions Engineer",
