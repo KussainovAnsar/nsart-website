@@ -7,29 +7,73 @@ import { Mail, MapPin, ArrowRight, CheckCircle } from "lucide-react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
+/* Same delivery pipeline as /apply: FormSubmit AJAX with mailto fallback,
+   so audience answers are collected even when the visitor has no mail client. */
+const FORM_PRIMARY = "ansar02012004@gmail.com";
+const FORM_CC = "A.kozhanbet@nsart.kz,nur@nsart.kz";
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${FORM_PRIMARY}`;
+const ALL_RECIPIENTS = `${FORM_PRIMARY},${FORM_CC}`;
+
 export default function ContactPage() {
   const { t } = useLanguage();
   const page = t.contactPage;
 
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
     org: "",
     audience: "",
+    industry: "",
+    interest: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email) return;
-    // Fallback: open user's mail client with prefilled content.
-    const subject = encodeURIComponent(`NSART contact — ${form.audience || "general"}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nOrg: ${form.org}\nAudience: ${form.audience}\n\n${form.message}`,
-    );
-    window.location.href = `mailto:${t.contact.email}?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    setSending(true);
+
+    const fields: [string, string][] = [
+      [page.formName, form.name],
+      [page.formEmail, form.email],
+      [page.formOrg, form.org],
+      [page.formAudience, form.audience],
+      [page.formIndustry, form.industry],
+      [page.formInterest, form.interest],
+      [page.formMessage, form.message],
+    ];
+
+    const payload: Record<string, string> = {
+      _subject: "NSART — Контакт / Contact form",
+      _cc: FORM_CC,
+      _captcha: "false",
+      _template: "table",
+    };
+    fields.forEach(([label, value]) => {
+      payload[label] = value.trim() || "—";
+    });
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(`status ${res.status}`);
+      setSubmitted(true);
+    } catch {
+      // Network/endpoint failure — fall back to the visitor's mail client.
+      const subject = encodeURIComponent(`NSART contact — ${form.audience || "general"}`);
+      const body = encodeURIComponent(
+        fields.map(([label, value]) => `${label}: ${value || "—"}`).join("\n"),
+      );
+      window.location.href = `mailto:${ALL_RECIPIENTS}?subject=${subject}&body=${body}`;
+      setSubmitted(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -96,30 +140,29 @@ export default function ContactPage() {
                     required
                   />
                 </div>
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <Field
-                    label={page.formOrg}
-                    value={form.org}
-                    onChange={(v) => setForm({ ...form, org: v })}
-                  />
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-navy-500 mb-2">
-                      {page.formAudience}
-                    </label>
-                    <select
-                      className="w-full rounded-xl border border-sand-300 bg-white px-4 py-3 text-sm text-navy-900 focus:border-navy-500 focus:outline-none"
-                      value={form.audience}
-                      onChange={(e) => setForm({ ...form, audience: e.target.value })}
-                    >
-                      <option value="">—</option>
-                      {page.audienceOptions.map((o) => (
-                        <option key={o} value={o}>
-                          {o}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
+                <Field
+                  label={page.formOrg}
+                  value={form.org}
+                  onChange={(v) => setForm({ ...form, org: v })}
+                />
+                <ChipGroup
+                  label={page.formAudience}
+                  options={page.audienceOptions}
+                  value={form.audience}
+                  onChange={(v) => setForm({ ...form, audience: v })}
+                />
+                <ChipGroup
+                  label={page.formIndustry}
+                  options={t.applyPage.questions.industry.options}
+                  value={form.industry}
+                  onChange={(v) => setForm({ ...form, industry: v })}
+                />
+                <ChipGroup
+                  label={page.formInterest}
+                  options={t.applyPage.questions.request.options}
+                  value={form.interest}
+                  onChange={(v) => setForm({ ...form, interest: v })}
+                />
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-navy-500 mb-2">
                     {page.formMessage}
@@ -133,7 +176,8 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-navy-950 px-6 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:-translate-y-0.5 cursor-pointer"
+                  disabled={sending}
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-navy-950 px-6 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:-translate-y-0.5 cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {page.formSubmit}
                   <ArrowRight className="h-4 w-4 rtl:rotate-180" />
@@ -173,6 +217,47 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+    </div>
+  );
+}
+
+function ChipGroup({
+  label,
+  options,
+  value,
+  onChange,
+}: {
+  label: string;
+  options: readonly string[];
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  return (
+    <div>
+      <span className="block text-xs font-bold uppercase tracking-wider text-navy-500 mb-2">
+        {label}
+      </span>
+      <div className="flex flex-wrap gap-2.5">
+        {options.map((opt) => {
+          const active = value === opt;
+          return (
+            <button
+              type="button"
+              key={opt}
+              onClick={() => onChange(active ? "" : opt)}
+              aria-pressed={active}
+              className={
+                "rounded-xl border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer " +
+                (active
+                  ? "border-navy-950 bg-navy-950 text-white"
+                  : "border-sand-300 bg-white text-navy-700 hover:border-navy-400")
+              }
+            >
+              {opt}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
