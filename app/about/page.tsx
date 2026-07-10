@@ -2,15 +2,17 @@
 
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { motion } from "motion/react";
-import { Compass, Layers, Target, Workflow, Sparkles } from "lucide-react";
+import { Compass, Layers, Target, Workflow, Sparkles, Mail, MapPin } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/components/ui/Button";
+import { team, pick } from "@/lib/team";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 const methodIcons: LucideIcon[] = [Compass, Workflow, Target, Layers];
 
 export default function AboutPage() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const page = t.aboutPage;
 
   return (
@@ -139,6 +141,62 @@ export default function AboutPage() {
                 </div>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team & contacts */}
+      <section className="bg-white border-t border-sand-200 py-20 sm:py-28">
+        <div className="container-page grid gap-12 lg:grid-cols-2">
+          <div>
+            <span className="eyebrow text-accent-600">{t.teamPage.badge}</span>
+            <h2 className="mt-3 text-3xl font-extrabold text-navy-950 sm:text-4xl">
+              {t.teamPage.title}
+            </h2>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {team.map(
+                (m) =>
+                  m.photo && (
+                    <img
+                      key={m.slug}
+                      src={m.photo}
+                      alt={pick(m.name, locale) ?? m.slug}
+                      title={`${pick(m.name, locale) ?? ""} — ${m.role}`}
+                      className="h-16 w-16 rounded-full border border-sand-300 object-cover sm:h-20 sm:w-20"
+                    />
+                  ),
+              )}
+            </div>
+            <div className="mt-8">
+              <Button href="/team" withArrow>
+                {t.nav.team}
+              </Button>
+            </div>
+          </div>
+
+          <div>
+            <span className="eyebrow text-accent-600">{t.contactPage.badge}</span>
+            <h2 className="mt-3 text-3xl font-extrabold text-navy-950 sm:text-4xl">
+              {t.contactPage.title}
+            </h2>
+            <div className="mt-8 space-y-4">
+              <a
+                href={`mailto:${t.contact.email}`}
+                className="flex items-center gap-3 rounded-2xl border border-sand-300 bg-sand-50 px-5 py-4 text-sm font-semibold text-navy-800 transition-colors hover:bg-sand-100"
+              >
+                <Mail className="h-5 w-5 text-accent-600" />
+                {t.contact.email}
+              </a>
+              <div className="flex items-center gap-3 rounded-2xl border border-sand-300 bg-sand-50 px-5 py-4 text-sm text-navy-700">
+                <MapPin className="h-5 w-5 text-accent-600" />
+                {t.contactPage.location}
+              </div>
+            </div>
+            <div className="mt-8">
+              <Button href="/contact" withArrow>
+                {t.common.getInTouch}
+              </Button>
+            </div>
           </div>
         </div>
       </section>
