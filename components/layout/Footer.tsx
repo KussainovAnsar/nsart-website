@@ -33,29 +33,34 @@ export function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold text-white break-words whitespace-pre-line min-w-0">
-              {t.footer.audiences}
-            </h3>
-            <ul className="mt-4 space-y-2.5 text-sm">
-              <FooterLink href="/investors">{t.nav.investors}</FooterLink>
-              <FooterLink href="/enterprise">{t.nav.enterprise}</FooterLink>
-              <FooterLink href="/founders">{t.nav.founders}</FooterLink>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-white break-words whitespace-pre-line min-w-0">
               {t.footer.company}
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <FooterLink href="/about">{t.nav.about}</FooterLink>
               <FooterLink href="/team">{t.nav.team}</FooterLink>
               <FooterLink href="/news">{t.nav.news}</FooterLink>
+              <FooterLink href="/miras">{t.nav.miras}</FooterLink>
+              <FooterLink href="/contact">{t.nav.contact}</FooterLink>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-white break-words whitespace-pre-line min-w-0">
+              {t.navGroups.solutions}
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm">
               <FooterLink href="/technologies">{t.nav.technologies}</FooterLink>
               <FooterLink href="/ip">{t.nav.ip}</FooterLink>
-              <FooterLink href="/miras">{t.nav.miras}</FooterLink>
+            </ul>
+            <h3 className="mt-8 text-sm font-semibold text-white break-words whitespace-pre-line min-w-0">
+              {t.navGroups.ecosystem}
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm">
               <FooterLink href="/markets">{t.nav.markets}</FooterLink>
               <FooterLink href="/partners">{t.nav.partners}</FooterLink>
-              <FooterLink href="/contact">{t.nav.contact}</FooterLink>
+              <FooterLink href="/investors">{t.nav.investors}</FooterLink>
+              <FooterLink href="/enterprise">{t.nav.enterprise}</FooterLink>
+              <FooterLink href="/founders">{t.nav.founders}</FooterLink>
             </ul>
           </div>
 

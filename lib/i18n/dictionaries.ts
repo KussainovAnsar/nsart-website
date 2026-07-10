@@ -29,6 +29,8 @@ const en = {
   navGroups: {
     company: "Company",
     audiences: "Audiences",
+    solutions: "Solutions",
+    ecosystem: "Eco-system",
   },
   common: {
     getInTouch: "Get in touch",
@@ -757,7 +759,7 @@ const ru: Dictionary = {
     team: "Команда",
     news: "Новости",
   },
-  navGroups: { company: "Компания", audiences: "Аудитории" },
+  navGroups: { company: "Компания", audiences: "Аудитории", solutions: "Решения", ecosystem: "Экосистема" },
   common: {
     getInTouch: "Связаться",
     learnMore: "Подробнее",
@@ -1446,7 +1448,7 @@ const ar: DeepPartial<Dictionary> = {
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · متوافق مع أهداف التنمية المستدامة",
-  navGroups: { company: "الشركة", audiences: "الجمهور" },
+  navGroups: { company: "الشركة", audiences: "الجمهور", solutions: "الحلول", ecosystem: "المنظومة" },
   common: {
     getInTouch: "تواصل معنا",
     learnMore: "اعرف المزيد",
@@ -1997,7 +1999,7 @@ const kk: DeepPartial<Dictionary> = {
   },
   trustBar:
     "ISO 9001 · ISO 14001 · ISO 10015 · TIA-942 · Uptime Tier III/IV · UN e-Gov Top-25 · ТДМ-ге сай",
-  navGroups: { company: "Компания", audiences: "Аудиториялар" },
+  navGroups: { company: "Компания", audiences: "Аудиториялар", solutions: "Шешімдер", ecosystem: "Экожүйе" },
   common: {
     getInTouch: "Байланысу",
     learnMore: "Толығырақ",

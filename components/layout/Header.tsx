@@ -15,8 +15,7 @@ export function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [audOpen, setAudOpen] = useState(false);
-  const [compOpen, setCompOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -36,18 +35,29 @@ export function Header() {
     };
   }, [mobileOpen]);
 
-  const audiences = [
+  const company = [
+    { href: "/about", label: t.nav.about },
+    { href: "/team", label: t.nav.team },
+    { href: "/contact", label: t.nav.contact },
+  ];
+
+  const solutions = [
+    { href: "/technologies", label: t.nav.technologies },
+    { href: "/ip", label: t.nav.ip },
+  ];
+
+  const ecosystem = [
+    { href: "/markets", label: t.nav.markets },
+    { href: "/partners", label: t.nav.partners },
     { href: "/investors", label: t.nav.investors },
     { href: "/enterprise", label: t.nav.enterprise },
     { href: "/founders", label: t.nav.founders },
   ];
 
-  const company = [
-    { href: "/about", label: t.nav.about },
-    { href: "/technologies", label: t.nav.technologies },
-    { href: "/ip", label: t.nav.ip },
-    { href: "/markets", label: t.nav.markets },
-    { href: "/partners", label: t.nav.partners },
+  const groups = [
+    { key: "company", label: t.navGroups.company, items: company, width: "w-64" },
+    { key: "solutions", label: t.navGroups.solutions, items: solutions, width: "w-64" },
+    { key: "ecosystem", label: t.navGroups.ecosystem, items: ecosystem, width: "w-72" },
   ];
 
   return (
@@ -66,95 +76,54 @@ export function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 lg:flex">
-          {/* Company dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setCompOpen(true)}
-            onMouseLeave={() => setCompOpen(false)}
-          >
-            <button
-              type="button"
-              onClick={() => setCompOpen((v) => !v)}
-              className={cn(
-                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
-                scrolled
-                  ? "text-navy-700 hover:bg-navy-50"
-                  : "text-white/80 hover:bg-white/10 hover:text-white"
-              )}
+          {groups.map((g) => (
+            <div
+              key={g.key}
+              className="relative"
+              onMouseEnter={() => setOpenGroup(g.key)}
+              onMouseLeave={() => setOpenGroup(null)}
             >
-              {t.navGroups.company}
-              <ChevronDown
+              <button
+                type="button"
+                onClick={() =>
+                  setOpenGroup((v) => (v === g.key ? null : g.key))
+                }
                 className={cn(
-                  "h-3.5 w-3.5 transition-transform",
-                  compOpen && "rotate-180",
+                  "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                  scrolled
+                    ? "text-navy-700 hover:bg-navy-50"
+                    : "text-white/80 hover:bg-white/10 hover:text-white"
                 )}
-              />
-            </button>
-            {compOpen && (
-              <div className="absolute start-0 top-full z-50 w-64 pt-2">
-                <div className="overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]">
-                  {company.map((c) => (
-                    <Link
-                      key={c.href}
-                      href={c.href}
-                      className="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy-700 transition-colors hover:bg-navy-50"
-                    >
-                      {c.label}
-                    </Link>
-                  ))}
+              >
+                {g.label}
+                <ChevronDown
+                  className={cn(
+                    "h-3.5 w-3.5 transition-transform",
+                    openGroup === g.key && "rotate-180",
+                  )}
+                />
+              </button>
+              {openGroup === g.key && (
+                <div className={cn("absolute start-0 top-full z-50 pt-2", g.width)}>
+                  <div className="overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]">
+                    {g.items.map((c) => (
+                      <Link
+                        key={c.href}
+                        href={c.href}
+                        className="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy-700 transition-colors hover:bg-navy-50"
+                      >
+                        {c.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-
-          <NavLink href="/team" scrolled={scrolled}>{t.nav.team}</NavLink>
+              )}
+            </div>
+          ))}
 
           <NavLink href="/news" scrolled={scrolled}>{t.nav.news}</NavLink>
 
           <NavLink href="/miras" scrolled={scrolled}>{t.nav.miras}</NavLink>
-
-          {/* Audiences dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setAudOpen(true)}
-            onMouseLeave={() => setAudOpen(false)}
-          >
-            <button
-              type="button"
-              onClick={() => setAudOpen((v) => !v)}
-              className={cn(
-                "inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
-                scrolled
-                  ? "text-navy-700 hover:bg-navy-50"
-                  : "text-white/80 hover:bg-white/10 hover:text-white"
-              )}
-            >
-              {t.navGroups.audiences}
-              <ChevronDown
-                className={cn(
-                  "h-3.5 w-3.5 transition-transform",
-                  audOpen && "rotate-180",
-                )}
-              />
-            </button>
-            {audOpen && (
-              <div className="absolute start-0 top-full z-50 w-72 pt-2">
-                <div className="overflow-hidden rounded-2xl border border-sand-300 bg-white p-1.5 shadow-[var(--shadow-lift)]">
-                  {audiences.map((a) => (
-                    <Link
-                      key={a.href}
-                      href={a.href}
-                      className="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy-700 transition-colors hover:bg-navy-50"
-                    >
-                      {a.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
-          <NavLink href="/contact" scrolled={scrolled}>{t.nav.contact}</NavLink>
           {/* Языковой переключатель прямо в навигации */}
           <div className="ml-2 flex items-center">
             <LanguageSwitcher tone={scrolled ? "dark" : "light"} />
@@ -202,28 +171,22 @@ export function Header() {
             </div>
             <div className="flex-1 overflow-y-auto px-5 py-6">
               <div className="mb-5 flex flex-col">
-                <MobileLink href="/team">{t.nav.team}</MobileLink>
                 <MobileLink href="/news">{t.nav.news}</MobileLink>
-              </div>
-              <p className="eyebrow mb-2 text-navy-400">{t.navGroups.audiences}</p>
-              <div className="flex flex-col">
-                {audiences.map((a) => (
-                  <MobileLink key={a.href} href={a.href}>
-                    {a.label}
-                  </MobileLink>
-                ))}
-              </div>
-              <div className="my-5 h-px bg-sand-300" />
-              <p className="eyebrow mb-2 text-navy-400">{t.navGroups.company}</p>
-              <div className="flex flex-col">
-                <MobileLink href="/about">{t.nav.about}</MobileLink>
-                <MobileLink href="/technologies">{t.nav.technologies}</MobileLink>
-                <MobileLink href="/ip">{t.nav.ip}</MobileLink>
                 <MobileLink href="/miras">{t.nav.miras}</MobileLink>
-                <MobileLink href="/markets">{t.nav.markets}</MobileLink>
-                <MobileLink href="/partners">{t.nav.partners}</MobileLink>
-                <MobileLink href="/contact">{t.nav.contact}</MobileLink>
               </div>
+              {groups.map((g, i) => (
+                <div key={g.key}>
+                  {i > 0 && <div className="my-5 h-px bg-sand-300" />}
+                  <p className="eyebrow mb-2 text-navy-400">{g.label}</p>
+                  <div className="flex flex-col">
+                    {g.items.map((c) => (
+                      <MobileLink key={c.href} href={c.href}>
+                        {c.label}
+                      </MobileLink>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
             <div className="flex items-center justify-between gap-2 border-t border-sand-300 px-4 py-3">
               <LanguageSwitcher placement="top" compact />
