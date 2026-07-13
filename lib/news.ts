@@ -594,6 +594,13 @@ export const news: NewsItem[] = [
     slug: "space-ai-competition-aeroo-jury",
     date: "2026-04-12",
     image: "/news/space-ai-competition-aeroo-jury.webp",
+    images: [
+      "/news/space-ai-competition-aeroo-jury.webp",
+      "/news/space-ai-competition-aeroo-jury-2.webp",
+      "/news/space-ai-competition-aeroo-jury-3.webp",
+      "/news/space-ai-competition-aeroo-jury-4.webp",
+      "/news/space-ai-competition-aeroo-jury-5.webp",
+    ],
     tag: { ru: "Событие", en: "Event", ar: "فعالية", kk: "Іс-шара" },
     location: { ru: "Астана", en: "Astana", ar: "أستانا", kk: "Астана" },
     displayDate: {
