@@ -14,7 +14,7 @@ import type { Locale } from "./i18n/config";
 type L<T> = Record<Locale, T>;
 
 export type NewsItem = {
-  /** Sequential id from the source feed (30…). */
+  /** Sequential id from the source feed (29…). */
   id: number;
   /** URL slug for /news/<slug>. */
   slug: string;
@@ -75,6 +75,55 @@ export const newsUi = {
 
 /* Newest first — see `sortedNews` below. */
 export const news: NewsItem[] = [
+  {
+    id: 29,
+    slug: "nurgozha-astana-venture-club",
+    date: "2025-07-09",
+    image: "/news/nurgozha-astana-venture-club.webp",
+    tag: { ru: "Интервью", en: "Interview", ar: "مقابلة", kk: "Сұхбат" },
+    location: {
+      ru: "Astana Venture Club",
+      en: "Astana Venture Club",
+      ar: "Astana Venture Club",
+      kk: "Astana Venture Club",
+    },
+    displayDate: {
+      ru: "9 июля 2025",
+      en: "9 July 2025",
+      ar: "9 يوليو 2025",
+      kk: "2025 жылғы 9 шілде",
+    },
+    title: {
+      ru: "Знакомьтесь: Нургожа Калиаскаров — венчурный инвестор и резидент Astana Venture Club",
+      en: "Meet Nurgozha Kaliaskarov — venture investor and Astana Venture Club resident",
+      ar: "تعرّفوا على نورغوجا كالياسكاروف — مستثمر جريء وعضو مقيم في Astana Venture Club",
+      kk: "Танысыңыздар: Нұрғожа Қалиасқаров — венчурлық инвестор әрі Astana Venture Club резиденті",
+    },
+    excerpt: {
+      ru: "Венчурный инвестор и резидент Astana Venture Club Нургожа Калиаскаров отвечает на короткие, честные и точные вопросы, которые интересуют всех.",
+      en: "Venture investor and Astana Venture Club resident Nurgozha Kaliaskarov answers short, honest and precise questions that everyone wants to ask.",
+      ar: "المستثمر الجريء والعضو المقيم في Astana Venture Club نورغوجا كالياسكاروف يجيب عن أسئلة قصيرة وصادقة ودقيقة تهمّ الجميع.",
+      kk: "Венчурлық инвестор әрі Astana Venture Club резиденті Нұрғожа Қалиасқаров барлығын қызықтыратын қысқа, шынайы әрі нақты сұрақтарға жауап береді.",
+    },
+    body: {
+      ru: [
+        "Знакомьтесь: венчурный инвестор и резидент Astana Venture Club — Нургожа Калиаскаров. Он отвечает на короткие, честные и точные вопросы, которые интересуют всех.",
+        "Присоединяйтесь — будет весело! 💡",
+      ],
+      en: [
+        "Meet Nurgozha Kaliaskarov — venture investor and Astana Venture Club resident. He answers short, honest and precise questions that everyone wants to ask.",
+        "Join in — it's going to be fun! 💡",
+      ],
+      ar: [
+        "تعرّفوا على المستثمر الجريء والعضو المقيم في Astana Venture Club — نورغوجا كالياسكاروف. يجيب عن أسئلة قصيرة وصادقة ودقيقة تهمّ الجميع.",
+        "انضمّوا إلينا — ستكون ممتعة! 💡",
+      ],
+      kk: [
+        "Танысыңыздар: венчурлық инвестор әрі Astana Venture Club резиденті — Нұрғожа Қалиасқаров. Ол барлығын қызықтыратын қысқа, шынайы әрі нақты сұрақтарға жауап береді.",
+        "Қосылыңыздар — қызықты болады! 💡",
+      ],
+    },
+  },
   {
     id: 30,
     slug: "nsart-qaztrade-alliance",
