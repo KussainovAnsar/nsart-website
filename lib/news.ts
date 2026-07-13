@@ -14,7 +14,7 @@ import type { Locale } from "./i18n/config";
 type L<T> = Record<Locale, T>;
 
 export type NewsItem = {
-  /** Sequential id from the source feed (31…). */
+  /** Sequential id from the source feed (30…). */
   id: number;
   /** URL slug for /news/<slug>. */
   slug: string;
@@ -73,6 +73,49 @@ export const newsUi = {
 
 /* Newest first — see `sortedNews` below. */
 export const news: NewsItem[] = [
+  {
+    id: 30,
+    slug: "nsart-qaztrade-alliance",
+    date: "2025-09-25",
+    image: "/news/nsart-qaztrade-alliance.webp",
+    tag: { ru: "Партнёрство", en: "Partnership", ar: "شراكة", kk: "Серіктестік" },
+    displayDate: {
+      ru: "25 сентября 2025",
+      en: "25 September 2025",
+      ar: "25 سبتمبر 2025",
+      kk: "2025 жылғы 25 қыркүйек",
+    },
+    title: {
+      ru: "NSART и QazTrade объединяют усилия для поддержки казахстанского экспорта и стартапов",
+      en: "NSART and QazTrade join forces to support Kazakhstan's exports and startups",
+      ar: "NSART وQazTrade توحّدان الجهود لدعم الصادرات والشركات الناشئة الكازاخستانية",
+      kk: "NSART пен QazTrade қазақстандық экспорт пен стартаптарды қолдау үшін күш біріктірді",
+    },
+    excerpt: {
+      ru: "NSART и QazTrade теперь вместе поддерживают казахстанский экспорт и стартапы на мировом уровне: выход на рынки MENA, Южной Азии и Африки, поиск инвесторов и партнёров, акселерация и пилотные проекты.",
+      en: "NSART and QazTrade now jointly support Kazakhstan's exports and startups on the global stage: entering the markets of MENA, South Asia and Africa, finding investors and partners, acceleration and pilot projects.",
+      ar: "NSART وQazTrade تدعمان الآن معًا الصادرات والشركات الناشئة الكازاخستانية على المستوى العالمي: دخول أسواق الشرق الأوسط وشمال إفريقيا وجنوب آسيا وإفريقيا، وإيجاد المستثمرين والشركاء، والتسريع والمشاريع التجريبية.",
+      kk: "NSART пен QazTrade енді қазақстандық экспорт пен стартаптарды жаһандық деңгейде бірлесіп қолдайды: MENA, Оңтүстік Азия және Африка нарықтарына шығу, инвесторлар мен серіктестер табу, акселерация және пилоттық жобалар.",
+    },
+    body: {
+      ru: [
+        "Спешим сообщить: NSART и QazTrade теперь вместе будут поддерживать казахстанский экспорт и стартапы на мировом уровне. Теперь мы ещё эффективнее и поможем вам с выходом на рынки MENA, Южной Азии и стран Африки, поиском инвесторов и партнёров, а также с акселерацией и пилотными проектами.",
+        "Этот альянс знаменует новый этап развития программы «NSART Gateway», созданной для комплексного вывода компаний и стартапов на глобальные рынки. Призываем вас расширять границы вместе — следите за новостями о совместных инициативах NSART и QazTrade!",
+      ],
+      en: [
+        "We are excited to announce that NSART and QazTrade will now join forces to support Kazakhstan's exports and startups on the global stage. From now on, we'll be even more effective in helping you with entering the markets of MENA, South Asia, and African countries, finding investors and partners, as well as acceleration and pilot projects.",
+        "This alliance marks a new stage of our program — NSART Gateway, designed to provide comprehensive support for companies and startups entering international markets. Let's expand boundaries together — stay tuned for updates on NSART and QazTrade joint initiatives!",
+      ],
+      ar: [
+        "يسرّنا الإعلان عن أن NSART وQazTrade ستوحّدان جهودهما من الآن فصاعدًا لدعم الصادرات والشركات الناشئة الكازاخستانية على المستوى العالمي. سنصبح الآن أكثر فاعلية في مساعدتكم على دخول أسواق منطقة الشرق الأوسط وشمال إفريقيا وجنوب آسيا والدول الإفريقية، وإيجاد المستثمرين والشركاء، إضافة إلى التسريع والمشاريع التجريبية.",
+        "يمثّل هذا التحالف مرحلة جديدة في تطوّر برنامج NSART Gateway المصمَّم لتقديم دعم شامل للشركات والشركات الناشئة الداخلة إلى الأسواق العالمية. لنوسّع الحدود معًا — تابعوا أخبار المبادرات المشتركة بين NSART وQazTrade!",
+      ],
+      kk: [
+        "Қуанышты жаңалық: NSART пен QazTrade енді бірлесіп қазақстандық экспорт пен стартаптарды жаһандық деңгейде қолдайды. Енді біз бұрынғыдан да тиімдіміз: MENA, Оңтүстік Азия және Африка елдерінің нарығына шығуға, инвесторлар мен серіктестер табуға, акселерация мен пилоттық жобаларды іске асыруға көмектесеміз.",
+        "Бұл альянс компаниялар мен стартаптарды әлем нарығына кешенді түрде шығаруға арналған «NSART Gateway» бағдарламасы дамуының жаңа кезеңін көрсетеді. Шекараны бірге кеңейтейік — NSART пен QazTrade-тың бірлескен бастамаларын жібермеңіздер!",
+      ],
+    },
+  },
   {
     id: 31,
     slug: "digital-bridge-2025-infotech-memorandum",
