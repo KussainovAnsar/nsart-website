@@ -22,6 +22,8 @@ export type NewsItem = {
   date: string;
   /** Optional cover image path under /public. Omit to use the placeholder. */
   image?: string;
+  /** Optional photo gallery for the article page; shown as a carousel instead of the single cover. */
+  images?: string[];
   /** Short category label shown as an eyebrow / badge. */
   tag: L<string>;
   /** Optional place. */
@@ -587,6 +589,11 @@ export const news: NewsItem[] = [
     slug: "akkol-investors-meeting",
     date: "2026-05-19",
     image: "/news/akkol-investors-meeting.webp",
+    images: [
+      "/news/akkol-investors-meeting.webp",
+      "/news/akkol-investors-meeting-2.webp",
+      "/news/akkol-investors-meeting-3.webp",
+    ],
     tag: { ru: "Инвестиции", en: "Investment", ar: "استثمار", kk: "Инвестиция" },
     location: { ru: "Акколь", en: "Akkol", ar: "أقكول", kk: "Ақкөл" },
     displayDate: {

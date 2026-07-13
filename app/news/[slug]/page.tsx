@@ -7,6 +7,7 @@ import { ArrowLeft, MapPin } from "lucide-react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Reveal } from "@/components/ui/Reveal";
 import { NewsCover } from "@/components/news/NewsCover";
+import { NewsGallery } from "@/components/news/NewsGallery";
 import { getNewsBySlug, sortedNews, pickNews, newsUi } from "@/lib/news";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -67,9 +68,16 @@ export default function NewsArticlePage() {
       <section className="bg-white py-14 sm:py-20">
         <article className="container-page max-w-3xl">
           <Reveal>
-            <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-sand-300">
-              <NewsCover item={item} locale={locale} priority />
-            </div>
+            {item.images && item.images.length > 0 ? (
+              <NewsGallery
+                images={item.images}
+                alt={pickNews(item.title, locale) ?? ""}
+              />
+            ) : (
+              <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-sand-300">
+                <NewsCover item={item} locale={locale} priority />
+              </div>
+            )}
           </Reveal>
 
           <div className="mt-9 flex flex-col gap-5 text-[1.05rem] leading-relaxed text-navy-800">
