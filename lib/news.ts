@@ -76,6 +76,72 @@ export const newsUi = {
 /* Newest first — see `sortedNews` below. */
 export const news: NewsItem[] = [
   {
+    id: 42,
+    slug: "aixc-launch",
+    date: "2026-07-15",
+    image: "/news/aixc-launch.webp",
+    images: [
+      "/news/aixc-launch.webp",
+      "/news/aixc-launch-2.webp",
+      "/news/aixc-launch-3.webp",
+    ],
+    tag: { ru: "Запуск", en: "Launch", ar: "إطلاق", kk: "Іске қосу" },
+    location: {
+      ru: "Гуджранвала, Пакистан",
+      en: "Gujranwala, Pakistan",
+      ar: "جوجرانوالا، باكستان",
+      kk: "Гуджранвала, Пәкістан",
+    },
+    displayDate: {
+      ru: "15 июля 2026",
+      en: "15 July 2026",
+      ar: "15 يوليو 2026",
+      kk: "2026 жылғы 15 шілде",
+    },
+    title: {
+      ru: "Историческая веха: запуск Центра превосходства ИИ (AIXC) в Гуджранвале",
+      en: "Historic Milestone: Launch of the AI Excellence Centre (AIXC) in Gujranwala",
+      ar: "إنجاز تاريخي: إطلاق مركز التميز للذكاء الاصطناعي (AIXC) في جوجرانوالا",
+      kk: "Тарихи белес: Гуджранвалада AI Excellence Centre (AIXC) іске қосылды",
+    },
+    excerpt: {
+      ru: "GIFT University, Gujranwala Business Alliance и NSART (Казахстан) при технологической поддержке ONIT Global запустили Центр превосходства ИИ (AIXC) — новая глава технологического сотрудничества Пакистана и Казахстана.",
+      en: "GIFT University, the Gujranwala Business Alliance and NSART Kazakhstan, with technology support from ONIT Global, launch the AI Excellence Centre (AIXC) — a new chapter in Pakistan–Kazakhstan tech cooperation.",
+      ar: "جامعة GIFT وتحالف جوجرانوالا للأعمال وNSART الكازاخستانية، بدعم تقني من ONIT Global، يطلقون مركز التميز للذكاء الاصطناعي (AIXC) — فصل جديد في التعاون التقني بين باكستان وكازاخستان.",
+      kk: "GIFT University, Gujranwala Business Alliance және NSART (Қазақстан) ONIT Global технологиялық қолдауымен AI Excellence Centre (AIXC) орталығын іске қосты — Пәкістан мен Қазақстан технологиялық ынтымақтастығының жаңа тарауы.",
+    },
+    body: {
+      ru: [
+        "Гуджранвала делает уверенный шаг к тому, чтобы стать хабом искусственного интеллекта и цифровой трансформации: запущен Центр превосходства ИИ (AIXC) — совместная инициатива GIFT University, Gujranwala Business Alliance (GBA) и NSART (Казахстан) при технологической поддержке ONIT Global.",
+        "Знаковая инициатива стартовала в присутствии Посла Казахстана в Пакистане Е.П. Ержана Кистафина, председателя Gujranwala Business Alliance Ахмада Икрама Лоне и основателя и председателя GIFT University Анвара Дара — открыта новая глава сотрудничества Пакистана и Казахстана в технологиях, инновациях и ИИ.",
+        "AIXC призван стать катализатором ИИ-революции в регионе: центр объединяет академическую среду, индустрию, международную экспертизу и технологических партнёров, чтобы трансформировать отрасли, готовить кадры будущего, поддерживать стартапы и ускорять внедрение ИИ.",
+        "В фокусе — здравоохранение, образование, кибербезопасность, агротех и модернизация МСБ: AIXC станет фундаментом мощной инновационной экосистемы и выведет Гуджранвалу на передовую цифровой экономики.",
+        "От индустриальной мощи — к интеллектуальным инновациям: путь к Gujranwala Valley начинается. 🇵🇰🇰🇿",
+      ],
+      en: [
+        "Gujranwala takes a bold step towards becoming a hub of Artificial Intelligence and digital transformation with the launch of the AI Excellence Centre (AIXC) — a joint initiative of GIFT University, the Gujranwala Business Alliance (GBA) and NSART Kazakhstan, with technology support from ONIT Global.",
+        "The landmark initiative was launched in the presence of H.E. Yerzhan Kistafin, Ambassador of Kazakhstan to Pakistan, alongside Mr. Ahmad Ikram Lone, Chairman of the Gujranwala Business Alliance, and Mr. Anwar Dar, Founder & Chairman of GIFT University — marking a new chapter in Pakistan–Kazakhstan cooperation in technology, innovation and AI.",
+        "AIXC aims to become the catalyst for the AI revolution in the region by connecting academia, industry, international expertise and technology partners to transform industries, develop future-ready talent, support startups and accelerate AI adoption.",
+        "With a focus on Healthcare, Education, Cybersecurity, AgriTech and SME Modernization, AIXC will serve as the foundation for building a powerful innovation ecosystem and positioning Gujranwala at the forefront of the digital economy.",
+        "From industrial strength to intelligent innovation — the journey towards Gujranwala Valley begins. 🇵🇰🇰🇿",
+      ],
+      ar: [
+        "تخطو جوجرانوالا خطوة جريئة نحو التحول إلى مركز للذكاء الاصطناعي والتحول الرقمي مع إطلاق مركز التميز للذكاء الاصطناعي (AIXC) — مبادرة مشتركة بين جامعة GIFT وتحالف جوجرانوالا للأعمال (GBA) وشركة NSART الكازاخستانية، بدعم تقني من ONIT Global.",
+        "أُطلقت هذه المبادرة البارزة بحضور سعادة يرجان كيستافين، سفير كازاخستان لدى باكستان، إلى جانب السيد أحمد إكرام لون، رئيس تحالف جوجرانوالا للأعمال، والسيد أنور دار، مؤسس ورئيس جامعة GIFT — لتفتح فصلاً جديداً في التعاون الباكستاني–الكازاخستاني في التكنولوجيا والابتكار والذكاء الاصطناعي.",
+        "يهدف AIXC إلى أن يكون محفّزاً لثورة الذكاء الاصطناعي في المنطقة عبر الربط بين الأوساط الأكاديمية والصناعة والخبرات الدولية والشركاء التقنيين، لتحويل القطاعات وإعداد مواهب المستقبل ودعم الشركات الناشئة وتسريع تبنّي الذكاء الاصطناعي.",
+        "وبتركيزه على الرعاية الصحية والتعليم والأمن السيبراني والتقنيات الزراعية وتحديث المنشآت الصغيرة والمتوسطة، سيكون AIXC أساساً لبناء منظومة ابتكار قوية تضع جوجرانوالا في طليعة الاقتصاد الرقمي.",
+        "من القوة الصناعية إلى الابتكار الذكي — تبدأ الرحلة نحو وادي جوجرانوالا. 🇵🇰🇰🇿",
+      ],
+      kk: [
+        "Гуджранвала жасанды интеллект пен цифрлық трансформация хабына айналу жолында батыл қадам жасады: GIFT University, Gujranwala Business Alliance (GBA) және NSART (Қазақстан) бірлескен бастамасы — AI Excellence Centre (AIXC) іске қосылды, технологиялық қолдауды ONIT Global көрсетеді.",
+        "Айтулы бастама Қазақстанның Пәкістандағы Елшісі Ержан Қыстафиннің, Gujranwala Business Alliance төрағасы Ахмад Икрам Лоненің және GIFT University негізін қалаушысы әрі төрағасы Анвар Дардың қатысуымен басталды — бұл Пәкістан мен Қазақстанның технология, инновация және ЖИ саласындағы ынтымақтастығының жаңа тарауы.",
+        "AIXC академиялық орта, индустрия, халықаралық сарапшылық пен технологиялық серіктестерді байланыстыра отырып, салаларды трансформациялау, болашақ мамандарды даярлау, стартаптарды қолдау және ЖИ енгізуді жеделдету арқылы өңірдегі ЖИ революциясының катализаторы болуды көздейді.",
+        "Басты бағыттар — денсаулық сақтау, білім беру, киберқауіпсіздік, агротех және ШОБ жаңғырту: AIXC қуатты инновациялық экожүйенің іргетасы болып, Гуджранваланы цифрлық экономиканың алдыңғы қатарына шығарады.",
+        "Индустриялық қуаттан — зияткерлік инновацияға: Gujranwala Valley жолындағы сапар басталды. 🇵🇰🇰🇿",
+      ],
+    },
+  },
+  {
     id: 29,
     slug: "nurgozha-astana-venture-club",
     date: "2025-07-09",
