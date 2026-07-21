@@ -26,7 +26,7 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   display: "swap",
 });
 
-const siteUrl = "https://nsart-website.vercel.app";
+const siteUrl = "https://nsartgateway.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -54,6 +54,22 @@ export const metadata: Metadata = {
       "Deep-tech ventures from Central Asia to the world — R&D, intellectual property, and investment infrastructure.",
     type: "website",
     siteName: "NSART",
+    url: "/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "NSART · Technology Interaction",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NSART · Technology Interaction",
+    description:
+      "Deep-tech ventures from Central Asia to the world — R&D, intellectual property, and investment infrastructure.",
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
