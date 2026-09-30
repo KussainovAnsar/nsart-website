@@ -43,6 +43,7 @@ export function Header() {
 
   const solutions = [
     { href: "/technologies", label: t.nav.technologies },
+    { href: "/digital-twin", label: t.nav.digitalTwin },
     { href: "/ip", label: t.nav.ip },
   ];
 

@@ -14,6 +14,7 @@ const en = {
     home: "Home",
     about: "About",
     technologies: "Technologies",
+    digitalTwin: "Digital twins",
     ip: "IP & Assets",
     miras: "Miras Accelerator",
     investors: "For Investors",
@@ -523,6 +524,89 @@ const en = {
     ],
   },
 
+  digitalTwinPage: {
+    badge: "Digital twins",
+    title: "A model of the object, kept in sync with the object itself.",
+    intro:
+      "A digital twin is a purpose-built digital representation of a real asset — a plant, a data hall, a network, a field — connected to that asset by a live data link. The value is not the 3D picture: it is the ability to test a decision on the copy before it is applied to the original.",
+    levels: {
+      heading: "Three levels of maturity",
+      sub: "The term is used loosely. These three differ by how data moves between the object and the model.",
+      items: [
+        {
+          n: "01",
+          title: "Digital model",
+          text: "A static representation. Data is transferred by hand; changes on either side do not propagate.",
+        },
+        {
+          n: "02",
+          title: "Digital shadow",
+          text: "A one-way link. The object feeds the model automatically, but the model does not act back on the object.",
+        },
+        {
+          n: "03",
+          title: "Digital twin",
+          text: "A two-way link. The model receives live telemetry and returns setpoints, schedules and warnings to the operating system.",
+        },
+      ],
+    },
+    kinds: {
+      heading: "What a twin is asked to do",
+      sub: "Four working types, in the order organisations usually adopt them.",
+      items: [
+        { title: "Descriptive", text: "Shows the current state of the object in one place, from the same data the operators already collect." },
+        { title: "Diagnostic", text: "Explains why an indicator has moved: which unit, which parameter, which interaction." },
+        { title: "Predictive", text: "Projects wear, load and failure probability forward in time." },
+        { title: "Prescriptive", text: "Proposes a specific action — a setpoint, a maintenance window, a load redistribution — and shows its modelled effect." },
+      ],
+    },
+    scope: {
+      heading: "What a project consists of",
+      sub: "The order of work is fixed; the depth of each step depends on the object.",
+      steps: [
+        { n: "1", title: "Survey", text: "Which data already exists, at what interval, in what systems; where the losses are; whether a model is justified at all." },
+        { n: "2", title: "Model", text: "Physics, statistics or a combination — chosen by the question the object has to answer, not by fashion." },
+        { n: "3", title: "Synchronisation", text: "A data link from sensors, metering and control systems, with checks on completeness and drift." },
+        { n: "4", title: "Operation", text: "Scenario runs, alerts and handover: the customer's team operates the model without the contractor." },
+      ],
+    },
+    domains: {
+      heading: "Where it applies",
+      sub: "Objects where metering already exists — a twin cannot be built without data.",
+      items: [
+        {
+          title: "Data centres",
+          text: "Airflow and heat simulation, placement of high-density racks, failure scenarios for cooling and power, capacity that is trapped by airflow rather than missing.",
+          tags: ["Thermal model", "Capacity", "Failure scenarios"],
+        },
+        {
+          title: "Power generation and grids",
+          text: "Equipment condition, load modes, maintenance planning by actual wear instead of a fixed calendar.",
+          tags: ["Condition", "Load modes", "Maintenance"],
+        },
+        {
+          title: "Industrial plant",
+          text: "Pumping stations, compressors and process lines: failure prediction and selection of an operating mode without risk to production.",
+          tags: ["Failure prediction", "Modes"],
+        },
+        {
+          title: "Urban networks",
+          text: "Water, heat and lighting: locating losses and setting the order of replacement.",
+          tags: ["Losses", "Replacement order"],
+        },
+      ],
+    },
+    standard: {
+      heading: "The standard behind the term",
+      text: "ISO 23247, Digital Twin Framework for Manufacturing, published in 2021, defines the reference architecture, the digital representation of physical elements and the rules of information exchange. Part 6, on composing several twins into one system, was published in 2026. The framework gives a common language for describing what exactly is being built — and what is not.",
+      points: ["Reference architecture", "Digital representation of elements", "Information exchange", "Composition of several twins"],
+    },
+    cta: {
+      heading: "Start with a survey",
+      text: "The first step is an assessment of the data an object already produces. It ends with a written answer on whether a twin is justified here.",
+      button: "Contact the team",
+    },
+  },
   /* -------- IP & Assets page -------- */
   ipPage: {
     badge: "Intellectual property & intangible assets",
@@ -749,6 +833,7 @@ const ru: Dictionary = {
     home: "Главная",
     about: "О компании",
     technologies: "Технологии",
+    digitalTwin: "Цифровые двойники",
     ip: "ИС и активы",
     miras: "Miras Accelerator",
     investors: "Для инвесторов",
@@ -1241,6 +1326,89 @@ const ru: Dictionary = {
         items: ["TIA-942", "Uptime Tier III/IV", "PUE ~1,2", "Охлаждение на СПГ"],
       },
     ],
+  },
+  digitalTwinPage: {
+    badge: "Цифровые двойники",
+    title: "Модель объекта, синхронизированная с самим объектом.",
+    intro:
+      "Цифровой двойник — это цифровое представление реального объекта: производственной площадки, машинного зала, сети, месторождения — связанное с ним потоком данных. Ценность не в трёхмерной картинке, а в возможности проверить решение на копии до того, как его применят к оригиналу.",
+    levels: {
+      heading: "Три уровня зрелости",
+      sub: "Термином называют разные вещи. Эти три различаются тем, как данные ходят между объектом и моделью.",
+      items: [
+        {
+          n: "01",
+          title: "Цифровая модель",
+          text: "Статичное представление. Данные переносятся вручную, изменения ни с одной стороны не передаются автоматически.",
+        },
+        {
+          n: "02",
+          title: "Цифровая тень",
+          text: "Односторонняя связь. Объект автоматически передаёт данные в модель, но модель не влияет на объект.",
+        },
+        {
+          n: "03",
+          title: "Цифровой двойник",
+          text: "Двусторонняя связь. Модель принимает телеметрию и возвращает уставки, графики и предупреждения в систему управления.",
+        },
+      ],
+    },
+    kinds: {
+      heading: "Что двойник должен делать",
+      sub: "Четыре рабочих типа — в том порядке, в котором их обычно внедряют.",
+      items: [
+        { title: "Описательный", text: "Показывает текущее состояние объекта в одном месте, по тем данным, которые уже собираются." },
+        { title: "Диагностический", text: "Объясняет, почему показатель изменился: какой узел, какой параметр, какое взаимодействие." },
+        { title: "Прогнозный", text: "Переносит вперёд износ, нагрузку и вероятность отказа." },
+        { title: "Предписывающий", text: "Предлагает конкретное действие — уставку, окно ремонта, перераспределение нагрузки — и показывает расчётный эффект." },
+      ],
+    },
+    scope: {
+      heading: "Из чего состоит проект",
+      sub: "Порядок работ постоянный, глубина каждого шага зависит от объекта.",
+      steps: [
+        { n: "1", title: "Обследование", text: "Какие данные уже есть, с каким интервалом и в каких системах; где потери; оправдана ли модель вообще." },
+        { n: "2", title: "Модель", text: "Физика, статистика или их сочетание — выбор определяется вопросом, на который должен отвечать объект." },
+        { n: "3", title: "Синхронизация", text: "Канал данных от датчиков, приборов учёта и систем управления, с контролем полноты и расхождений." },
+        { n: "4", title: "Эксплуатация", text: "Расчёт сценариев, оповещения и передача: команда заказчика ведёт модель без подрядчика." },
+      ],
+    },
+    domains: {
+      heading: "Где применимо",
+      sub: "Объекты, где уже есть приборный учёт: без данных двойник не строится.",
+      items: [
+        {
+          title: "Дата-центры",
+          text: "Расчёт воздушных потоков и тепла, размещение стоек высокой плотности, сценарии отказа охлаждения и питания, мощность, запертая не нехваткой оборудования, а движением воздуха.",
+          tags: ["Тепловая модель", "Мощность", "Сценарии отказа"],
+        },
+        {
+          title: "Генерация и сети",
+          text: "Состояние оборудования, режимы нагрузки, планирование ремонтов по фактическому износу вместо календаря.",
+          tags: ["Состояние", "Режимы", "Ремонты"],
+        },
+        {
+          title: "Промышленные объекты",
+          text: "Насосные, компрессорные и технологические линии: прогноз отказов и подбор режима без риска для производства.",
+          tags: ["Прогноз отказов", "Режимы"],
+        },
+        {
+          title: "Городские сети",
+          text: "Вода, тепло и освещение: локализация потерь и очерёдность замены участков.",
+          tags: ["Потери", "Очерёдность замены"],
+        },
+      ],
+    },
+    standard: {
+      heading: "Стандарт, стоящий за термином",
+      text: "ISO 23247 «Основы цифрового двойника для производства», опубликованный в 2021 году, задаёт эталонную архитектуру, правила цифрового представления физических элементов и обмена информацией. Часть 6 — о сборке нескольких двойников в одну систему — вышла в 2026 году. Стандарт даёт общий язык: что именно строится, а что нет.",
+      points: ["Эталонная архитектура", "Представление элементов", "Обмен информацией", "Сборка нескольких двойников"],
+    },
+    cta: {
+      heading: "Начало — обследование",
+      text: "Первый шаг — оценка данных, которые объект уже выдаёт. Он завершается письменным ответом, оправдан ли здесь двойник.",
+      button: "Связаться с командой",
+    },
   },
   ipPage: {
     badge: "Интеллектуальная собственность и нематериальные активы",

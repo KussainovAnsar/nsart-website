@@ -50,6 +50,7 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <FooterLink href="/technologies">{t.nav.technologies}</FooterLink>
+              <FooterLink href="/digital-twin">{t.nav.digitalTwin}</FooterLink>
               <FooterLink href="/ip">{t.nav.ip}</FooterLink>
             </ul>
             <h3 className="mt-8 text-sm font-semibold text-white break-words whitespace-pre-line min-w-0">
