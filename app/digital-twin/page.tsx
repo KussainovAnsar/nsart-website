@@ -3,6 +3,7 @@
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { useState } from "react";
 import {
   ArrowRight,
   Activity,
@@ -12,6 +13,8 @@ import {
   LineChart,
   Search,
   Server,
+  Maximize2,
+  Play,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
@@ -21,8 +24,13 @@ const kindIcons: LucideIcon[] = [Layers, Search, LineChart, Gauge];
 const domainIcons: LucideIcon[] = [Server, Activity, Gauge, LineChart];
 
 export default function DigitalTwinPage() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const page = t.digitalTwinPage;
+  const cs = page.caseStudy;
+  const [twinOpen, setTwinOpen] = useState(false);
+  // the model speaks en / ru / kk; Arabic visitors get English
+  const twinLang = locale === "ru" || locale === "kk" ? locale : "en";
+  const twinBase = "/twin/kt-cloud-lab/index.html";
 
   return (
     <div className="bg-sand-50 min-h-screen">
@@ -163,6 +171,68 @@ export default function DigitalTwinPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Case study: KT Cloud Lab digital twin */}
+      <section id="kt-cloud-lab" className="border-t border-sand-200 bg-white py-20 sm:py-28">
+        <div className="container-page grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <span className="eyebrow text-accent-600">{cs.eyebrow}</span>
+            <h2 className="mt-4 text-3xl font-extrabold leading-tight text-navy-950 sm:text-4xl">{cs.title}</h2>
+            <p className="mt-5 leading-relaxed text-navy-600">{cs.text}</p>
+            <ul className="mt-6 grid gap-2 sm:grid-cols-2">
+              {cs.facts.map((fact) => (
+                <li key={fact} className="flex items-start gap-2 text-sm text-navy-700">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" />
+                  {fact}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={`${twinBase}?lang=${twinLang}`}
+              target="_blank"
+              rel="noopener"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-accent-600 transition hover:text-accent-700"
+            >
+              <Maximize2 className="h-4 w-4" />
+              {cs.full}
+            </a>
+          </div>
+          <Reveal index={0}>
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-card)] border border-sand-300 bg-navy-950 sm:aspect-video">
+              {twinOpen ? (
+                <iframe
+                  src={`${twinBase}?embed=1&lang=${twinLang}#site`}
+                  title={cs.title}
+                  allow="fullscreen"
+                  className="absolute inset-0 h-full w-full border-0"
+                />
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setTwinOpen(true)}
+                  className="group absolute inset-0 block h-full w-full cursor-pointer"
+                  aria-label={cs.open}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/twin/kt-cloud-lab-poster.webp"
+                    alt={cs.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+                  />
+                  <span className="absolute left-1/2 top-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition group-hover:bg-accent-700">
+                    <Play className="h-4 w-4" />
+                    {cs.open}
+                  </span>
+                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-5 pb-4 pt-10 text-left text-xs text-white/80">
+                    {cs.hint}
+                  </span>
+                </button>
+              )}
+            </div>
+          </Reveal>
         </div>
       </section>
 

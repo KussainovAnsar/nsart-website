@@ -525,6 +525,15 @@ const en = {
   },
 
   digitalTwinPage: {
+    caseStudy: {
+      eyebrow: "Case study",
+      title: "Digital twin of the KT Cloud Lab data centre",
+      text: "The data-centre building in the Park of Innovative Technologies, Alatau. Geometry follows the working drawings; inside are 84 racks in seven rows, in-row cooling, power from two 10 kV feeders with a standby generator, and telemetry from the operator's Zabbix.",
+      facts: ["44.85 × 18 m, server hall 221.7 m²", "84 racks · 14 in-row coolers", "UPS N+1 · 833 kW generator", "PUE, alarms and forecasts live"],
+      open: "Open the 3D model",
+      full: "Full screen, with the guided story",
+      hint: "Rotate, zoom, walk through the rooms and open the 2D schematics.",
+    },
     badge: "Digital twins",
     title: "A model of the object, kept in sync with the object itself.",
     intro:
@@ -1328,6 +1337,15 @@ const ru: Dictionary = {
     ],
   },
   digitalTwinPage: {
+    caseStudy: {
+      eyebrow: "Кейс",
+      title: "Цифровой двойник дата-центра KT Cloud Lab",
+      text: "Здание ЦОД в Парке инновационных технологий, Алатау. Геометрия — по рабочей документации; внутри 84 стойки в семи рядах, межрядное охлаждение, питание от двух фидеров 10 кВ с резервным генератором и телеметрия из Zabbix эксплуатации.",
+      facts: ["44,85 × 18 м, машзал 221,7 м²", "84 стойки · 14 межрядных кондиционеров", "ИБП N+1 · генератор 833 кВт", "PUE, тревоги и прогнозы онлайн"],
+      open: "Открыть 3D-модель",
+      full: "На весь экран, с историей объекта",
+      hint: "Вращайте, приближайте, пройдите по помещениям и откройте 2D-схемы.",
+    },
     badge: "Цифровые двойники",
     title: "Модель объекта, синхронизированная с самим объектом.",
     intro:
@@ -2150,6 +2168,17 @@ const ar: DeepPartial<Dictionary> = {
 /* ------------------------------------------------------------------ */
 
 const kk: DeepPartial<Dictionary> = {
+  digitalTwinPage: {
+    caseStudy: {
+      eyebrow: "Кейс",
+      title: "KT Cloud Lab дата-орталығының цифрлық егізі",
+      text: "Алатаудағы Инновациялық технологиялар паркіндегі ДӨО ғимараты. Геометрия жұмыс құжаттамасы бойынша; ішінде жеті қатарда 84 сөре, қатараралық салқындату, резервтік генераторы бар екі 10 кВ фидерден қуат және пайдалану қызметінің Zabbix телеметриясы.",
+      facts: ["44,85 × 18 м, машзал 221,7 м²", "84 сөре · 14 қатараралық кондиционер", "ҮҚК N+1 · 833 кВт генератор", "PUE, дабылдар мен болжамдар онлайн"],
+      open: "3D-модельді ашу",
+      full: "Толық экранда, нысан тарихымен",
+      hint: "Айналдырыңыз, жақындатыңыз, бөлмелерді аралап, 2D-сызбаларды ашыңыз.",
+    },
+  },
   meta: {
     title: "NSART · Technology Interaction",
     description:
