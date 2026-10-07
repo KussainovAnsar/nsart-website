@@ -61,9 +61,9 @@ button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--kt); o
 #langs button[aria-pressed="true"] { color: var(--ink); border-color: var(--rule); background: var(--kt-soft); }
 #kpis { pointer-events: auto; display: flex; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: var(--r); overflow-x: auto; min-width: 0; flex: 1 1 auto; scrollbar-width: none; }
 #kpis::-webkit-scrollbar { display: none; }
-.kpi { background: var(--glass); backdrop-filter: blur(10px); padding: 9px 14px 10px; min-width: 128px; flex: 1 0 auto; }
+.kpi { background: var(--glass); backdrop-filter: blur(10px); padding: 7px 12px 8px; min-width: 112px; flex: 1 0 auto; }
 .kpi .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); white-space: nowrap; }
-.kpi .v { font-family: var(--f-display); font-weight: 600; font-size: 24px; line-height: 1.1; margin-top: 2px; white-space: nowrap; }
+.kpi .v { font-family: var(--f-display); font-weight: 600; font-size: 21px; line-height: 1.1; margin-top: 2px; white-space: nowrap; }
 .kpi .v small { font-family: var(--f-body); font-size: 12px; color: var(--ink-2); font-weight: 400; margin-left: 3px; }
 .kpi .s { font-size: 11px; color: var(--ink-2); white-space: nowrap; margin-top: 1px; }
 .kpi .bar { height: 3px; background: rgba(255,255,255,0.08); border-radius: 2px; margin-top: 6px; overflow: hidden; }
@@ -72,11 +72,11 @@ button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--kt); o
 .ok { color: var(--ok); } .warn { color: var(--warn); } .crit { color: var(--crit); }
 
 /* left dossier */
-#panel { position: fixed; left: 16px; top: 132px; bottom: 112px; width: 340px; background: var(--glass); border: 1px solid var(--rule); border-radius: var(--r); backdrop-filter: blur(12px); display: flex; flex-direction: column; z-index: 4; }
+#panel { position: fixed; left: 16px; top: 118px; bottom: 112px; width: 296px; background: var(--glass); border: 1px solid var(--rule); border-radius: var(--r); backdrop-filter: blur(12px); display: flex; flex-direction: column; z-index: 4; }
 #tabs { display: flex; border-bottom: 1px solid var(--rule); overflow-x: auto; scrollbar-width: none; flex: none; }
-#tabs button { padding: 10px 12px 9px; font-family: var(--f-display); font-size: 14px; font-weight: 600; color: var(--ink-2); border-bottom: 2px solid transparent; white-space: nowrap; }
+#tabs button { padding: 8px 9px 7px; font-family: var(--f-display); font-size: 13px; font-weight: 600; color: var(--ink-2); border-bottom: 2px solid transparent; white-space: nowrap; }
 #tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--kt); }
-#tabbody { overflow-y: auto; padding: 14px 16px 18px; flex: 1; min-height: 0; }
+#tabbody { overflow-y: auto; padding: 12px 14px 16px; font-size: 12.5px; flex: 1; min-height: 0; }
 #tabbody h3 { font-family: var(--f-display); font-size: 15px; font-weight: 700; margin: 16px 0 8px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ink-2); }
 #tabbody h3:first-child { margin-top: 0; }
 dl.facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; }
@@ -104,9 +104,9 @@ ol.chain li:not(:last-child)::after { content: ""; position: absolute; left: 8px
 .prose { font-size: 12.5px; line-height: 1.55; color: var(--ink); max-width: 62ch; }
 
 /* right layers */
-#layers { position: fixed; right: 16px; top: 132px; width: 214px; background: var(--glass); border: 1px solid var(--rule); border-radius: var(--r); backdrop-filter: blur(12px); padding: 10px 6px 8px; z-index: 4; max-height: calc(100% - 260px); overflow-y: auto; }
+#layers { position: fixed; right: 16px; top: 118px; width: 188px; background: var(--glass); border: 1px solid var(--rule); border-radius: var(--r); backdrop-filter: blur(12px); padding: 10px 6px 8px; z-index: 4; max-height: calc(100% - 260px); overflow-y: auto; }
 #layers h2 { margin: 0 8px 6px; font-family: var(--f-display); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); font-weight: 600; }
-.tg { display: flex; align-items: center; gap: 10px; width: 100%; padding: 6px 8px; border-radius: 4px; text-align: left; font-size: 12.5px; }
+.tg { display: flex; align-items: center; gap: 9px; width: 100%; padding: 4px 8px; border-radius: 4px; text-align: left; font-size: 12.5px; }
 .tg:hover { background: rgba(255,255,255,0.04); }
 .tg .sw { width: 26px; height: 15px; border-radius: 8px; background: rgba(255,255,255,0.12); position: relative; flex: none; transition: background .2s; }
 .tg .sw::after { content: ""; position: absolute; left: 2px; top: 2px; width: 11px; height: 11px; border-radius: 50%; background: var(--ink-2); transition: transform .2s, background .2s; }
@@ -146,7 +146,7 @@ ol.chain li:not(:last-child)::after { content: ""; position: absolute; left: 8px
 .lb.row { font-family: var(--f-display); font-weight: 700; font-size: 15px; padding: 1px 8px; background: var(--kt); border: 0; }
 .lb.equip { font-family: var(--f-display); font-size: 13px; font-weight: 600; }
 
-#compass { position: fixed; right: 16px; top: 132px; width: 44px; height: 44px; border-radius: 50%; background: var(--glass); border: 1px solid var(--rule); z-index: 4; display: grid; place-items: center; transform: translateX(-230px); }
+#compass { position: fixed; right: 16px; top: 118px; width: 44px; height: 44px; border-radius: 50%; background: var(--glass); border: 1px solid var(--rule); z-index: 4; display: grid; place-items: center; transform: translateX(-204px); }
 #compass svg { width: 34px; height: 34px; }
 #hint { position: fixed; left: 50%; bottom: 128px; transform: translateX(-50%); background: var(--glass-2); border: 1px solid var(--rule); border-radius: var(--r); padding: 8px 14px; font-size: 12.5px; z-index: 6; text-align: center; max-width: calc(100% - 32px); }
 #hint button { margin-left: 10px; color: var(--kt); font-weight: 600; }
@@ -262,6 +262,22 @@ body.in-tour #panel, body.in-tour #layers, body.in-tour #compass, body.in-tour #
 #simBtn { width: 100%; padding: 10px 12px; border-radius: 3px; border: 1px solid #5d666c; background: #e9ebec; font-weight: 600; font-size: 13px; color: #1d2328; cursor: pointer; }
 #simBtn.on { background: #ffe0b2; border-color: #e65100; }
 @keyframes flow { to { stroke-dashoffset: -32; } }
+/* collapsible panels */
+.min-btn, .kpi-min { width: 26px; height: 26px; border-radius: 4px; color: var(--ink-2); font-size: 16px; line-height: 1; flex: none; display: inline-grid; place-items: center; }
+.min-btn:hover, .kpi-min:hover { background: rgba(255,255,255,0.07); color: var(--ink); }
+#panel { position: fixed; }
+#panelMin { position: absolute; right: 5px; top: 6px; z-index: 1; background: var(--glass-2); }
+#tabs { padding-right: 32px; }
+#layers h2 { display: flex; align-items: center; justify-content: space-between; }
+#panel.min { bottom: auto; }
+#panel.min #tabbody { display: none; }
+#layers.min .tg { display: none; }
+#layers.min h2 { margin-bottom: 0; }
+.kpi-min { align-self: center; margin: 0 6px; background: var(--glass); }
+#kpis.min .kpi { padding: 6px 12px; min-width: 0; }
+#kpis.min .kpi .s, #kpis.min .kpi .bar { display: none; }
+#kpis.min .kpi .v { font-size: 17px; }
+#kpis.min .kpi .k { font-size: 9.5px; }
 /* scroll story */
 #stage { transform-origin: 50% 50%; }
 body.in-story #top, body.in-story #panel, body.in-story #layers, body.in-story #bottom, body.in-story #compass, body.in-story #card, body.in-story #labels, body.in-story #toast, body.in-story #hint, body.in-story #pad { display: none !important; }
@@ -320,6 +336,7 @@ body.in-story #top, body.in-story #panel, body.in-story #layers, body.in-story #
   #layers.open { transform: none; }
   #panelToggle, #layersToggle { display: inline-block; pointer-events: auto; background: var(--glass); border: 1px solid var(--rule); border-radius: var(--r); padding: 7px 12px; font-family: var(--f-display); font-weight: 600; font-size: 14px; }
   #mobileBar { display: flex; gap: 8px; }
+  #panel.min { bottom: 0; } #panel.min #tabbody { display: block; } #panelMin { display: none; }
   #card { left: 16px; right: 16px; width: auto; bottom: 150px; }
   #compass { top: auto; bottom: 160px; right: 16px; transform: none; }
   #time input[type=range] { width: 110px; }
@@ -348,6 +365,7 @@ body.in-story #top, body.in-story #panel, body.in-story #layers, body.in-story #
 </header>
 
 <aside id="panel" aria-label="Facility details">
+  <button class="min-btn" data-min="panel" id="panelMin" aria-label="Collapse">–</button>
   <div id="tabs" role="tablist"></div>
   <div id="tabbody" role="tabpanel"></div>
 </aside>

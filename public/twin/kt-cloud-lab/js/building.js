@@ -505,7 +505,17 @@ export function createBuilding({ clip, weak = false }) {
   const skin = std({ color: 0xc89a7c, roughness: 0.7 }), dark = std({ color: 0x2d3238, roughness: 0.8 }), hat = std({ color: 0xf5f5f0, roughness: 0.4 });
   function person(id, role, color, { helmet = false, seated = false } = {}) {
     const g = new THREE.Group(); g.name = id;
-    const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.19, 0.55, 4, 10), personMat(color)); body.position.y = seated ? 0.95 : 1.18;
+    const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.17, 0.5, 4, 10), personMat(color)); body.position.y = seated ? 0.95 : 1.18;
+    // arms hang from shoulder pivots so they can swing while walking; a small hand at the end
+    const sy = body.position.y + 0.24, arms = [];
+    for (const side of [-1, 1]) {
+      const pivot = new THREE.Group(); pivot.position.set(side * 0.235, sy, 0);
+      const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.055, 0.42, 3, 8), personMat(color)); arm.position.y = -0.26;
+      const hand = new THREE.Mesh(new THREE.SphereGeometry(0.052, 10, 8), skin); hand.position.y = -0.52;
+      pivot.add(arm, hand); pivot.rotation.z = side * 0.07;
+      if (seated) pivot.rotation.x = -1.05; // forearms toward the desk
+      g.add(pivot); arms.push(pivot);
+    }
     const head = new THREE.Mesh(new THREE.SphereGeometry(0.115, 14, 10), skin); head.position.y = seated ? 1.5 : 1.73;
     const legL = new THREE.Mesh(new THREE.CapsuleGeometry(0.075, seated ? 0.3 : 0.62, 3, 8), dark), legR = legL.clone();
     if (seated) { legL.rotation.x = legR.rotation.x = Math.PI / 2; legL.position.set(-0.09, 0.55, 0.2); legR.position.set(0.09, 0.55, 0.2); }
@@ -514,7 +524,7 @@ export function createBuilding({ clip, weak = false }) {
     if (helmet) { const h = new THREE.Mesh(new THREE.SphereGeometry(0.135, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2), hat); h.position.y = head.position.y + 0.02; g.add(h); }
     g.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.userData = { id, kind: 'person' }; pickables.push(o); } });
     groups.people.add(g);
-    const p = { id, role, group: g, legs: [legL, legR], seated };
+    const p = { id, role, group: g, legs: [legL, legR], arms, seated };
     people.push(p); items.set(id, { id, kind: 'person', role, object: body, pos: g.position, person: p });
     return p;
   }
@@ -541,7 +551,7 @@ export function createBuilding({ clip, weak = false }) {
       const k = seg[i] ? s / seg[i] : 0;
       p.group.position.set(a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k);
       p.group.rotation.y = Math.atan2(b[0] - a[0], b[2] - a[2]);
-      const sw = Math.sin(t * 6) * 0.35; p.legs[0].rotation.x = sw; p.legs[1].rotation.x = -sw;
+      const sw = Math.sin(t * 6) * 0.35; p.legs[0].rotation.x = sw; p.legs[1].rotation.x = -sw; p.arms[0].rotation.x = -sw * 0.8; p.arms[1].rotation.x = sw * 0.8;
     }
   }
 

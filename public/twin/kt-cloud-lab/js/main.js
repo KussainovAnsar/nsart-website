@@ -361,6 +361,13 @@ function drawSpark(cv, fn, unit) {
 
 // ---------- UI ----------
 const TABS = ['systems', 'ops', 'power', 'cooling', 'about'];
+// panels can be collapsed; the choice is remembered per viewer
+const mins = Object.assign({ panel: false, layers: false, kpis: false }, store.get('mins', {}));
+document.addEventListener('click', (e) => { const b = e.target.closest('.min-btn'); if (!b) return; const k = b.dataset.min; mins[k] = !mins[k]; store.set('mins', mins); b.textContent = mins[k] ? '+' : '–'; applyMins(); });
+function applyMins() {
+  $('#panel').classList.toggle('min', mins.panel); $('#layers').classList.toggle('min', mins.layers); $('#kpis').classList.toggle('min', mins.kpis);
+  const k = $('#kpiMin'); if (k) k.textContent = mins.kpis ? '+' : '–';
+}
 let tab = store.get('tab', 'systems'); if (!TABS.includes(tab)) tab = 'systems';
 let activeSystem = null;
 // left panel drives the scene: each system sets the camera, the layers and the selection
@@ -439,8 +446,10 @@ function buildChrome() {
   $('#views').querySelectorAll('button').forEach((b) => (b.onclick = () => flyTo(b.dataset.v)));
   updateViewButtons();
   $('#tabs').innerHTML = TABS.map((k) => `<button role="tab" data-t="${k}" aria-selected="${k === tab}">${L.tabs2[k] || L.tabs[k]}</button>`).join('');
-  $('#tabs').querySelectorAll('button').forEach((b) => (b.onclick = () => { tab = b.dataset.t; store.set('tab', tab); buildChrome(); }));
-  $('#layers').innerHTML = `<h2>${L.layers.title}</h2>` + Object.keys(layerState).map((k) => `<button class="tg" data-k="${k}" aria-pressed="${layerState[k]}" style="--sw:${LAYER_COLORS[k] || 'var(--kt)'}"><span class="sw"></span>${L.layers[k]}</button>`).join('');
+  $('#panelMin').textContent = mins.panel ? '+' : '–';
+  $('#tabs').querySelectorAll('button[data-t]').forEach((b) => (b.onclick = () => { tab = b.dataset.t; mins.panel = false; store.set('mins', mins); store.set('tab', tab); buildChrome(); }));
+  applyMins();
+  $('#layers').innerHTML = `<h2>${L.layers.title}<button class="min-btn" data-min="layers" aria-label="Collapse">${mins.layers ? '+' : '–'}</button></h2>` + Object.keys(layerState).map((k) => `<button class="tg" data-k="${k}" aria-pressed="${layerState[k]}" style="--sw:${LAYER_COLORS[k] || 'var(--kt)'}"><span class="sw"></span>${L.layers[k]}</button>`).join('');
   $('#layers').querySelectorAll('.tg').forEach((b) => (b.onclick = () => { const k = b.dataset.k; layerState[k] = !layerState[k]; b.setAttribute('aria-pressed', layerState[k]); applyLayers(); if (['power', 'cooling', 'airflow', 'network', 'fire'].includes(k) && layerState[k] && !cut && view !== 'walk') flyTo(k === 'power' || k === 'cooling' ? 'cutaway' : 'hall'); }));
   $('#panelToggle').textContent = L.tabs2.systems + ' ▴'; $('#layersToggle').textContent = L.layers.title + ' ▴';
   $('#panelToggle').onclick = () => { $('#panel').classList.toggle('open'); $('#layers').classList.remove('open'); };
@@ -513,7 +522,8 @@ function renderKpis() {
     [K2.uptime, `100<small>%</small>`, `${days + 1} d · ${K2.uptimeS}`, 100],
     [K2.racks, `${ACTIVE_RACKS + 9}<small>· ${75 - ACTIVE_RACKS}</small>`, K2.racksS, (ACTIVE_RACKS + 9) / 84 * 100],
     [K.alarms, `<span class="${act ? 'crit' : 'ok'}">${act}</span>`, 'Zabbix · SNMP', null],
-  ].map(([k, v, s, bar]) => `<div class="kpi"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div>${bar != null ? `<div class="bar"><i style="width:${Math.max(2, Math.min(100, bar))}%"></i></div>` : ''}</div>`).join('');
+  ].map(([k, v, s, bar]) => `<div class="kpi"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div>${bar != null ? `<div class="bar"><i style="width:${Math.max(2, Math.min(100, bar))}%"></i></div>` : ''}</div>`).join('') + `<button class="kpi-min" id="kpiMin" aria-label="Collapse">${mins.kpis ? '+' : '–'}</button>`;
+  $('#kpiMin').onclick = () => { mins.kpis = !mins.kpis; store.set('mins', mins); applyMins(); };
   const d = new Date(t + 5 * 3600e3);
   $('#clock').textContent = `${d.getUTCDate().toString().padStart(2, '0')}.${(d.getUTCMonth() + 1).toString().padStart(2, '0')}.${d.getUTCFullYear()} ${d.getUTCHours().toString().padStart(2, '0')}:${d.getUTCMinutes().toString().padStart(2, '0')}`;
 }
