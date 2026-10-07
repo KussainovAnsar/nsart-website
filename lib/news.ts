@@ -20,6 +20,8 @@ export type NewsItem = {
   slug: string;
   /** ISO date — used for sorting and <time>. */
   date: string;
+  /** Ссылка на исходный пост в Instagram, если новость пришла оттуда. */
+  source?: string;
   /** Optional cover image path under /public. Omit to use the placeholder. */
   image?: string;
   /** Optional photo gallery for the article page; shown as a carousel instead of the single cover. */
