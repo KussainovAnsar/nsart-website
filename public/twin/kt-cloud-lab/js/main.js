@@ -27,10 +27,11 @@ let L = TEXT[lang];
 $('#loadMsg').textContent = L.loading;
 
 // ---------- renderer ----------
-const renderer = new THREE.WebGLRenderer({ antialias: !WEAK, powerPreference: 'high-performance' });
+const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
 // resolution adapts to the machine: start modest, step up while frames stay fast
-const DPR_MAX = Math.min(devicePixelRatio, WEAK ? 1.1 : 1.5);
-let dpr = Math.min(DPR_MAX, 1);
+const DPR_MAX = Math.min(devicePixelRatio, WEAK ? 1.25 : 1.5), DPR_MIN = 0.8;
+let dpr = Math.min(DPR_MAX, 1), lastMoveT = 0;
+const setDpr = (v) => { if (Math.abs(v - dpr) < 0.01) return; dpr = v; renderer.setPixelRatio(dpr); renderer.setSize(innerWidth, innerHeight); };
 renderer.setPixelRatio(dpr);
 renderer.autoClear = false;
 renderer.setSize(innerWidth, innerHeight);
@@ -60,11 +61,13 @@ const skyCam = new THREE.CubeCamera(1, 5000, skyRT); envScene.add(skyCam);
 let envRT = null;
 scene.fog = new THREE.FogExp2(0xbfcfda, 0.000021); farScene.fog = scene.fog;
 const sun = new THREE.DirectionalLight(0xfff1df, 3.0);
-sun.castShadow = true; sun.shadow.mapSize.set(WEAK ? 1024 : 2048, WEAK ? 1024 : 2048);
+sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
 Object.assign(sun.shadow.camera, { left: -62, right: 62, top: 62, bottom: -62, near: 10, far: 600 });
 sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.04;
 scene.add(sun, sun.target);
 const hemi = new THREE.HemisphereLight(0xcfe3f5, 0x6b5f45, 0.6); scene.add(hemi);
+// sky fill for matte (Lambert) surfaces, which get no image-based light
+const skyFill = new THREE.AmbientLight(0xdfe8f0, 0.6); scene.add(skyFill);
 const farSun = new THREE.DirectionalLight(0xfff1df, 2.4), farHemi = new THREE.HemisphereLight(0xcfe3f5, 0x6b5f45, 0.4); farScene.add(farSun, farHemi);
 const nightLights = [];
 
@@ -89,7 +92,7 @@ function setSun(hour) {
   const day = 1 - night, low = THREE.MathUtils.smoothstep(el, -2, 18);
   sun.position.copy(d.clone().multiplyScalar(300)); sun.intensity = 3.0 * low; farSun.position.copy(d); farSun.intensity = 2.2 * low; farHemi.intensity = 0.1 + 0.35 * (1 - night);
   sun.color.setHSL(0.08, 0.6 - 0.45 * low, 0.6 + 0.25 * low);
-  hemi.intensity = 0.1 + 0.55 * day;
+  hemi.intensity = 0.1 + 0.55 * day; skyFill.intensity = (WEAK ? 0.85 : 0.35) * day + 0.05;
   scene.fog.color.setRGB(0.04 + 0.7 * day * (0.85 + 0.15 * low), 0.06 + 0.75 * day * (0.85 + 0.15 * low), 0.09 + 0.78 * day);
   renderer.toneMappingExposure = 0.72 + night * 0.3;
   if (envRT) envRT.dispose();
@@ -531,8 +534,8 @@ const ICON_PAUSE = '<svg viewBox="0 0 16 16" width="12" height="12"><rect x="3" 
 const ICON_PLAY = '<svg viewBox="0 0 16 16" width="12" height="12"><path d="M4 2 L14 8 L4 14 Z" fill="currentColor"/></svg>';
 $('#play').innerHTML = ICON_PAUSE;
 $('#play').onclick = () => { playing = !playing; $('#play').innerHTML = playing ? ICON_PAUSE : ICON_PLAY; };
-$('#sun').value = store.get('sun', 16.5);
-$('#sun').oninput = (e) => { setSun(+e.target.value); store.set('sun', +e.target.value); };
+$('#sun').value = store.get('sun2', 13.5);
+$('#sun').oninput = (e) => { setSun(+e.target.value); store.set('sun2', +e.target.value); };
 
 // ---------- labels ----------
 const labelEls = new Map();
@@ -641,6 +644,9 @@ function frame() {
   if (layerState.airflow && (heatDirty || accHeat > 3)) { accHeat = 0; heatDirty = false; layers.updateHeat(heatSamples()); }
   if (accScreen > 3) { accScreen = 0; drawScreen(); }
   const moved = lastCam.distanceToSquared(camera.position) > 1e-6; lastCam.copy(camera.position);
+  if (moved || tween) lastMoveT = time;
+  // a still frame is always drawn at full resolution; only motion may trade sharpness for speed
+  if (time - lastMoveT > 0.35 && dpr < DPR_MAX) setDpr(DPR_MAX);
   if (!story.active && (moved || accLbl > 0.5)) { accLbl = 0; updateLabels(); updateCompass(); }
   farCam.position.copy(camera.position); farCam.quaternion.copy(camera.quaternion);
   const _t1 = performance.now();
@@ -650,8 +656,7 @@ function frame() {
   frames++; perfT += dt;
   if (perfT > 2) {
     const fps = frames / perfT; frames = 0; perfT = 0;
-    const next = fps < 38 ? Math.max(0.6, dpr - 0.15) : fps > 57 && dpr < DPR_MAX ? Math.min(DPR_MAX, dpr + 0.1) : dpr;
-    if (Math.abs(next - dpr) > 0.01) { dpr = next; renderer.setPixelRatio(dpr); renderer.setSize(innerWidth, innerHeight); }
+    if (time - lastMoveT < 0.35) setDpr(fps < 38 ? Math.max(DPR_MIN, dpr - 0.1) : fps > 57 ? Math.min(DPR_MAX, dpr + 0.1) : dpr);
     window.__fps = fps; window.__dpr = dpr; window.__js = jsT / jsN; window.__rt = rT / jsN; jsT = rT = jsN = 0;
   }
 }
