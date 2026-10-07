@@ -287,6 +287,8 @@ const ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
 let selected = null, downAt = null;
 const selBox = new THREE.Box3Helper(new THREE.Box3(), 0x1e9be0); selBox.visible = false; selBox.material.depthTest = false; selBox.renderOrder = 9; scene.add(selBox);
 renderer.domElement.addEventListener('pointerdown', (e) => (downAt = [e.clientX, e.clientY]));
+// phone: a tap on the scene closes an open sheet
+renderer.domElement.addEventListener('pointerdown', () => { if (PHONE) { $('#panel').classList.remove('open'); $('#layers').classList.remove('open'); } });
 renderer.domElement.addEventListener('pointerup', (e) => {
   if (walk.on || !downAt || Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > 5) return;
   pick(e.clientX, e.clientY);
@@ -365,7 +367,8 @@ function drawSpark(cv, fn, unit) {
 // ---------- UI ----------
 const TABS = ['systems', 'ops', 'power', 'cooling', 'about'];
 // panels can be collapsed; the choice is remembered per viewer
-const mins = Object.assign({ panel: false, layers: false, kpis: false }, store.get('mins', {}));
+const PHONE = matchMedia('(max-width: 820px)').matches;
+const mins = Object.assign({ panel: false, layers: false, kpis: PHONE }, store.get('mins', {}));
 document.addEventListener('click', (e) => { const b = e.target.closest('.min-btn'); if (!b) return; const k = b.dataset.min; mins[k] = !mins[k]; store.set('mins', mins); b.textContent = mins[k] ? '+' : '–'; applyMins(); });
 function applyMins() {
   $('#panel').classList.toggle('min', mins.panel); $('#layers').classList.toggle('min', mins.layers); $('#kpis').classList.toggle('min', mins.kpis);
@@ -658,7 +661,10 @@ function frame() {
   }
 }
 
-addEventListener('resize', () => { for (const c of [camera, farCam]) { c.aspect = innerWidth / innerHeight; c.updateProjectionMatrix(); } renderer.setSize(innerWidth, innerHeight); });
+// portrait phones get a wider lens so rooms and rows stay readable; landscape and desktop keep 42°
+const fitLens = () => { const asp = innerWidth / innerHeight, fov = asp < 0.8 ? 62 : 42; for (const c of [camera, farCam]) { c.aspect = asp; c.fov = fov; c.updateProjectionMatrix(); } };
+fitLens();
+addEventListener('resize', () => { fitLens(); renderer.setSize(innerWidth, innerHeight); });
 
 // ---------- scroll story ----------
 const STAT_L = {
