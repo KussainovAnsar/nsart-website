@@ -20,6 +20,8 @@ export type NewsItem = {
   slug: string;
   /** ISO date — used for sorting and <time>. */
   date: string;
+  /** Ссылка на исходный пост в Instagram, если новость пришла оттуда. */
+  source?: string;
   /** Optional cover image path under /public. Omit to use the placeholder. */
   image?: string;
   /** Optional photo gallery for the article page; shown as a carousel instead of the single cover. */
@@ -75,6 +77,682 @@ export const newsUi = {
 
 /* Newest first — see `sortedNews` below. */
 export const news: NewsItem[] = [
+  {
+    id: 44,
+    slug: "kistafin-dinner-reception",
+    date: "2026-10-05",
+    source: "https://www.instagram.com/p/DeHofkmDU3k/",
+    image: "/news/kistafin-dinner-reception.jpg",
+    tag: {
+      ru: "Встреча",
+      en: "Meeting",
+      ar: "لقاء",
+      kk: "Кездесу",
+    },
+    location: {
+      ru: "Казахстан",
+      en: "Kazakhstan",
+      ar: "كازاخستان",
+      kk: "Қазақстан",
+    },
+    displayDate: {
+      ru: "5 октября 2026",
+      en: "5 October 2026",
+      ar: "5 أكتوبر 2026",
+      kk: "2026 жылғы 5 қазан",
+    },
+    title: {
+      ru: "Приём в честь Ержана Кистафина — экс-посла Казахстана в Пакистане",
+      en: "A reception in honour of Yerzhan Kistafin, former Ambassador of Kazakhstan to Pakistan",
+      ar: "حفل تكريم يرجان كيستافين، السفير السابق لكازاخستان لدى باكستان",
+      kk: "Қазақстанның Пәкістандағы бұрынғы елшісі Ержан Кистафин құрметіне қабылдау",
+    },
+    excerpt: {
+      ru: "Делегация Gujranwala Business Alliance и GIFT University провела в Казахстане ужин-приём с участием Ержана Кистафина, бывшего посла Казахстана в Пакистане.",
+      en: "The delegation of the Gujranwala Business Alliance and GIFT University held a dinner reception in Kazakhstan attended by Yerzhan Kistafin, former Ambassador of Kazakhstan to Pakistan.",
+      ar: "أقام وفد تحالف أعمال غوجرانوالا وجامعة GIFT حفل عشاء في كازاخستان بحضور يرجان كيستافين، السفير السابق لكازاخستان لدى باكستان.",
+      kk: "Gujranwala Business Alliance пен GIFT University делегациясы Қазақстанда Қазақстанның Пәкістандағы бұрынғы елшісі Ержан Кистафиннің қатысуымен кешкі қабылдау өткізді.",
+    },
+    body: {
+      ru: [
+        "Делегация Gujranwala Business Alliance (GBA) и GIFT University, работавшая в Казахстане, провела ужин-приём, на котором присутствовал Ержан Кистафин — бывший посол Республики Казахстан в Пакистане.",
+        "Ержан Кистафин — один из тех, кто выстраивал казахстанско-пакистанские отношения последних лет. Его поддержка помогала открывать двери, налаживать институциональные связи и доводить договорённости до совместных проектов, в том числе в работе с GBA и её председателем Ахмадом Икрамом Лоне.",
+      ],
+      en: [
+        "The delegation of the Gujranwala Business Alliance (GBA) and GIFT University, working in Kazakhstan, held a dinner reception attended by Yerzhan Kistafin, former Ambassador of the Republic of Kazakhstan to Pakistan.",
+        "Yerzhan Kistafin has been one of the architects of the Kazakhstan–Pakistan relationship of recent years. His support helped open doors, build institutional connections and turn agreements into joint work, including with GBA and its Chairman Ahmad Ikram Lone.",
+      ],
+      ar: [
+        "أقام وفد تحالف أعمال غوجرانوالا (GBA) وجامعة GIFT، خلال عمله في كازاخستان، حفل عشاء حضره يرجان كيستافين، السفير السابق لجمهورية كازاخستان لدى باكستان.",
+        "يُعد يرجان كيستافين أحد مهندسي العلاقات الكازاخستانية الباكستانية في السنوات الأخيرة. فقد ساعد دعمه على فتح الأبواب وبناء الصلات المؤسسية وتحويل الاتفاقات إلى عمل مشترك، بما في ذلك مع GBA ورئيسها أحمد إكرام لون.",
+      ],
+      kk: [
+        "Қазақстанда жұмыс істеген Gujranwala Business Alliance (GBA) және GIFT University делегациясы кешкі қабылдау өткізді, оған Қазақстан Республикасының Пәкістандағы бұрынғы елшісі Ержан Кистафин қатысты.",
+        "Ержан Кистафин — соңғы жылдардағы қазақстан-пәкістан қатынастарын қалыптастырғандардың бірі. Оның қолдауы есіктерді ашуға, институционалдық байланыстар орнатуға және уағдаластықтарды бірлескен жұмысқа айналдыруға көмектесті, оның ішінде GBA және оның төрағасы Ахмад Икрам Лонемен жұмыста.",
+      ],
+    },
+  },
+  {
+    id: 45,
+    slug: "gba-delegation-atameken",
+    date: "2026-10-02",
+    source: "https://www.instagram.com/p/Dd_tQfWDYKK/",
+    image: "/news/gba-delegation-atameken.jpg",
+    tag: {
+      ru: "Партнёрство",
+      en: "Partnership",
+      ar: "شراكة",
+      kk: "Серіктестік",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "2 октября 2026",
+      en: "2 October 2026",
+      ar: "2 أكتوبر 2026",
+      kk: "2026 жылғы 2 қазан",
+    },
+    title: {
+      ru: "Делегация GBA и NSART в НПП «Атамекен»: деловые связи Казахстана и Пакистана",
+      en: "GBA and NSART at Atameken: business connectivity between Kazakhstan and Pakistan",
+      ar: "وفد GBA وNSART في غرفة «أتاميكن»: روابط الأعمال بين كازاخستان وباكستان",
+      kk: "GBA және NSART «Атамекен» ҰКП-да: Қазақстан мен Пәкістанның іскерлік байланыстары",
+    },
+    excerpt: {
+      ru: "Делегация Gujranwala Business Alliance посетила Национальную палату предпринимателей «Атамекен» в Астане. В составе делегации — генеральный директор NSART Group Нургожа Калиаскаров.",
+      en: "The Gujranwala Business Alliance delegation visited the Atameken National Chamber of Entrepreneurs in Astana. Nurgozha Kaliaskarov, CEO of NSART Group, was part of the delegation.",
+      ar: "زار وفد تحالف أعمال غوجرانوالا غرفة رواد الأعمال الوطنية «أتاميكن» في أستانا. وضم الوفد نورغوجا كالياسكاروف، الرئيس التنفيذي لمجموعة NSART.",
+      kk: "Gujranwala Business Alliance делегациясы Астанадағы «Атамекен» ҰКП-ға барды. Делегация құрамында NSART Group бас директоры Нұрғожа Қалиасқаров болды.",
+    },
+    body: {
+      ru: [
+        "В рамках деловой миссии в Казахстане делегация Gujranwala Business Alliance (GBA) посетила Национальную палату предпринимателей «Атамекен» в Астане. Делегацию приняла Гулия Жунисова, управляющий директор палаты по направлению женского предпринимательства.",
+        "Делегацию возглавлял председатель GBA Ахмад Икрам Лоне; вместе с ним работали основатель и председатель GIFT University Мухаммад Анвар Дар и генеральный директор NSART Group Нургожа Калиаскаров.",
+        "Разговор шёл о развитии двусторонней торговли, инвестиций и прямых связей между компаниями. «Атамекен» представляет предпринимательское сообщество по всему Казахстану, GBA — Гуджранвалу, третий по величине промышленный город Пакистана; обе стороны видят в этом основу для деловых контактов и партнёрств.",
+      ],
+      en: [
+        "As part of its business mission to Kazakhstan, the Gujranwala Business Alliance (GBA) delegation visited the Atameken National Chamber of Entrepreneurs in Astana. The delegation was received by Guliya Zhunisova, Managing Director for Women Entrepreneurship.",
+        "The delegation was led by GBA Chairman Ahmad Ikram Lone and included Muhammad Anwar Dar, Founder and Chairman of GIFT University, and Nurgozha Kaliaskarov, CEO of NSART Group.",
+        "The discussion covered bilateral trade, investment and direct company-to-company links. Atameken represents the entrepreneurial community across Kazakhstan, while GBA represents Gujranwala, Pakistan's third-largest industrial city — a basis both sides see for building business contacts and partnerships.",
+      ],
+      ar: [
+        "في إطار بعثته التجارية إلى كازاخستان، زار وفد تحالف أعمال غوجرانوالا (GBA) غرفة رواد الأعمال الوطنية «أتاميكن» في أستانا. واستقبلت الوفد غولية جونيسوفا، المديرة التنفيذية لريادة الأعمال النسائية.",
+        "ترأس الوفد أحمد إكرام لون، رئيس GBA، وضم محمد أنور دار، مؤسس ورئيس جامعة GIFT، ونورغوجا كالياسكاروف، الرئيس التنفيذي لمجموعة NSART.",
+        "وتناولت المناقشات التجارة الثنائية والاستثمار والروابط المباشرة بين الشركات. تمثل «أتاميكن» مجتمع الأعمال في كازاخستان، بينما يمثل GBA غوجرانوالا، ثالث أكبر مدينة صناعية في باكستان — وهو أساس يراه الطرفان لبناء شراكات.",
+      ],
+      kk: [
+        "Қазақстандағы іскерлік миссия аясында Gujranwala Business Alliance (GBA) делегациясы Астанадағы «Атамекен» ҰКП-ға барды. Делегацияны палатаның әйелдер кәсіпкерлігі бағытының басқарушы директоры Гүлия Жүнісова қабылдады.",
+        "Делегацияны GBA төрағасы Ахмад Икрам Лоне басқарды; құрамында GIFT University негізін қалаушы әрі төрағасы Мұхаммад Анвар Дар мен NSART Group бас директоры Нұрғожа Қалиасқаров болды.",
+        "Әңгіме екіжақты сауда, инвестиция және компаниялар арасындағы тікелей байланыстар туралы өрбіді. «Атамекен» Қазақстандағы кәсіпкерлер қауымдастығын, GBA Пәкістанның үшінші ірі өнеркәсіптік қаласы Гуджранваланы білдіреді.",
+      ],
+    },
+  },
+  {
+    id: 46,
+    slug: "gba-delegation-kt-cloud-lab",
+    date: "2026-09-30",
+    source: "https://www.instagram.com/p/Dd6aotnDS-B/",
+    image: "/news/gba-delegation-kt-cloud-lab.jpg",
+    tag: {
+      ru: "Проект",
+      en: "Project",
+      ar: "مشروع",
+      kk: "Жоба",
+    },
+    location: {
+      ru: "Алматы, Казахстан",
+      en: "Almaty, Kazakhstan",
+      ar: "ألماتي، كازاخستان",
+      kk: "Алматы, Қазақстан",
+    },
+    displayDate: {
+      ru: "30 сентября 2026",
+      en: "30 September 2026",
+      ar: "30 سبتمبر 2026",
+      kk: "2026 жылғы 30 қыркүйек",
+    },
+    title: {
+      ru: "Визит в KT Cloud Lab: совместный дата-центр в Пакистане как общая цель",
+      en: "Visit to KT Cloud Lab: a joint data centre in Pakistan as a shared goal",
+      ar: "زيارة إلى KT Cloud Lab: مركز بيانات مشترك في باكستان كهدف مشترك",
+      kk: "KT Cloud Lab-қа сапар: Пәкістандағы бірлескен дата-орталық — ортақ мақсат",
+    },
+    excerpt: {
+      ru: "Делегация Gujranwala Business Alliance побывала в KT Cloud Lab — казахстанском операторе облачной инфраструктуры и центров обработки данных. Обсуждали выход компании на пакистанский рынок и совместный дата-центр.",
+      en: "The Gujranwala Business Alliance delegation visited KT Cloud Lab, a Kazakhstani operator of cloud infrastructure and data centres. The talks covered the company's entry into the Pakistani market and a joint data centre.",
+      ar: "زار وفد تحالف أعمال غوجرانوالا شركة KT Cloud Lab، المشغّل الكازاخستاني للبنية التحتية السحابية ومراكز البيانات. وتناولت المحادثات دخول الشركة إلى السوق الباكستانية ومركز بيانات مشترك.",
+      kk: "Gujranwala Business Alliance делегациясы бұлттық инфрақұрылым мен деректерді өңдеу орталықтарының қазақстандық операторы KT Cloud Lab-та болды. Әңгіме компанияның Пәкістан нарығына шығуы мен бірлескен дата-орталық туралы өрбіді.",
+    },
+    body: {
+      ru: [
+        "В рамках миссии в Казахстане делегация Gujranwala Business Alliance (GBA) посетила KT Cloud Lab — компанию казахстанского рынка цифровой инфраструктуры, работающую с облачной инфраструктурой, центрами обработки данных, ИТ-аутсорсингом и корпоративными технологическими решениями.",
+        "Обсуждение касалось нового этапа технологического сотрудничества Пакистана и Казахстана. GBA намерена поддержать выход KT Cloud Lab на пакистанский рынок и связать её технологические возможности с растущей цифровой экономикой, промышленностью и институциональным сектором Пакистана.",
+        "Отдельно стороны обсудили долгосрочную задачу — создание совместного центра обработки данных в Пакистане: инфраструктуры для облачных сервисов, приложений искусственного интеллекта и обработки данных.",
+      ],
+      en: [
+        "As part of its Kazakhstan mission, the Gujranwala Business Alliance (GBA) delegation visited KT Cloud Lab, a player in Kazakhstan's digital infrastructure market whose work spans cloud infrastructure, data centres, IT outsourcing and enterprise technology solutions.",
+        "The discussion focused on taking Pakistan–Kazakhstan technology cooperation to the next stage. GBA intends to support KT Cloud Lab's expansion into the Pakistani market and connect its technological capabilities with Pakistan's growing digital economy, industry and institutional sector.",
+        "Separately, the two sides discussed a longer-term goal: developing a joint data centre in Pakistan — infrastructure for cloud services, AI applications and data processing.",
+      ],
+      ar: [
+        "في إطار بعثته إلى كازاخستان، زار وفد تحالف أعمال غوجرانوالا (GBA) شركة KT Cloud Lab، أحد الفاعلين في سوق البنية التحتية الرقمية في كازاخستان، ويشمل عملها البنية التحتية السحابية ومراكز البيانات وخدمات تقنية المعلومات والحلول التقنية للمؤسسات.",
+        "وركزت المناقشة على نقل التعاون التقني بين باكستان وكازاخستان إلى مرحلة جديدة. ويعتزم GBA دعم دخول KT Cloud Lab إلى السوق الباكستانية وربط قدراتها التقنية بالاقتصاد الرقمي والصناعة والقطاع المؤسسي في باكستان.",
+        "كما ناقش الجانبان هدفاً طويل المدى: إنشاء مركز بيانات مشترك في باكستان — بنية تحتية للخدمات السحابية وتطبيقات الذكاء الاصطناعي ومعالجة البيانات.",
+      ],
+      kk: [
+        "Қазақстандағы миссия аясында Gujranwala Business Alliance (GBA) делегациясы KT Cloud Lab компаниясына барды. Компания бұлттық инфрақұрылым, деректерді өңдеу орталықтары, IT-аутсорсинг және корпоративтік технологиялық шешімдермен айналысады.",
+        "Талқылау Пәкістан мен Қазақстанның технологиялық ынтымақтастығын жаңа кезеңге шығаруға арналды. GBA KT Cloud Lab-тың Пәкістан нарығына шығуын қолдап, оның технологиялық мүмкіндіктерін елдің цифрлық экономикасымен байланыстыруға ниетті.",
+        "Бөлек тақырып — Пәкістанда бірлескен деректерді өңдеу орталығын салу: бұлттық сервистерге, жасанды интеллект қолданбаларына және деректерді өңдеуге арналған инфрақұрылым.",
+      ],
+    },
+  },
+  {
+    id: 47,
+    slug: "gift-university-pakistan-products-house",
+    date: "2026-09-29",
+    source: "https://www.instagram.com/p/Dd3TscsDxRR/",
+    image: "/news/gift-university-pakistan-products-house.jpg",
+    tag: {
+      ru: "Проект",
+      en: "Project",
+      ar: "مشروع",
+      kk: "Жоба",
+    },
+    location: {
+      ru: "Казахстан",
+      en: "Kazakhstan",
+      ar: "كازاخستان",
+      kk: "Қазақстан",
+    },
+    displayDate: {
+      ru: "29 сентября 2026",
+      en: "29 September 2026",
+      ar: "29 سبتمبر 2026",
+      kk: "2026 жылғы 29 қыркүйек",
+    },
+    title: {
+      ru: "GIFT University — участник Pakistan Products House в Казахстане",
+      en: "GIFT University joins Pakistan Products House in Kazakhstan",
+      ar: "جامعة GIFT تنضم إلى «بيت المنتجات الباكستانية» في كازاخستان",
+      kk: "GIFT University — Қазақстандағы Pakistan Products House қатысушысы",
+    },
+    excerpt: {
+      ru: "GIFT University присоединился к проекту Gujranwala Business Alliance — открытию Pakistan Products House в Казахстане, которое связывает университет, промышленность и внешние рынки.",
+      en: "GIFT University joined the Gujranwala Business Alliance project — the opening of Pakistan Products House in Kazakhstan, bringing academia, industry and international markets closer together.",
+      ar: "انضمت جامعة GIFT إلى مشروع تحالف أعمال غوجرانوالا — افتتاح «بيت المنتجات الباكستانية» في كازاخستان، الذي يقرّب بين الجامعة والصناعة والأسواق الخارجية.",
+      kk: "GIFT University Gujranwala Business Alliance жобасына — Қазақстанда Pakistan Products House ашуға қосылды. Бұл университет, өнеркәсіп және сыртқы нарықтарды жақындастырады.",
+    },
+    body: {
+      ru: [
+        "GIFT University присоединился к Gujranwala Business Alliance (GBA) на открытии Pakistan Products House — Kazakhstan. Для университета это очередной шаг в программе интернационализации.",
+        "Площадка задумана как точка соединения трёх сторон: академической среды, промышленности и внешних рынков. Проект реализует GBA, партнёром по казахстанскому направлению выступает NSART.",
+      ],
+      en: [
+        "GIFT University joined the Gujranwala Business Alliance (GBA) for the inauguration of Pakistan Products House – Kazakhstan. For the university it is another step in its internationalisation programme.",
+        "The venue is conceived as a meeting point for three sides: academia, industry and international markets. The project is run by GBA, with NSART as its partner on the Kazakhstan side.",
+      ],
+      ar: [
+        "انضمت جامعة GIFT إلى تحالف أعمال غوجرانوالا (GBA) في افتتاح «بيت المنتجات الباكستانية — كازاخستان». وتمثل هذه الخطوة محطة جديدة في برنامج التدويل لدى الجامعة.",
+        "وقد صُمم المكان ليكون نقطة التقاء بين ثلاثة أطراف: الأوساط الأكاديمية والصناعة والأسواق الخارجية. ويتولى GBA تنفيذ المشروع، وتشارك NSART كشريك على الجانب الكازاخستاني.",
+      ],
+      kk: [
+        "GIFT University Pakistan Products House — Kazakhstan ашылуында Gujranwala Business Alliance (GBA) қатарына қосылды. Университет үшін бұл интернационалдандыру бағдарламасындағы кезекті қадам.",
+        "Алаң үш тарапты — академиялық орта, өнеркәсіп және сыртқы нарықтарды — байланыстыратын нүкте ретінде ойластырылған. Жобаны GBA жүзеге асырады, қазақстандық бағыттағы серіктесі — NSART.",
+      ],
+    },
+  },
+  {
+    id: 48,
+    slug: "gba-delegation-samruk-kazyna-invest",
+    date: "2026-09-27",
+    source: "https://www.instagram.com/p/Dd0hosgiPYd/",
+    image: "/news/gba-delegation-samruk-kazyna-invest.jpg",
+    tag: {
+      ru: "Встреча",
+      en: "Meeting",
+      ar: "لقاء",
+      kk: "Кездесу",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "27 сентября 2026",
+      en: "27 September 2026",
+      ar: "27 سبتمبر 2026",
+      kk: "2026 жылғы 27 қыркүйек",
+    },
+    title: {
+      ru: "Делегация GBA в Samruk-Kazyna Invest: разговор об инвестиционных направлениях",
+      en: "GBA delegation at Samruk-Kazyna Invest: a conversation about investment avenues",
+      ar: "وفد GBA في «سامروك-كازينا إنفست»: حديث عن مسارات الاستثمار",
+      kk: "GBA делегациясы Samruk-Kazyna Invest-те: инвестиция бағыттары туралы әңгіме",
+    },
+    excerpt: {
+      ru: "В рамках миссии в Казахстане делегация Gujranwala Business Alliance посетила Samruk-Kazyna Invest. Делегацию принял генеральный директор компании Сакен Пирмаханов.",
+      en: "As part of its Kazakhstan mission, the Gujranwala Business Alliance delegation visited Samruk-Kazyna Invest and was received by its CEO, Saken Pirmakhanov.",
+      ar: "في إطار بعثته إلى كازاخستان، زار وفد تحالف أعمال غوجرانوالا شركة «سامروك-كازينا إنفست» واستقبله رئيسها التنفيذي ساكن بيرماخانوف.",
+      kk: "Қазақстандағы миссия аясында Gujranwala Business Alliance делегациясы Samruk-Kazyna Invest компаниясына барды. Делегацияны компанияның бас директоры Сәкен Пірмаханов қабылдады.",
+    },
+    body: {
+      ru: [
+        "Делегация Gujranwala Business Alliance (GBA) посетила Samruk-Kazyna Invest — компанию, работающую в экосистеме фонда «Самрук-Қазына». Делегацию принял генеральный директор Сакен Пирмаханов.",
+        "Встреча была посвящена инвестиционным направлениям, в которых интересы казахстанской и пакистанской сторон совпадают, и возможным форматам совместной работы.",
+      ],
+      en: [
+        "The Gujranwala Business Alliance (GBA) delegation visited Samruk-Kazyna Invest, a company operating within the Samruk-Kazyna fund ecosystem. The delegation was received by CEO Saken Pirmakhanov.",
+        "The meeting focused on investment avenues where Kazakhstani and Pakistani interests overlap, and on possible formats for working together.",
+      ],
+      ar: [
+        "زار وفد تحالف أعمال غوجرانوالا (GBA) شركة «سامروك-كازينا إنفست» العاملة ضمن منظومة صندوق «سامروك-كازينا». واستقبل الوفد الرئيس التنفيذي ساكن بيرماخانوف.",
+        "وتركز اللقاء على مسارات الاستثمار التي تتقاطع فيها المصالح الكازاخستانية والباكستانية، وعلى صيغ ممكنة للعمل المشترك.",
+      ],
+      kk: [
+        "Gujranwala Business Alliance (GBA) делегациясы «Самұрық-Қазына» қорының экожүйесінде жұмыс істейтін Samruk-Kazyna Invest компаниясына барды. Делегацияны бас директор Сәкен Пірмаханов қабылдады.",
+        "Кездесу қазақстандық және пәкістандық тараптардың мүдделері тоғысатын инвестициялық бағыттарға және бірлескен жұмыстың ықтимал форматтарына арналды.",
+      ],
+    },
+  },
+  {
+    id: 49,
+    slug: "gba-qaztrade-memorandum",
+    date: "2026-09-26",
+    source: "https://www.instagram.com/p/DdwuBoiDUDk/",
+    image: "/news/gba-qaztrade-memorandum.jpg",
+    tag: {
+      ru: "Партнёрство",
+      en: "Partnership",
+      ar: "شراكة",
+      kk: "Серіктестік",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "26 сентября 2026",
+      en: "26 September 2026",
+      ar: "26 سبتمبر 2026",
+      kk: "2026 жылғы 26 қыркүйек",
+    },
+    title: {
+      ru: "GBA и QazTrade подписали меморандум о сотрудничестве",
+      en: "GBA and QazTrade sign a memorandum of cooperation",
+      ar: "GBA وQazTrade توقعان مذكرة تعاون",
+      kk: "GBA мен QazTrade ынтымақтастық меморандумына қол қойды",
+    },
+    excerpt: {
+      ru: "Gujranwala Business Alliance и QazTrade подписали меморандум о развитии двусторонней торговли, инвестиций и институционального сотрудничества. Подписание прошло в присутствии генерального директора NSART Group.",
+      en: "The Gujranwala Business Alliance and QazTrade signed a memorandum on bilateral trade, investment and institutional cooperation. The signing took place in the presence of the CEO of NSART Group.",
+      ar: "وقّع تحالف أعمال غوجرانوالا وQazTrade مذكرة بشأن التجارة الثنائية والاستثمار والتعاون المؤسسي. وجرى التوقيع بحضور الرئيس التنفيذي لمجموعة NSART.",
+      kk: "Gujranwala Business Alliance пен QazTrade екіжақты сауда, инвестиция және институционалдық ынтымақтастық туралы меморандумға қол қойды. Қол қою NSART Group бас директорының қатысуымен өтті.",
+    },
+    body: {
+      ru: [
+        "Gujranwala Business Alliance (GBA) и QazTrade подписали меморандум о сотрудничестве, направленный на развитие двусторонней торговли, инвестиций и институциональных связей между Казахстаном и Пакистаном.",
+        "Документ подписали председатель GBA Ахмад Икрам Лоне и заместитель генерального директора QazTrade Айнур Амирбекова. При подписании присутствовали основатель и председатель GIFT University Мухаммад Анвар Дар и генеральный директор NSART Group Нургожа Калиаскаров.",
+      ],
+      en: [
+        "The Gujranwala Business Alliance (GBA) and QazTrade signed a memorandum of cooperation aimed at developing bilateral trade, investment and institutional ties between Kazakhstan and Pakistan.",
+        "The document was signed by GBA Chairman Ahmad Ikram Lone and QazTrade Deputy General Director Ainur Amirbekova, in the presence of Muhammad Anwar Dar, Founder and Chairman of GIFT University, and Nurgozha Kaliaskarov, CEO of NSART Group.",
+      ],
+      ar: [
+        "وقّع تحالف أعمال غوجرانوالا (GBA) وQazTrade مذكرة تعاون تهدف إلى تنمية التجارة الثنائية والاستثمار والروابط المؤسسية بين كازاخستان وباكستان.",
+        "ووقّع الوثيقة أحمد إكرام لون، رئيس GBA، وعينور أميربيكوفا، نائبة المدير العام لـ QazTrade، بحضور محمد أنور دار، مؤسس ورئيس جامعة GIFT، ونورغوجا كالياسكاروف، الرئيس التنفيذي لمجموعة NSART.",
+      ],
+      kk: [
+        "Gujranwala Business Alliance (GBA) мен QazTrade Қазақстан мен Пәкістан арасындағы екіжақты сауданы, инвестицияны және институционалдық байланыстарды дамытуға бағытталған ынтымақтастық меморандумына қол қойды.",
+        "Құжатқа GBA төрағасы Ахмад Икрам Лоне мен QazTrade бас директорының орынбасары Айнұр Әмірбекова қол қойды. Қол қою рәсіміне GIFT University негізін қалаушы Мұхаммад Анвар Дар және NSART Group бас директоры Нұрғожа Қалиасқаров қатысты.",
+      ],
+    },
+  },
+  {
+    id: 50,
+    slug: "gba-delegation-nazarbayev-university",
+    date: "2026-09-25",
+    source: "https://www.instagram.com/p/DdtyWQXjOb9/",
+    image: "/news/gba-delegation-nazarbayev-university.jpg",
+    tag: {
+      ru: "Встреча",
+      en: "Meeting",
+      ar: "لقاء",
+      kk: "Кездесу",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "25 сентября 2026",
+      en: "25 September 2026",
+      ar: "25 سبتمبر 2026",
+      kk: "2026 жылғы 25 қыркүйек",
+    },
+    title: {
+      ru: "Назарбаев Университет: разговор о науке и промышленном сотрудничестве",
+      en: "Nazarbayev University: a conversation about research and industry collaboration",
+      ar: "جامعة نزارباييف: حديث عن البحث والتعاون الصناعي",
+      kk: "Назарбаев Университеті: ғылым және өнеркәсіптік ынтымақтастық туралы әңгіме",
+    },
+    excerpt: {
+      ru: "Делегация Gujranwala Business Alliance посетила Назарбаев Университет и обсудила с руководством вуза академическое, исследовательское и промышленное сотрудничество.",
+      en: "The Gujranwala Business Alliance delegation visited Nazarbayev University and discussed academic, research and industrial collaboration with the university's leadership.",
+      ar: "زار وفد تحالف أعمال غوجرانوالا جامعة نزارباييف وناقش مع قيادتها التعاون الأكاديمي والبحثي والصناعي.",
+      kk: "Gujranwala Business Alliance делегациясы Назарбаев Университетіне барып, жетекшілікпен академиялық, зерттеу және өнеркәсіптік ынтымақтастықты талқылады.",
+    },
+    body: {
+      ru: [
+        "Делегация Gujranwala Business Alliance (GBA) во главе с председателем Ахмадом Икрамом Лоне посетила Назарбаев Университет и провела встречу с руководством вуза.",
+        "В составе делегации работали основатель и председатель GIFT University Мухаммад Анвар Дар и генеральный директор NSART Group Нургожа Калиаскаров. Для гостей провели обход университета: кафедры, исследовательские подразделения и лаборатории.",
+        "Обсуждали, как связать академическую среду, исследования и промышленность двух стран в совместных проектах.",
+      ],
+      en: [
+        "A Gujranwala Business Alliance (GBA) delegation led by Chairman Ahmad Ikram Lone visited Nazarbayev University and met the university's leadership.",
+        "The delegation included Muhammad Anwar Dar, Founder and Chairman of GIFT University, and Nurgozha Kaliaskarov, CEO of NSART Group. The visitors were given a tour of the university: departments, research units and laboratories.",
+        "The talks were about connecting academia, research and industry in the two countries through joint projects.",
+      ],
+      ar: [
+        "زار وفد من تحالف أعمال غوجرانوالا (GBA) برئاسة أحمد إكرام لون جامعة نزارباييف والتقى بقيادة الجامعة.",
+        "وضم الوفد محمد أنور دار، مؤسس ورئيس جامعة GIFT، ونورغوجا كالياسكاروف، الرئيس التنفيذي لمجموعة NSART. وقد اصطحب الضيوف في جولة شملت الأقسام ووحدات البحث والمختبرات.",
+        "وتناولت المحادثات سبل ربط الأوساط الأكاديمية والبحث والصناعة في البلدين عبر مشاريع مشتركة.",
+      ],
+      kk: [
+        "Төраға Ахмад Икрам Лоне бастаған Gujranwala Business Alliance (GBA) делегациясы Назарбаев Университетіне барып, жетекшілікпен кездесті.",
+        "Делегация құрамында GIFT University негізін қалаушы Мұхаммад Анвар Дар және NSART Group бас директоры Нұрғожа Қалиасқаров болды. Қонақтарға университет кафедралары, зерттеу бөлімшелері мен зертханалары көрсетілді.",
+        "Талқылау екі елдің академиялық ортасын, зерттеулерін және өнеркәсібін бірлескен жобаларда байланыстыруға арналды.",
+      ],
+    },
+  },
+  {
+    id: 51,
+    slug: "pakistan-products-house-kazakhstan",
+    date: "2026-09-14",
+    source: "https://www.instagram.com/p/DdQpugVDT9m/",
+    image: "/news/pakistan-products-house-kazakhstan.jpg",
+    tag: {
+      ru: "Запуск",
+      en: "Launch",
+      ar: "إطلاق",
+      kk: "Ашылу",
+    },
+    location: {
+      ru: "Казахстан",
+      en: "Kazakhstan",
+      ar: "كازاخستان",
+      kk: "Қазақстан",
+    },
+    displayDate: {
+      ru: "14 сентября 2026",
+      en: "14 September 2026",
+      ar: "14 سبتمبر 2026",
+      kk: "2026 жылғы 14 қыркүйек",
+    },
+    title: {
+      ru: "Pakistan Products House открылся в Казахстане — первый в Центральной Азии",
+      en: "Pakistan Products House opens in Kazakhstan — the first in Central Asia",
+      ar: "افتتاح «بيت المنتجات الباكستانية» في كازاخستان — الأول في آسيا الوسطى",
+      kk: "Pakistan Products House Қазақстанда ашылды — Орталық Азиядағы алғашқысы",
+    },
+    excerpt: {
+      ru: "Gujranwala Business Alliance открыл Pakistan Products House в Казахстане: второй такой центр в мире и первый в Центральной Азии. На первом этапе — спорттовары, текстиль и хирургические инструменты.",
+      en: "The Gujranwala Business Alliance opened Pakistan Products House in Kazakhstan — the second such centre worldwide and the first in Central Asia. The first phase covers sports goods, textiles and surgical instruments.",
+      ar: "افتتح تحالف أعمال غوجرانوالا «بيت المنتجات الباكستانية» في كازاخستان — ثاني مركز من نوعه عالمياً والأول في آسيا الوسطى. وتشمل المرحلة الأولى السلع الرياضية والمنسوجات والأدوات الجراحية.",
+      kk: "Gujranwala Business Alliance Қазақстанда Pakistan Products House ашты: әлемдегі екінші, Орталық Азиядағы бірінші орталық. Бірінші кезеңде — спорт тауарлары, тоқыма және хирургиялық аспаптар.",
+    },
+    body: {
+      ru: [
+        "Gujranwala Business Alliance (GBA) открыл Pakistan Products House — Kazakhstan. Это второй такой центр в мире и первый в Центральной Азии.",
+        "Площадка задумана как канал поставок продукции с маркировкой Made in Pakistan — и прежде всего Made in Gujranwala — в Казахстан и шире, в страны Центральной Азии.",
+        "На первом этапе работа сосредоточена на трёх товарных группах: спортивные товары, текстиль и хирургические инструменты.",
+      ],
+      en: [
+        "The Gujranwala Business Alliance (GBA) opened Pakistan Products House – Kazakhstan. It is the second such centre worldwide and the first in Central Asia.",
+        "The venue is designed as a channel for Made in Pakistan — and specifically Made in Gujranwala — products into Kazakhstan and the wider Central Asian region.",
+        "In its first phase the work focuses on three product groups: sports goods, textiles and surgical instruments.",
+      ],
+      ar: [
+        "افتتح تحالف أعمال غوجرانوالا (GBA) «بيت المنتجات الباكستانية — كازاخستان». وهو ثاني مركز من نوعه على مستوى العالم والأول في آسيا الوسطى.",
+        "وصُمم المكان ليكون قناة لدخول المنتجات التي تحمل علامة «صُنع في باكستان» — وتحديداً «صُنع في غوجرانوالا» — إلى كازاخستان ومنطقة آسيا الوسطى الأوسع.",
+        "وفي مرحلته الأولى يركز العمل على ثلاث مجموعات من المنتجات: السلع الرياضية والمنسوجات والأدوات الجراحية.",
+      ],
+      kk: [
+        "Gujranwala Business Alliance (GBA) Pakistan Products House — Kazakhstan ашты. Бұл әлемдегі осындай екінші, Орталық Азиядағы бірінші орталық.",
+        "Алаң Made in Pakistan, әсіресе Made in Gujranwala өнімдерін Қазақстанға және Орталық Азия елдеріне жеткізу арнасы ретінде ойластырылған.",
+        "Бірінші кезеңде жұмыс үш тауар тобына шоғырланады: спорт тауарлары, тоқыма және хирургиялық аспаптар.",
+      ],
+    },
+  },
+  {
+    id: 52,
+    slug: "qaztrade-working-meeting-pakistan",
+    date: "2026-09-11",
+    source: "https://www.instagram.com/p/DdJ03Bql_81/",
+    image: "/news/qaztrade-working-meeting-pakistan.jpg",
+    tag: {
+      ru: "Встреча",
+      en: "Meeting",
+      ar: "لقاء",
+      kk: "Кездесу",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "11 сентября 2026",
+      en: "11 September 2026",
+      ar: "11 سبتمبر 2026",
+      kk: "2026 жылғы 11 қыркүйек",
+    },
+    title: {
+      ru: "Рабочая встреча с партнёрами из Пакистана на площадке QazTrade",
+      en: "A working meeting with partners from Pakistan at QazTrade",
+      ar: "اجتماع عمل مع شركاء من باكستان في مقر QazTrade",
+      kk: "QazTrade алаңында Пәкістандық серіктестермен жұмыс кездесуі",
+    },
+    excerpt: {
+      ru: "NSART провёл рабочую встречу с партнёрами из Пакистана на площадке QazTrade. Впереди — реализация достигнутых договорённостей и совместные проекты.",
+      en: "NSART held a working meeting with partners from Pakistan at QazTrade. Ahead lies the implementation of the agreements reached and joint projects.",
+      ar: "عقدت NSART اجتماع عمل مع شركاء من باكستان في مقر QazTrade. وتنتظر الجانبين مرحلة تنفيذ الاتفاقات والمشاريع المشتركة.",
+      kk: "NSART QazTrade алаңында Пәкістандық серіктестермен жұмыс кездесуін өткізді. Алда — уағдаластықтарды жүзеге асыру және бірлескен жобалар.",
+    },
+    body: {
+      ru: [
+        "NSART провёл рабочую встречу с партнёрами из Пакистана на площадке QazTrade.",
+        "Сотрудничество выходит на новый этап: стороны переходят к реализации достигнутых договорённостей и подготовке совместных проектов.",
+      ],
+      en: [
+        "NSART held a working meeting with partners from Pakistan at QazTrade.",
+        "The cooperation is moving to a new stage: the parties are turning to implementing the agreements reached and preparing joint projects.",
+      ],
+      ar: [
+        "عقدت NSART اجتماع عمل مع شركاء من باكستان في مقر QazTrade.",
+        "ويدخل التعاون مرحلة جديدة: ينتقل الطرفان إلى تنفيذ الاتفاقات التي تم التوصل إليها وإعداد مشاريع مشتركة.",
+      ],
+      kk: [
+        "NSART QazTrade алаңында Пәкістандық серіктестермен жұмыс кездесуін өткізді.",
+        "Ынтымақтастық жаңа кезеңге шығады: тараптар қол жеткізілген уағдаластықтарды жүзеге асыруға және бірлескен жобаларды дайындауға көшеді.",
+      ],
+    },
+  },
+  {
+    id: 53,
+    slug: "alem-ai-joins-aixc",
+    date: "2026-09-10",
+    source: "https://www.instagram.com/p/DdHhgqXDdT0/",
+    image: "/news/alem-ai-joins-aixc.jpg",
+    tag: {
+      ru: "Партнёрство",
+      en: "Partnership",
+      ar: "شراكة",
+      kk: "Серіктестік",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "10 сентября 2026",
+      en: "10 September 2026",
+      ar: "10 سبتمبر 2026",
+      kk: "2026 жылғы 10 қыркүйек",
+    },
+    title: {
+      ru: "Alem.ai стал партнёром Центра передовых решений в области ИИ",
+      en: "Alem.ai joins the AI Excellence Centre as a partner",
+      ar: "Alem.ai ينضم إلى مركز التميز للذكاء الاصطناعي كشريك",
+      kk: "Alem.ai жасанды интеллект орталығының серіктесі болды",
+    },
+    excerpt: {
+      ru: "Alem.ai — международный центр искусственного интеллекта Казахстана — присоединился к AI Excellence Centre (AIXC), который развивают Gujranwala Business Alliance, GIFT University и NSART Technology.",
+      en: "Alem.ai, Kazakhstan's international artificial intelligence centre, joined the AI Excellence Centre (AIXC) developed by the Gujranwala Business Alliance, GIFT University and NSART Technology.",
+      ar: "انضم Alem.ai، المركز الدولي للذكاء الاصطناعي في كازاخستان، إلى مركز التميز للذكاء الاصطناعي (AIXC) الذي يطوره تحالف أعمال غوجرانوالا وجامعة GIFT وNSART Technology.",
+      kk: "Қазақстанның халықаралық жасанды интеллект орталығы Alem.ai Gujranwala Business Alliance, GIFT University және NSART Technology дамытып жатқан AI Excellence Centre (AIXC) жобасына қосылды.",
+    },
+    body: {
+      ru: [
+        "Alem.ai — международный центр искусственного интеллекта Казахстана — стал ключевым партнёром AI Excellence Centre (AIXC). Проект развивают Gujranwala Business Alliance (GBA), GIFT University и NSART Technology.",
+        "Для технологической экосистемы Гуджранвалы это заметный шаг: центр получает партнёра, который находится в середине казахстанской повестки по искусственному интеллекту.",
+      ],
+      en: [
+        "Alem.ai, Kazakhstan's international artificial intelligence centre, has become a key partner of the AI Excellence Centre (AIXC). The project is developed by the Gujranwala Business Alliance (GBA), GIFT University and NSART Technology.",
+        "For Gujranwala's technology ecosystem this is a notable step: the centre gains a partner that sits at the heart of Kazakhstan's artificial intelligence agenda.",
+      ],
+      ar: [
+        "أصبح Alem.ai، المركز الدولي للذكاء الاصطناعي في كازاخستان، شريكاً رئيسياً في مركز التميز للذكاء الاصطناعي (AIXC). ويطوّر المشروع تحالف أعمال غوجرانوالا (GBA) وجامعة GIFT وNSART Technology.",
+        "وتمثل هذه الخطوة تطوراً ملحوظاً لمنظومة التكنولوجيا في غوجرانوالا: إذ يكسب المركز شريكاً يقع في صميم أجندة الذكاء الاصطناعي في كازاخستان.",
+      ],
+      kk: [
+        "Қазақстанның халықаралық жасанды интеллект орталығы Alem.ai AI Excellence Centre (AIXC) жобасының негізгі серіктесі болды. Жобаны Gujranwala Business Alliance (GBA), GIFT University және NSART Technology дамытады.",
+        "Гуджранвала технологиялық экожүйесі үшін бұл елеулі қадам: орталық Қазақстанның жасанды интеллект күн тәртібінің ортасында тұрған серіктес алды.",
+      ],
+    },
+  },
+  {
+    id: 54,
+    slug: "qazbot-robotics-forum-2026",
+    date: "2026-08-21",
+    source: "https://www.instagram.com/p/DcUYb5qCLBl/",
+    image: "/news/qazbot-robotics-forum-2026.jpg",
+    tag: {
+      ru: "Событие",
+      en: "Event",
+      ar: "فعالية",
+      kk: "Іс-шара",
+    },
+    location: {
+      ru: "Астана, Казахстан",
+      en: "Astana, Kazakhstan",
+      ar: "أستانا، كازاخستان",
+      kk: "Астана, Қазақстан",
+    },
+    displayDate: {
+      ru: "21 августа 2026",
+      en: "21 August 2026",
+      ar: "21 أغسطس 2026",
+      kk: "2026 жылғы 21 тамыз",
+    },
+    title: {
+      ru: "QAZBOT ROBOTICS FORUM 2026: команда NSART на площадке Alem.ai",
+      en: "QAZBOT ROBOTICS FORUM 2026: the NSART team at Alem.ai",
+      ar: "منتدى QAZBOT للروبوتات 2026: فريق NSART في Alem.ai",
+      kk: "QAZBOT ROBOTICS FORUM 2026: Alem.ai алаңындағы NSART командасы",
+    },
+    excerpt: {
+      ru: "Команда NSART побывала на форуме QAZBOT ROBOTICS FORUM 2026 в Alem.ai. Компания состоит в Ассоциации робототехники Казахстана и готовит к запуску проект Cybero.",
+      en: "The NSART team attended QAZBOT ROBOTICS FORUM 2026 at Alem.ai. The company is a member of the Robotics Association of Kazakhstan and is preparing to launch its Cybero project.",
+      ar: "حضر فريق NSART منتدى QAZBOT للروبوتات 2026 في Alem.ai. والشركة عضو في جمعية الروبوتات في كازاخستان وتستعد لإطلاق مشروعها Cybero.",
+      kk: "NSART командасы Alem.ai алаңында өткен QAZBOT ROBOTICS FORUM 2026 форумына қатысты. Компания Қазақстан робототехника қауымдастығының мүшесі және Cybero жобасын іске қосуға дайындалып жатыр.",
+    },
+    body: {
+      ru: [
+        "Команда NSART побывала на форуме QAZBOT ROBOTICS FORUM 2026, который прошёл на площадке Alem.ai. Компания участвует в этом направлении не первый год, состоит в Ассоциации робототехники Казахстана и готовит к запуску проект Cybero.",
+        "Отдельный интерес на форуме вызвали роботы AgiBot и планы компании открыть производство в Казахстане в следующем году. Для отрасли это переход от разговоров к конкретным шагам.",
+      ],
+      en: [
+        "The NSART team attended QAZBOT ROBOTICS FORUM 2026, held at Alem.ai. The company has worked in this field for several years, is a member of the Robotics Association of Kazakhstan and is preparing to launch its Cybero project.",
+        "A particular point of interest at the forum were AgiBot's robots and the company's plans to open production in Kazakhstan next year — for the industry, a move from talk to concrete steps.",
+      ],
+      ar: [
+        "حضر فريق NSART منتدى QAZBOT للروبوتات 2026 الذي أقيم في Alem.ai. وتعمل الشركة في هذا المجال منذ سنوات، وهي عضو في جمعية الروبوتات في كازاخستان وتستعد لإطلاق مشروع Cybero.",
+        "وكان من أبرز ما لفت الانتباه في المنتدى روبوتات AgiBot وخطط الشركة لافتتاح إنتاج في كازاخستان العام المقبل — وهو انتقال القطاع من الكلام إلى خطوات ملموسة.",
+      ],
+      kk: [
+        "NSART командасы Alem.ai алаңында өткен QAZBOT ROBOTICS FORUM 2026 форумына қатысты. Компания бұл бағытта бірнеше жыл жұмыс істейді, Қазақстан робототехника қауымдастығының мүшесі және Cybero жобасын іске қосуға дайындалуда.",
+        "Форумда AgiBot роботтары және компанияның келесі жылы Қазақстанда өндіріс ашу жоспары ерекше қызығушылық тудырды — сала үшін бұл сөзден нақты қадамға көшу.",
+      ],
+    },
+  },
+  {
+    id: 55,
+    slug: "ai-excellence-centre-launch",
+    date: "2026-07-07",
+    source: "https://www.instagram.com/p/DafL9NCDfe0/",
+    image: "/news/ai-excellence-centre-launch.jpg",
+    tag: {
+      ru: "Запуск",
+      en: "Launch",
+      ar: "إطلاق",
+      kk: "Ашылу",
+    },
+    location: {
+      ru: "Гуджранвала, Пакистан",
+      en: "Gujranwala, Pakistan",
+      ar: "غوجرانوالا، باكستان",
+      kk: "Гуджранвала, Пәкістан",
+    },
+    displayDate: {
+      ru: "7 июля 2026",
+      en: "7 July 2026",
+      ar: "7 يوليو 2026",
+      kk: "2026 жылғы 7 шілде",
+    },
+    title: {
+      ru: "Запуск AI Excellence Centre: совместный проект GIFT University, GBA и NSART",
+      en: "Launch of the AI Excellence Centre: a joint project of GIFT University, GBA and NSART",
+      ar: "إطلاق مركز التميز للذكاء الاصطناعي: مشروع مشترك بين جامعة GIFT وGBA وNSART",
+      kk: "AI Excellence Centre ашылуы: GIFT University, GBA және NSART бірлескен жобасы",
+    },
+    excerpt: {
+      ru: "В Гуджранвале запущен AI Excellence Centre (AIXC) — совместная инициатива GIFT University, Gujranwala Business Alliance и NSART Kazakhstan при технологической поддержке ONIT Global.",
+      en: "The AI Excellence Centre (AIXC) was launched in Gujranwala — a joint initiative of GIFT University, the Gujranwala Business Alliance and NSART Kazakhstan, with technology support from ONIT Global.",
+      ar: "أُطلق مركز التميز للذكاء الاصطناعي (AIXC) في غوجرانوالا — مبادرة مشتركة بين جامعة GIFT وتحالف أعمال غوجرانوالا وNSART كازاخستان، بدعم تقني من ONIT Global.",
+      kk: "Гуджранвалада AI Excellence Centre (AIXC) іске қосылды — GIFT University, Gujranwala Business Alliance және NSART Kazakhstan бірлескен бастамасы, технологиялық қолдау ONIT Global тарапынан.",
+    },
+    body: {
+      ru: [
+        "В Гуджранвале запущен AI Excellence Centre (AIXC) — центр компетенций в области искусственного интеллекта и цифровой трансформации. Это совместная инициатива GIFT University, Gujranwala Business Alliance (GBA) и NSART Kazakhstan; технологическую поддержку обеспечивает ONIT Global.",
+        "Открытие прошло с участием посла Казахстана в Пакистане Ержана Кистафина, председателя Gujranwala Business Alliance Ахмада Икрама Лоне и руководства GIFT University.",
+      ],
+      en: [
+        "The AI Excellence Centre (AIXC) was launched in Gujranwala — a competence centre for artificial intelligence and digital transformation. It is a joint initiative of GIFT University, the Gujranwala Business Alliance (GBA) and NSART Kazakhstan, with technology support from ONIT Global.",
+        "The launch took place in the presence of Yerzhan Kistafin, Ambassador of Kazakhstan to Pakistan, Ahmad Ikram Lone, Chairman of the Gujranwala Business Alliance, and the leadership of GIFT University.",
+      ],
+      ar: [
+        "أُطلق مركز التميز للذكاء الاصطناعي (AIXC) في غوجرانوالا — مركز كفاءات في مجال الذكاء الاصطناعي والتحول الرقمي. وهو مبادرة مشتركة بين جامعة GIFT وتحالف أعمال غوجرانوالا (GBA) وNSART كازاخستان، بدعم تقني من ONIT Global.",
+        "وجرى الإطلاق بحضور يرجان كيستافين، سفير كازاخستان لدى باكستان، وأحمد إكرام لون، رئيس تحالف أعمال غوجرانوالا، وقيادة جامعة GIFT.",
+      ],
+      kk: [
+        "Гуджранвалада AI Excellence Centre (AIXC) — жасанды интеллект пен цифрлық трансформация саласындағы құзыреттілік орталығы ашылды. Бұл GIFT University, Gujranwala Business Alliance (GBA) және NSART Kazakhstan бірлескен бастамасы; технологиялық қолдауды ONIT Global көрсетеді.",
+        "Ашылуға Қазақстанның Пәкістандағы елшісі Ержан Кистафин, Gujranwala Business Alliance төрағасы Ахмад Икрам Лоне және GIFT University басшылығы қатысты.",
+      ],
+    },
+  },
   {
     id: 43,
     slug: "res-2026-expo",
