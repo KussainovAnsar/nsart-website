@@ -30,7 +30,7 @@ $('#loadMsg').textContent = L.loading;
 const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
 // resolution adapts to the machine: start modest, step up while frames stay fast
 const DPR_MAX = Math.min(devicePixelRatio, WEAK ? 1.25 : 1.5), DPR_MIN = 0.8;
-let dpr = Math.min(DPR_MAX, 1), lastMoveT = 0;
+let dpr = DPR_MAX, dprLowered = false;
 const setDpr = (v) => { if (Math.abs(v - dpr) < 0.01) return; dpr = v; renderer.setPixelRatio(dpr); renderer.setSize(innerWidth, innerHeight); };
 renderer.setPixelRatio(dpr);
 renderer.autoClear = false;
@@ -62,7 +62,7 @@ let envRT = null;
 scene.fog = new THREE.FogExp2(0xbfcfda, 0.000021); farScene.fog = scene.fog;
 const sun = new THREE.DirectionalLight(0xfff1df, 3.0);
 sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
-Object.assign(sun.shadow.camera, { left: -62, right: 62, top: 62, bottom: -62, near: 10, far: 600 });
+Object.assign(sun.shadow.camera, { left: -66, right: 66, top: 66, bottom: -66, near: 10, far: 600 });
 sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.04;
 scene.add(sun, sun.target);
 const hemi = new THREE.HemisphereLight(0xcfe3f5, 0x6b5f45, 0.6); scene.add(hemi);
@@ -632,8 +632,7 @@ function frame() {
   // shadows are re-rendered only when the sun or the point of interest moves
   const focus = walk.on || tour.on ? camera.position : controls.target;
   const fx = THREE.MathUtils.clamp(focus.x, -40, 40), fz = THREE.MathUtils.clamp(focus.z, -30, 30);
-  if (Math.abs(fx - lastFocus.x) + Math.abs(fz - lastFocus.z) > 3) { lastFocus.set(fx, 0, fz); shadowDirty = true; }
-  if (shadowDirty) { sun.target.position.set(lastFocus.x, 0, lastFocus.z); sun.position.copy(su.sunPosition.value).multiplyScalar(300).add(sun.target.position); sun.target.updateMatrixWorld(); renderer.shadowMap.needsUpdate = true; shadowDirty = false; }
+  if (shadowDirty) { sun.target.position.set(-1.5, 0, -1.5); sun.position.copy(su.sunPosition.value).multiplyScalar(300).add(sun.target.position); sun.target.updateMatrixWorld(); renderer.shadowMap.needsUpdate = true; shadowDirty = false; }
   layers.update(time, dt); bld.updatePeople(time); bld.updateDoors(camera.position, dt, walk.on || tour.on); checkNewAlerts();
   acc += dt; accTab += dt; accCard += dt; accHeat += dt; accScreen += dt; accLed += dt; accLbl += dt;
   if (acc > 1) { acc = 0; refreshAlarmMap(); if (!story.active) renderKpis(); }
@@ -644,9 +643,6 @@ function frame() {
   if (layerState.airflow && (heatDirty || accHeat > 3)) { accHeat = 0; heatDirty = false; layers.updateHeat(heatSamples()); }
   if (accScreen > 3) { accScreen = 0; drawScreen(); }
   const moved = lastCam.distanceToSquared(camera.position) > 1e-6; lastCam.copy(camera.position);
-  if (moved || tween) lastMoveT = time;
-  // a still frame is always drawn at full resolution; only motion may trade sharpness for speed
-  if (time - lastMoveT > 0.35 && dpr < DPR_MAX) setDpr(DPR_MAX);
   if (!story.active && (moved || accLbl > 0.5)) { accLbl = 0; updateLabels(); updateCompass(); }
   farCam.position.copy(camera.position); farCam.quaternion.copy(camera.quaternion);
   const _t1 = performance.now();
@@ -656,7 +652,8 @@ function frame() {
   frames++; perfT += dt;
   if (perfT > 2) {
     const fps = frames / perfT; frames = 0; perfT = 0;
-    if (time - lastMoveT < 0.35) setDpr(fps < 38 ? Math.max(DPR_MIN, dpr - 0.1) : fps > 57 ? Math.min(DPR_MAX, dpr + 0.1) : dpr);
+    // resolution stays fixed; it steps down once, permanently, only if this machine is truly too slow
+    if (fps < 28 && !dprLowered) { dprLowered = true; setDpr(Math.max(DPR_MIN, dpr - 0.2)); }
     window.__fps = fps; window.__dpr = dpr; window.__js = jsT / jsN; window.__rt = rT / jsN; jsT = rT = jsN = 0;
   }
 }

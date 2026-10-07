@@ -522,7 +522,7 @@ export function createBuilding({ clip, weak = false }) {
     else { legL.position.set(-0.09, 0.42, 0); legR.position.set(0.09, 0.42, 0); }
     g.add(body, head, legL, legR);
     if (helmet) { const h = new THREE.Mesh(new THREE.SphereGeometry(0.135, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2), hat); h.position.y = head.position.y + 0.02; g.add(h); }
-    g.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.userData = { id, kind: 'person' }; pickables.push(o); } });
+    g.traverse((o) => { if (o.isMesh) { o.castShadow = false; o.userData = { id, kind: 'person' }; pickables.push(o); } });
     groups.people.add(g);
     const p = { id, role, group: g, legs: [legL, legR], arms, seated };
     people.push(p); items.set(id, { id, kind: 'person', role, object: body, pos: g.position, person: p });
