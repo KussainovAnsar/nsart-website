@@ -212,14 +212,22 @@ function renderItem(item) {
   return lines.join("\n");
 }
 
+/* вставка блока новостей в исходник lib/news.ts — чистая функция, её проверяет тест */
+function spliceNews(src, rendered) {
+  // файл может лежать с CRLF (git на Windows) — иначе вставка молча не срабатывает
+  const CR = String.fromCharCode(13, 10), LF = String.fromCharCode(10);
+  const eol = src.indexOf(CR) !== -1 ? CR : LF;
+  const m = src.match(/export const news: NewsItem\[\] = \[\r?\n/);
+  if (!m) throw new Error("не найден массив news в lib/news.ts");
+  const at = m.index + m[0].length;
+  const block = rendered.join(LF).split(LF).join(eol) + eol;
+  return src.slice(0, at) + block + src.slice(at);
+}
+
 async function insertNews(items) {
-  let src = await readFile(NEWS_TS, "utf8");
-  const anchor = "export const news: NewsItem[] = [\n";
-  const at = src.indexOf(anchor);
-  if (at === -1) throw new Error("не найден массив news в lib/news.ts");
-  const block = items.map(renderItem).join("\n") + "\n";
-  src = src.slice(0, at + anchor.length) + block + src.slice(at + anchor.length);
-  if (!DRY) await writeFile(NEWS_TS, src);
+  const src = await readFile(NEWS_TS, "utf8");
+  const out = spliceNews(src, items.map(renderItem));
+  if (!DRY) await writeFile(NEWS_TS, out);
 }
 
 function nextId(src) {
@@ -359,7 +367,7 @@ const run = async () => {
   }
 };
 
-export { renderItem, pickImages, nextId, insertNews, l4 };
+export { renderItem, pickImages, nextId, insertNews, spliceNews, l4 };
 
 /* запускаемся только как программа, а не при импорте из теста */
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

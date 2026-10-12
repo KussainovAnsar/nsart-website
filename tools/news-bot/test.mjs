@@ -2,7 +2,7 @@
 import assert from "node:assert/strict";
 import { readFile, writeFile, copyFile, rm } from "node:fs/promises";
 import path from "node:path";
-import { renderItem, pickImages, nextId } from "./bot.mjs";
+import { renderItem, pickImages, nextId, spliceNews } from "./bot.mjs";
 
 const DRAFT = {
   id: 44,
@@ -54,16 +54,15 @@ const newsSrc = await readFile(path.resolve(import.meta.dirname, "../../lib/news
 const id = nextId(newsSrc);
 assert.ok(id > 43, `следующий id должен быть больше 43, получен ${id}`);
 
-// 6. вставка в копию файла не ломает структуру массива
-const tmp = path.resolve(import.meta.dirname, "news.test.ts");
-await copyFile(path.resolve(import.meta.dirname, "../../lib/news.ts"), tmp);
-let src = await readFile(tmp, "utf8");
-const anchor = "export const news: NewsItem[] = [\n";
-src = src.replace(anchor, anchor + rendered + "\n");
-await writeFile(tmp, src);
-const after = await readFile(tmp, "utf8");
-assert.equal((after.match(/slug: "digital-almaty-2026"/g) || []).length, 1);
-assert.ok(after.indexOf("id: 44") < after.indexOf("id: 43"), "новая запись должна быть первой");
-await rm(tmp);
+// 6. вставка работает и в файле с LF, и в файле с CRLF (git на Windows переписывает концы строк)
+const CR = String.fromCharCode(13, 10), LF = String.fromCharCode(10);
+for (const eol of [LF, CR]) {
+  const sample = newsSrc.split(/\r?\n/).join(eol);
+  const out = spliceNews(sample, [rendered]);
+  assert.equal((out.match(/slug: "digital-almaty-2026"/g) || []).length, 1,
+    "запись должна вставиться ровно один раз");
+  assert.ok(out.indexOf("id: 44") < out.indexOf("id: 43"), "новая запись должна быть первой");
+  assert.ok(out.includes(eol), "концы строк исходного файла должны сохраниться");
+}
 
-console.log("тест пройден: запись новости собирается и встаёт в начало списка");
+console.log("тест пройден: запись новости собирается и встаёт в начало списка (LF и CRLF)");

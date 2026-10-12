@@ -78,6 +78,69 @@ export const newsUi = {
 /* Newest first — see `sortedNews` below. */
 export const news: NewsItem[] = [
   {
+    id: 56,
+    slug: "gba-delegation-smart-aqkol",
+    date: "2026-10-08",
+    source: "https://www.instagram.com/p/DePXnNmjYB3/",
+    image: "/news/gba-delegation-smart-aqkol.jpg",
+    tag: {
+      ru: "Визит",
+      en: "Visit",
+      ar: "زيارة",
+      kk: "Сапар",
+    },
+    location: {
+      ru: "Акколь, Казахстан",
+      en: "Aqkol, Kazakhstan",
+      ar: "أقكول، كازاخستان",
+      kk: "Ақкөл, Қазақстан",
+    },
+    displayDate: {
+      ru: "8 октября 2026",
+      en: "8 October 2026",
+      ar: "8 أكتوبر 2026",
+      kk: "2026 жылғы 8 қазан",
+    },
+    title: {
+      ru: "Делегация GBA и NSART в Smart Aqkol: как работает умный город",
+      en: "GBA and NSART at Smart Aqkol: a working smart city model",
+      ar: "وفد GBA وNSART في «سمارت أقكول»: نموذج مدينة ذكية قيد التشغيل",
+      kk: "GBA және NSART делегациясы Smart Aqkol-да: ақылды қала қалай жұмыс істейді",
+    },
+    excerpt: {
+      ru: "Делегация Gujranwala Business Alliance с генеральным директором NSART Group побывала в Акколе — одном из первых проектов умного города в Казахстане. Гостей принял аким Аккольского района Биржан Абдрахманов.",
+      en: "The Gujranwala Business Alliance delegation, joined by the CEO of NSART Group, visited Aqkol — one of Kazakhstan's first smart city projects. The guests were received by Birzhan Abdrakhmanov, Akim of Aqkol District.",
+      ar: "زار وفد تحالف أعمال غوجرانوالا، ومعه الرئيس التنفيذي لمجموعة NSART، مدينة أقكول — أحد أوائل مشاريع المدن الذكية في كازاخستان. واستقبل الضيوف بيرجان عبد الرحمنوف، حاكم منطقة أقكول.",
+      kk: "Gujranwala Business Alliance делегациясы NSART Group бас директорымен бірге Ақкөлге барды — бұл Қазақстандағы алғашқы ақылды қала жобаларының бірі. Қонақтарды Ақкөл ауданының әкімі Біржан Әбдірахманов қабылдады.",
+    },
+    body: {
+      ru: [
+        "В рамках миссии в Казахстане делегация Gujranwala Business Alliance (GBA) во главе с председателем Ахмадом Икрамом Лоне посетила Акколь. Вместе с ним работали основатель и председатель GIFT University Мухаммад Анвар Дар и генеральный директор NSART Group Нургожа Калиаскаров. Делегацию принял аким Аккольского района Биржан Абдрахманов.",
+        "Smart Aqkol — одна из первых моделей умного города в Казахстане, созданная в рамках программы «Цифровой Казахстан». В основе — цифровая инфраструктура и Ситуационный центр, который сводит данные и городские службы в одну точку управления.",
+        "Делегации показали, как в городе работают интернет вещей, умные приборы учёта, видеонаблюдение с аналитикой, экологический мониторинг, управление дорожным движением, умное освещение и цифровые сети связи — всё это настроено на городские сервисы, безопасность и эффективность.",
+        "Председатель GBA Ахмад Икрам Лоне отметил, что такой опыт можно связать с развитием Гуджранвалы и использовать как основу для технологического и образовательного сотрудничества Пакистана и Казахстана.",
+      ],
+      en: [
+        "As part of its mission to Kazakhstan, the Gujranwala Business Alliance (GBA) delegation led by Chairman Ahmad Ikram Lone visited Aqkol. He was accompanied by Muhammad Anwar Dar, Founder and Chairman of GIFT University, and Nurgozha Kaliaskarov, CEO of NSART Group. The delegation was received by Birzhan Abdrakhmanov, Akim of Aqkol District.",
+        "Smart Aqkol is one of Kazakhstan's pioneering smart city models, developed under the Digital Kazakhstan programme. It combines digital infrastructure with a central Situation Centre that brings city data and services together in one place.",
+        "The delegation was shown how the city runs the Internet of Things, smart metering, video surveillance with analytics, environmental monitoring, traffic management, smart lighting and digital connectivity — all directed at public services, safety and urban efficiency.",
+        "GBA Chairman Ahmad Ikram Lone noted that this experience could be connected with Gujranwala's own development and serve as a basis for technology and knowledge cooperation between Pakistan and Kazakhstan.",
+      ],
+      ar: [
+        "في إطار بعثته إلى كازاخستان، زار وفد تحالف أعمال غوجرانوالا (GBA) برئاسة أحمد إكرام لون مدينة أقكول. ورافقه محمد أنور دار، مؤسس ورئيس جامعة GIFT، ونورغوجا كالياسكاروف، الرئيس التنفيذي لمجموعة NSART. واستقبل الوفد بيرجان عبد الرحمنوف، حاكم منطقة أقكول.",
+        "تُعد «سمارت أقكول» من أوائل نماذج المدن الذكية في كازاخستان، وقد طُوّرت ضمن برنامج «كازاخستان الرقمية». وهي تجمع بين البنية التحتية الرقمية ومركز عمليات مركزي يوحّد بيانات المدينة وخدماتها في نقطة إدارة واحدة.",
+        "واطّلع الوفد على تشغيل إنترنت الأشياء، والعدادات الذكية، والمراقبة بالفيديو مع التحليلات، والرصد البيئي، وإدارة حركة المرور، والإنارة الذكية، وشبكات الاتصال الرقمية — وجميعها موجهة لخدمة السكان والسلامة وكفاءة إدارة المدينة.",
+        "وأشار رئيس GBA أحمد إكرام لون إلى إمكانية ربط هذه الخبرة بتطوير غوجرانوالا، واعتبارها أساساً للتعاون التقني والمعرفي بين باكستان وكازاخستان.",
+      ],
+      kk: [
+        "Қазақстандағы миссия аясында төраға Ахмад Икрам Лоне бастаған Gujranwala Business Alliance (GBA) делегациясы Ақкөлге барды. Онымен бірге GIFT University негізін қалаушы әрі төрағасы Мұхаммад Анвар Дар және NSART Group бас директоры Нұрғожа Қалиасқаров болды. Делегацияны Ақкөл ауданының әкімі Біржан Әбдірахманов қабылдады.",
+        "Smart Aqkol — «Цифрлық Қазақстан» бағдарламасы аясында жасалған, елдегі алғашқы ақылды қала үлгілерінің бірі. Негізінде цифрлық инфрақұрылым мен қала деректері мен қызметтерін бір нүктеге жинайтын Ситуациялық орталық тұр.",
+        "Делегацияға қалада заттар интернеті, ақылды есептеуіштер, талдауы бар бейнебақылау, экологиялық мониторинг, жол қозғалысын басқару, ақылды жарықтандыру және цифрлық байланыс желілері қалай жұмыс істейтіні көрсетілді.",
+        "GBA төрағасы Ахмад Икрам Лоне бұл тәжірибені Гуджранвала дамуымен байланыстыруға және оны Пәкістан мен Қазақстанның технологиялық әрі білім ынтымақтастығының негізі ретінде пайдалануға болатынын атап өтті.",
+      ],
+    },
+  },
+  {
     id: 44,
     slug: "kistafin-dinner-reception",
     date: "2026-10-05",
