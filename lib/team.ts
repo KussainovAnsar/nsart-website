@@ -121,7 +121,7 @@ export const team: TeamMember[] = [
       ar: "أيدار كوجانبيت",
       kk: "Айдар Қожанбет",
     },
-    role: "Project Office Operations",
+    role: "Head of operations",
     photo: "/team/aidar.jpg",
     years: {
       en: "13+ years in project management & legal",
